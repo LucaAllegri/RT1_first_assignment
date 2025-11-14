@@ -1,0 +1,80 @@
+[0.000000] (-) TimerEvent: {}
+[0.000325] (assignment1_rt) JobQueued: {'identifier': 'assignment1_rt', 'dependencies': OrderedDict()}
+[0.001786] (assignment1_rt) JobStarted: {'identifier': 'assignment1_rt'}
+[0.015382] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'cmake'}
+[0.017258] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'build'}
+[0.018616] (assignment1_rt) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luchino/RT_first_assignment/build/assignment1_rt', '--', '-j8', '-l8'], 'cwd': '/home/luchino/RT_first_assignment/build/assignment1_rt', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'luchino', 'GIT_ASKPASS': '/home/luchino/.vscode-server/bin/ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/luchino', 'TERM_PROGRAM_VERSION': '1.106.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-a71d5277-6bb5-47f8-b172-dbe71b239a0e.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/luchino/.vscode-server/bin/ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/luchino/.vscode-server/bin/ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/luchino/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luchino', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/844_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/luchino/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/luchino/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/luchino/.vscode-server/bin/ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/Radiance/bin:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/c/Program Files/MySQL/MySQL Server 9.0/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/runtime/win64:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/lucaa/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lucaa/AppData/Roaming/npm:/mnt/c/Users/lucaa/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/lucaa/AppData/Roaming/Programs/Zero Install:/mnt/c/Users/lucaa/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/lucaa/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4ff4c84477.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/luchino/ros_ws/install/turtlesim_controller:/home/luchino/ros_ws/install/first_package_py:/home/luchino/ros_ws/install/first_package_cpp:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/luchino/RT_first_assignment/build/assignment1_rt', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luchino/ros_ws/install/first_package_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/luchino/ros_ws/install/turtlesim_controller:/home/luchino/ros_ws/install/first_package_cpp:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:'}), 'shell': False}
+[0.090710] (assignment1_rt) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/distance.dir/src/distance.cpp.o\x1b[0m\n'}
+[0.094411] (assignment1_rt) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ui.dir/src/ui.cpp.o\x1b[0m\n'}
+[0.099663] (-) TimerEvent: {}
+[0.200146] (-) TimerEvent: {}
+[0.300605] (-) TimerEvent: {}
+[0.401121] (-) TimerEvent: {}
+[0.501649] (-) TimerEvent: {}
+[0.602107] (-) TimerEvent: {}
+[0.702664] (-) TimerEvent: {}
+[0.803148] (-) TimerEvent: {}
+[0.903733] (-) TimerEvent: {}
+[1.004187] (-) TimerEvent: {}
+[1.104790] (-) TimerEvent: {}
+[1.205391] (-) TimerEvent: {}
+[1.305897] (-) TimerEvent: {}
+[1.406374] (-) TimerEvent: {}
+[1.506780] (-) TimerEvent: {}
+[1.607256] (-) TimerEvent: {}
+[1.707668] (-) TimerEvent: {}
+[1.808094] (-) TimerEvent: {}
+[1.908834] (-) TimerEvent: {}
+[2.009326] (-) TimerEvent: {}
+[2.109789] (-) TimerEvent: {}
+[2.210281] (-) TimerEvent: {}
+[2.310737] (-) TimerEvent: {}
+[2.411140] (-) TimerEvent: {}
+[2.511590] (-) TimerEvent: {}
+[2.612057] (-) TimerEvent: {}
+[2.712673] (-) TimerEvent: {}
+[2.813113] (-) TimerEvent: {}
+[2.913604] (-) TimerEvent: {}
+[3.014113] (-) TimerEvent: {}
+[3.114615] (-) TimerEvent: {}
+[3.215093] (-) TimerEvent: {}
+[3.315555] (-) TimerEvent: {}
+[3.416066] (-) TimerEvent: {}
+[3.516563] (-) TimerEvent: {}
+[3.617012] (-) TimerEvent: {}
+[3.717431] (-) TimerEvent: {}
+[3.818017] (-) TimerEvent: {}
+[3.918453] (-) TimerEvent: {}
+[4.019033] (-) TimerEvent: {}
+[4.119550] (-) TimerEvent: {}
+[4.219973] (-) TimerEvent: {}
+[4.320822] (-) TimerEvent: {}
+[4.421277] (-) TimerEvent: {}
+[4.521710] (-) TimerEvent: {}
+[4.622250] (-) TimerEvent: {}
+[4.722656] (-) TimerEvent: {}
+[4.823122] (-) TimerEvent: {}
+[4.923674] (-) TimerEvent: {}
+[5.024196] (-) TimerEvent: {}
+[5.124741] (-) TimerEvent: {}
+[5.164697] (assignment1_rt) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable ui\x1b[0m\n'}
+[5.174290] (assignment1_rt) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable distance\x1b[0m\n'}
+[5.224979] (-) TimerEvent: {}
+[5.325467] (-) TimerEvent: {}
+[5.425878] (-) TimerEvent: {}
+[5.521572] (assignment1_rt) StderrLine: {'line': b"/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n"}
+[5.521947] (assignment1_rt) StderrLine: {'line': b"(.text+0x1b): undefined reference to `main'\n"}
+[5.522019] (assignment1_rt) StderrLine: {'line': b"/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':\n"}
+[5.522085] (assignment1_rt) StderrLine: {'line': b"(.text+0x1b): undefined reference to `main'\n"}
+[5.526017] (-) TimerEvent: {}
+[5.528948] (assignment1_rt) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[5.530069] (assignment1_rt) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[5.531710] (assignment1_rt) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/distance.dir/build.make:185: distance] Error 1\n'}
+[5.531980] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2\n'}
+[5.532200] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[5.532561] (assignment1_rt) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ui.dir/build.make:185: ui] Error 1\n'}
+[5.532812] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2\n'}
+[5.533235] (assignment1_rt) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.537105] (assignment1_rt) CommandEnded: {'returncode': 2}
+[5.549478] (assignment1_rt) JobEnded: {'identifier': 'assignment1_rt', 'rc': 2}
+[5.560365] (-) EventReactorShutdown: {}

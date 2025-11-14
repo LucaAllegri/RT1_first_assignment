@@ -1,0 +1,18 @@
+[0.021s] Invoking command in '/home/luchino/RT_first_assignment/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8
+[0.089s] [ 25%] [32mBuilding CXX object CMakeFiles/distance.dir/src/distance.cpp.o[0m
+[0.093s] [ 50%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui.cpp.o[0m
+[5.163s] [ 75%] [32m[1mLinking CXX executable ui[0m
+[5.172s] [100%] [32m[1mLinking CXX executable distance[0m
+[5.520s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[5.520s] (.text+0x1b): undefined reference to `main'
+[5.520s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[5.520s] (.text+0x1b): undefined reference to `main'
+[5.527s] collect2: error: ld returned 1 exit status
+[5.528s] collect2: error: ld returned 1 exit status
+[5.530s] gmake[2]: *** [CMakeFiles/distance.dir/build.make:185: distance] Error 1
+[5.530s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2
+[5.530s] gmake[1]: *** Waiting for unfinished jobs....
+[5.531s] gmake[2]: *** [CMakeFiles/ui.dir/build.make:185: ui] Error 1
+[5.531s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+[5.531s] gmake: *** [Makefile:146: all] Error 2
+[5.535s] Invoked command in '/home/luchino/RT_first_assignment/build/assignment1_rt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8

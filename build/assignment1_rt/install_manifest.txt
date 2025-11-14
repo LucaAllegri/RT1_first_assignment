@@ -1,0 +1,15 @@
+/home/luchino/RT_first_assignment/install/assignment1_rt/share/ament_index/resource_index/package_run_dependencies/assignment1_rt
+/home/luchino/RT_first_assignment/install/assignment1_rt/share/ament_index/resource_index/parent_prefix_path/assignment1_rt
+/home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/environment/ament_prefix_path.sh
+/home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/environment/ament_prefix_path.dsv
+/home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/environment/path.sh
+/home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/environment/path.dsv
+/home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/local_setup.bash
+/home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/local_setup.sh
+/home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/local_setup.zsh
+/home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/local_setup.dsv
+/home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/package.dsv
+/home/luchino/RT_first_assignment/install/assignment1_rt/share/ament_index/resource_index/packages/assignment1_rt
+/home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/cmake/assignment1_rtConfig.cmake
+/home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/cmake/assignment1_rtConfig-version.cmake
+/home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/package.xml

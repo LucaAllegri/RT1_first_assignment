@@ -7,9 +7,21 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
+find_package(rclcpp REQUIRED) 
+find_package(turtlesim REQUIRED)
+find_package(geometry_msgs REQUIRED)
+
+add_executable(ui src/ui_node.cpp)  
+add_executable(distance src/distance_node.cpp) 
+
+ament_target_dependencies(ui rclcpp turtlesim geometry_msgs)
+ament_target_dependencies(distance rclcpp turtlesim geometry_msgs)
+
+install(TARGETS 
+  ui
+  distance
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
