@@ -223,53 +223,53 @@ distance/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/distance.dir/build.make CMakeFiles/distance.dir/build
 .PHONY : distance/fast
 
-src/distance.o: src/distance.cpp.o
-.PHONY : src/distance.o
+src/distance_node.o: src/distance_node.cpp.o
+.PHONY : src/distance_node.o
 
 # target to build an object file
-src/distance.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/distance.dir/build.make CMakeFiles/distance.dir/src/distance.cpp.o
-.PHONY : src/distance.cpp.o
+src/distance_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/distance.dir/build.make CMakeFiles/distance.dir/src/distance_node.cpp.o
+.PHONY : src/distance_node.cpp.o
 
-src/distance.i: src/distance.cpp.i
-.PHONY : src/distance.i
+src/distance_node.i: src/distance_node.cpp.i
+.PHONY : src/distance_node.i
 
 # target to preprocess a source file
-src/distance.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/distance.dir/build.make CMakeFiles/distance.dir/src/distance.cpp.i
-.PHONY : src/distance.cpp.i
+src/distance_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/distance.dir/build.make CMakeFiles/distance.dir/src/distance_node.cpp.i
+.PHONY : src/distance_node.cpp.i
 
-src/distance.s: src/distance.cpp.s
-.PHONY : src/distance.s
+src/distance_node.s: src/distance_node.cpp.s
+.PHONY : src/distance_node.s
 
 # target to generate assembly for a file
-src/distance.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/distance.dir/build.make CMakeFiles/distance.dir/src/distance.cpp.s
-.PHONY : src/distance.cpp.s
+src/distance_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/distance.dir/build.make CMakeFiles/distance.dir/src/distance_node.cpp.s
+.PHONY : src/distance_node.cpp.s
 
-src/ui.o: src/ui.cpp.o
-.PHONY : src/ui.o
+src/ui_node.o: src/ui_node.cpp.o
+.PHONY : src/ui_node.o
 
 # target to build an object file
-src/ui.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui.dir/build.make CMakeFiles/ui.dir/src/ui.cpp.o
-.PHONY : src/ui.cpp.o
+src/ui_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui.dir/build.make CMakeFiles/ui.dir/src/ui_node.cpp.o
+.PHONY : src/ui_node.cpp.o
 
-src/ui.i: src/ui.cpp.i
-.PHONY : src/ui.i
+src/ui_node.i: src/ui_node.cpp.i
+.PHONY : src/ui_node.i
 
 # target to preprocess a source file
-src/ui.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui.dir/build.make CMakeFiles/ui.dir/src/ui.cpp.i
-.PHONY : src/ui.cpp.i
+src/ui_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui.dir/build.make CMakeFiles/ui.dir/src/ui_node.cpp.i
+.PHONY : src/ui_node.cpp.i
 
-src/ui.s: src/ui.cpp.s
-.PHONY : src/ui.s
+src/ui_node.s: src/ui_node.cpp.s
+.PHONY : src/ui_node.s
 
 # target to generate assembly for a file
-src/ui.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui.dir/build.make CMakeFiles/ui.dir/src/ui.cpp.s
-.PHONY : src/ui.cpp.s
+src/ui_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui.dir/build.make CMakeFiles/ui.dir/src/ui_node.cpp.s
+.PHONY : src/ui_node.cpp.s
 
 # Help Target
 help:
@@ -288,12 +288,12 @@ help:
 	@echo "... uninstall"
 	@echo "... distance"
 	@echo "... ui"
-	@echo "... src/distance.o"
-	@echo "... src/distance.i"
-	@echo "... src/distance.s"
-	@echo "... src/ui.o"
-	@echo "... src/ui.i"
-	@echo "... src/ui.s"
+	@echo "... src/distance_node.o"
+	@echo "... src/distance_node.i"
+	@echo "... src/distance_node.s"
+	@echo "... src/ui_node.o"
+	@echo "... src/ui_node.i"
+	@echo "... src/ui_node.s"
 .PHONY : help
 
 

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance.cpp" "CMakeFiles/distance.dir/src/distance.cpp.o" "gcc" "CMakeFiles/distance.dir/src/distance.cpp.o.d"
+  "/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp" "CMakeFiles/distance.dir/src/distance_node.cpp.o" "gcc" "CMakeFiles/distance.dir/src/distance_node.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

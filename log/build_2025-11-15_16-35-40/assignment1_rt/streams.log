@@ -1,0 +1,43 @@
+[0.022s] Invoking command in '/home/luchino/RT_first_assignment/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8
+[0.111s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.420s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.645s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.660s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.687s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.709s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.834s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.839s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.145s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.485s] -- Found turtlesim: 1.8.3 (/opt/ros/jazzy/share/turtlesim/cmake)
+[1.578s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.683s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.939s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.939s] -- Configured cppcheck include dirs: 
+[1.939s] -- Configured cppcheck exclude dirs and/or files: 
+[1.940s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.940s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.941s] -- Added test 'lint_cmake' to check CMake code style
+[1.942s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.943s] -- Added test 'uncrustify' to check C / C++ code style
+[1.943s] -- Configured uncrustify additional arguments: 
+[1.944s] -- Added test 'xmllint' to check XML markup files
+[1.947s] -- Configuring done (1.9s)
+[1.972s] -- Generating done (0.0s)
+[1.981s] -- Build files have been written to: /home/luchino/RT_first_assignment/build/assignment1_rt
+[2.021s] [ 25%] [32mBuilding CXX object CMakeFiles/distance.dir/src/distance_node.cpp.o[0m
+[2.021s] [ 50%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[2.743s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/float32.hpp: No such file or directory
+[2.743s]     3 | #include [01;31m[K"geometry_msgs/msg/float32.hpp"[m[K
+[2.743s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.744s] compilation terminated.
+[2.750s] gmake[2]: *** [CMakeFiles/distance.dir/build.make:76: CMakeFiles/distance.dir/src/distance_node.cpp.o] Error 1
+[2.751s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2
+[2.751s] gmake[1]: *** Waiting for unfinished jobs....
+[2.751s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/float32.hpp: No such file or directory
+[2.751s]     4 | #include [01;31m[K"geometry_msgs/msg/float32.hpp"[m[K
+[2.751s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.751s] compilation terminated.
+[2.755s] gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+[2.756s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+[2.756s] gmake: *** [Makefile:146: all] Error 2
+[2.759s] Invoked command in '/home/luchino/RT_first_assignment/build/assignment1_rt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8

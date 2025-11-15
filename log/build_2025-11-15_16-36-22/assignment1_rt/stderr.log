@@ -1,0 +1,135 @@
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:17:29:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+   17 |                 std::cout<< [01;35m[K"[m[KQuale tartaruga vuoi muovere?\n
+      |                             [01;35m[K^[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:17:29:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+   17 |                 std::cout<< [01;31m[K"Quale tartaruga vuoi muovere?\n[m[K
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:18:41:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   18 |                              1) Turtle 1[01;31m[K\[m[Kn
+      |                                         [01;31m[K^[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:19:41:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   19 |                              2) Turtle 2[01;31m[K\[m[Kn
+      |                                         [01;31m[K^[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:20:31:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+   20 |                              :[01;35m[K"[m[K;
+      |                               [01;35m[K^[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:20:31:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+   20 |                              :[01;31m[K";[m[K
+      |                               [01;31m[K^~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:23:29:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+   23 |                 std::cout<< [01;35m[K"[m[KInserisci Velocità Lineare\n
+      |                             [01;35m[K^[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:23:29:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+   23 |                 std::cout<< [01;31m[K"Inserisci Velocità Lineare\n[m[K
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:24:32:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+   24 |                              x:[01;35m[K"[m[K
+      |                                [01;35m[K^[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:24:32:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:31:29:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+   31 |                 std::cout<< [01;35m[K"[m[KInserisci Velocità Angolare\n
+      |                             [01;35m[K^[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:31:29:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+   31 |                 std::cout<< [01;31m[K"Inserisci Velocità Angolare\n[m[K
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:32:32:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+   32 |                              x:[01;35m[K"[m[K
+      |                                [01;35m[K^[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:32:32:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/float32.hpp: No such file or directory
+    3 | #include [01;31m[K"geometry_msgs/msg/float32.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/distance.dir/build.make:76: CMakeFiles/distance.dir/src/distance_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:65:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   65 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:62:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before numeric constant
+   62 |                                                  [01;31m[K0.0[m[K , 0.0 , 0.0};
+      |                                                  [01;31m[K^~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:61:49:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   61 |         geometry_msgs::msg::Twist stop_turtle = [01;36m[K{[m[K0.0 , 0.0 , 0.0
+      |                                                 [01;36m[K^[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:62:50:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{0.0, 0.0, 0.0}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kgeometry_msgs::msg::Twist[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Twist_<std::allocator<void> >[m[K’}
+   62 |                                                  [01;31m[K0.0[m[K , 0.0 , 0.0};
+      |                                                  [01;31m[K^~~[m[K
+      |                                                  [01;31m[K|[m[K
+      |                                                  [01;31m[K<brace-enclosed initializer list>[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:62:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before numeric constant
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In constructor ‘[01m[KInput_Controller::[01;32m[KInput_Controller[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:11:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+   11 |             [01;31m[Ktimer_[m[K = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&Distance_Check::input_loop, this));
+      |             [01;31m[K^~~~~~[m[K
+      |             [32m[Ktimer_t[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:11:90:[m[K [01;31m[Kerror: [m[K‘[01m[KDistance_Check[m[K’ has not been declared
+   11 | te_wall_timer(std::chrono::milliseconds(1000), std::bind(&[01;31m[KDistance_Check[m[K::input_loop, this));
+      |                                                           [01;31m[K^~~~~~~~~~~~~~[m[K
+
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kinput_loop[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:18:31:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+   18 |                              1[01;31m[K)[m[K Turtle 1\n
+      |                               [01;31m[K^[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:24:31:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+   24 |                              x[01;31m[K:[m[K"
+      |                               [01;31m[K^[m[K
+      |                               [32m[K::[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:24:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ has not been declared
+   24 |                              [01;31m[Kx[m[K:"
+      |                              [01;31m[K^[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:27:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+   27 |                 [01;31m[Kstd[m[K::cin >> vel_input.linear.y;
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:29:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+   29 |                 [01;31m[Kstd[m[K::cin >> vel_input.linear.z;
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:32:31:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+   32 |                              x[01;31m[K:[m[K"
+      |                               [01;31m[K^[m[K
+      |                               [32m[K::[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:32:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ has not been declared
+   32 |                              [01;31m[Kx[m[K:"
+      |                              [01;31m[K^[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:35:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+   35 |                 [01;31m[Kstd[m[K::cin >> vel_input.angular.y;
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:37:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+   37 |                 [01;31m[Kstd[m[K::cin >> vel_input.angular.z;
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Ktimer_callback[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:54:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kdistance[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::distance[m[K’?
+   54 |             [01;31m[Kdistance[m[K = sqrt((pos_t2.x-pos_t1.x)^2 + (pos_t2.y-pos_t1.y)^2);
+      |             [01;31m[K^~~~~~~~[m[K
+      |             [32m[Kstd::distance[m[K
+In file included from [01m[K/usr/include/c++/13/bits/stl_construct.h:62[m[K,
+                 from [01m[K/usr/include/c++/13/bits/stl_tempbuf.h:61[m[K,
+                 from [01m[K/usr/include/c++/13/memory:66[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K,
+                 from [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:1[m[K:
+[01m[K/usr/include/c++/13/bits/stl_iterator_base_funcs.h:148:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::distance[m[K’ declared here
+  148 |     [01;36m[Kdistance[m[K(_InputIterator __first, _InputIterator __last)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:54:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kpos_t2[m[K’ was not declared in this scope; did you mean ‘[01m[Kfpos_t[m[K’?
+   54 |             distance = sqrt(([01;31m[Kpos_t2[m[K.x-pos_t1.x)^2 + (pos_t2.y-pos_t1.y)^2);
+      |                              [01;31m[K^~~~~~[m[K
+      |                              [32m[Kfpos_t[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:54:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kpos_t1[m[K’ was not declared in this scope; did you mean ‘[01m[Kfpos_t[m[K’?
+   54 |             distance = sqrt((pos_t2.x-[01;31m[Kpos_t1[m[K.x)^2 + (pos_t2.y-pos_t1.y)^2);
+      |                                       [01;31m[K^~~~~~[m[K
+      |                                       [32m[Kfpos_t[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:55:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kt1_publisher_[m[K’?
+   55 |             [01;31m[Kpublisher_[m[K->publish(distance);
+      |             [01;31m[K^~~~~~~~~~[m[K
+      |             [32m[Kt1_publisher_[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:69:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kargc[m[K’ was not declared in this scope
+   69 |     rclcpp::init([01;31m[Kargc[m[K, argv);
+      |                  [01;31m[K^~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:69:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kargv[m[K’ was not declared in this scope
+   69 |     rclcpp::init(argc, [01;31m[Kargv[m[K);
+      |                        [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
