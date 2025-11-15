@@ -1,0 +1,29 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/distance.dir/src/distance_node.cpp.o[0m
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:52:50:[m[K [01;35m[Kwarning: [m[KISO C++ does not allow GNU designated initializers [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   52 |         geometry_msgs::msg::Twist stop_turtle = {[01;35m[Klinear[m[K:{0.0, 0.0, 0.0},angular:{0.0, 0.0, 0.0}};
+      |                                                  [01;35m[K^~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:52:73:[m[K [01;35m[Kwarning: [m[KISO C++ does not allow GNU designated initializers [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   52 |         geometry_msgs::msg::Twist stop_turtle = {linear:{0.0, 0.0, 0.0},[01;35m[Kangular[m[K:{0.0, 0.0, 0.0}};
+      |                                                                         [01;35m[K^~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:52:96:[m[K [01;31m[Kerror: [m[Kdesignated initializers cannot be used with a non-aggregate type ‘[01m[Kgeometry_msgs::msg::Twist[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Twist_<std::allocator<void> >[m[K’}
+   52 |         geometry_msgs::msg::Twist stop_turtle = {linear:{0.0, 0.0, 0.0},angular:{0.0, 0.0, 0.0}[01;31m[K}[m[K;
+      |                                                                                                [01;31m[K^[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:[m[K In member function ‘[01m[Kvoid Distance_Check::[01;32m[Ktimer_callback[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:18:84:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::Float32[m[K’ {aka ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >[m[K’} and ‘[01m[Kdouble[m[K’)
+   18 |             distance = sqrt(pow((pos_t2.x-pos_t1.x),2) + pow((pos_t2.y-pos_t1.y),2)[01;31m[K)[m[K;
+      |                                                                                    [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/float32.hpp:7[m[K,
+                 from [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:3[m[K:
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std_msgs::msg::Float32_<std::allocator<void> >& std_msgs::msg::Float32_<std::allocator<void> >::[01;32m[Koperator=[m[K(const std_msgs::msg::Float32_<std::allocator<void> >&)[m[K’
+   35 | struct [01;36m[KFloat32_[m[K
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Kconst std_msgs::msg::Float32_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std_msgs::msg::Float32_<std::allocator<void> >& std_msgs::msg::Float32_<std::allocator<void> >::[01;32m[Koperator=[m[K(std_msgs::msg::Float32_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Kstd_msgs::msg::Float32_<std::allocator<void> >&&[m[K’
+gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/distance.dir/build.make:76: CMakeFiles/distance.dir/src/distance_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

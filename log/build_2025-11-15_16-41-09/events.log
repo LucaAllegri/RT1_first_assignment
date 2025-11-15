@@ -1,0 +1,245 @@
+[0.000000] (-) TimerEvent: {}
+[0.001384] (assignment1_rt) JobQueued: {'identifier': 'assignment1_rt', 'dependencies': OrderedDict()}
+[0.002027] (assignment1_rt) JobStarted: {'identifier': 'assignment1_rt'}
+[0.011262] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'cmake'}
+[0.012231] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'build'}
+[0.013444] (assignment1_rt) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luchino/RT_first_assignment/build/assignment1_rt', '--', '-j8', '-l8'], 'cwd': '/home/luchino/RT_first_assignment/build/assignment1_rt', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'luchino', 'GIT_ASKPASS': '/home/luchino/.vscode-server/bin/ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/luchino', 'TERM_PROGRAM_VERSION': '1.106.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-ec9ac464-7ec4-4181-ac2b-ea16150749c7.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/luchino/.vscode-server/bin/ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/luchino/.vscode-server/bin/ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/luchino/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luchino', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/588_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/luchino/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/luchino/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/luchino/.vscode-server/bin/ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/Radiance/bin:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/c/Program Files/MySQL/MySQL Server 9.0/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/runtime/win64:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/lucaa/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lucaa/AppData/Roaming/npm:/mnt/c/Users/lucaa/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/lucaa/AppData/Roaming/Programs/Zero Install:/mnt/c/Users/lucaa/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/lucaa/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-9a94ca708d272173.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/luchino/.vscode-server/data/User/workspaceStorage/c8a841b907075387caedaf67b70a8506/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4ff4c84477.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/luchino/ros_ws/install/turtlesim_controller:/home/luchino/ros_ws/install/first_package_py:/home/luchino/ros_ws/install/first_package_cpp:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/luchino/RT_first_assignment/build/assignment1_rt', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luchino/ros_ws/install/first_package_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/luchino/ros_ws/install/turtlesim_controller:/home/luchino/ros_ws/install/first_package_cpp:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:'}), 'shell': False}
+[0.056545] (assignment1_rt) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099746] (-) TimerEvent: {}
+[0.200309] (-) TimerEvent: {}
+[0.300735] (-) TimerEvent: {}
+[0.309703] (assignment1_rt) StdoutLine: {'line': b'-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.400863] (-) TimerEvent: {}
+[0.471266] (assignment1_rt) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.478051] (assignment1_rt) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.490483] (assignment1_rt) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.500717] (assignment1_rt) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500965] (-) TimerEvent: {}
+[0.552238] (assignment1_rt) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.553618] (assignment1_rt) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.601105] (-) TimerEvent: {}
+[0.701502] (-) TimerEvent: {}
+[0.801868] (-) TimerEvent: {}
+[0.902251] (-) TimerEvent: {}
+[0.915831] (assignment1_rt) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.002392] (-) TimerEvent: {}
+[1.098056] (assignment1_rt) StdoutLine: {'line': b'-- Found turtlesim: 1.8.3 (/opt/ros/jazzy/share/turtlesim/cmake)\n'}
+[1.102483] (-) TimerEvent: {}
+[1.143718] (assignment1_rt) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[1.172879] (assignment1_rt) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[1.202689] (-) TimerEvent: {}
+[1.256030] (assignment1_rt) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.256279] (assignment1_rt) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.256410] (assignment1_rt) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.256691] (assignment1_rt) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.256919] (assignment1_rt) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[1.257107] (assignment1_rt) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.257344] (assignment1_rt) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.258075] (assignment1_rt) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.258228] (assignment1_rt) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.258473] (assignment1_rt) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.259034] (assignment1_rt) StdoutLine: {'line': b'-- Configuring done (1.2s)\n'}
+[1.282439] (assignment1_rt) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.291315] (assignment1_rt) StdoutLine: {'line': b'-- Build files have been written to: /home/luchino/RT_first_assignment/build/assignment1_rt\n'}
+[1.302952] (-) TimerEvent: {}
+[1.338039] (assignment1_rt) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/distance.dir/src/distance_node.cpp.o\x1b[0m\n'}
+[1.346905] (assignment1_rt) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o\x1b[0m\n'}
+[1.403136] (-) TimerEvent: {}
+[1.503675] (-) TimerEvent: {}
+[1.604406] (-) TimerEvent: {}
+[1.625817] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:17:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing terminating " character\n'}
+[1.626067] (assignment1_rt) StderrLine: {'line': b'   17 |                 std::cout<< \x1b[01;35m\x1b[K"\x1b[m\x1b[KQuale tartaruga vuoi muovere?\\n\n'}
+[1.626137] (assignment1_rt) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.626209] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:17:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing terminating " character\n'}
+[1.626257] (assignment1_rt) StderrLine: {'line': b'   17 |                 std::cout<< \x1b[01;31m\x1b[K"Quale tartaruga vuoi muovere?\\n\x1b[m\x1b[K\n'}
+[1.626304] (assignment1_rt) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.626351] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:18:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstray \xe2\x80\x98\x1b[01m\x1b[K\\\x1b[m\x1b[K\xe2\x80\x99 in program\n'}
+[1.626398] (assignment1_rt) StderrLine: {'line': b'   18 |                              1) Turtle 1\x1b[01;31m\x1b[K\\\x1b[m\x1b[Kn\n'}
+[1.626444] (assignment1_rt) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.626495] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:19:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstray \xe2\x80\x98\x1b[01m\x1b[K\\\x1b[m\x1b[K\xe2\x80\x99 in program\n'}
+[1.626541] (assignment1_rt) StderrLine: {'line': b'   19 |                              2) Turtle 2\x1b[01;31m\x1b[K\\\x1b[m\x1b[Kn\n'}
+[1.626587] (assignment1_rt) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.626631] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:20:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing terminating " character\n'}
+[1.626677] (assignment1_rt) StderrLine: {'line': b'   20 |                              :\x1b[01;35m\x1b[K"\x1b[m\x1b[K;\n'}
+[1.626722] (assignment1_rt) StderrLine: {'line': b'      |                               \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.626764] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:20:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing terminating " character\n'}
+[1.626811] (assignment1_rt) StderrLine: {'line': b'   20 |                              :\x1b[01;31m\x1b[K";\x1b[m\x1b[K\n'}
+[1.626854] (assignment1_rt) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.626898] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:23:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing terminating " character\n'}
+[1.626942] (assignment1_rt) StderrLine: {'line': b'   23 |                 std::cout<< \x1b[01;35m\x1b[K"\x1b[m\x1b[KInserisci Velocit\xc3\xa0 Lineare\\n\n'}
+[1.626988] (assignment1_rt) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.627041] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:23:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing terminating " character\n'}
+[1.627093] (assignment1_rt) StderrLine: {'line': b'   23 |                 std::cout<< \x1b[01;31m\x1b[K"Inserisci Velocit\xc3\xa0 Lineare\\n\x1b[m\x1b[K\n'}
+[1.627148] (assignment1_rt) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.627205] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:24:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing terminating " character\n'}
+[1.627259] (assignment1_rt) StderrLine: {'line': b'   24 |                              x:\x1b[01;35m\x1b[K"\x1b[m\x1b[K\n'}
+[1.627312] (assignment1_rt) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.627364] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:24:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing terminating " character\n'}
+[1.627417] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:31:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing terminating " character\n'}
+[1.627470] (assignment1_rt) StderrLine: {'line': b'   31 |                 std::cout<< \x1b[01;35m\x1b[K"\x1b[m\x1b[KInserisci Velocit\xc3\xa0 Angolare\\n\n'}
+[1.627523] (assignment1_rt) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.627575] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:31:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing terminating " character\n'}
+[1.627650] (assignment1_rt) StderrLine: {'line': b'   31 |                 std::cout<< \x1b[01;31m\x1b[K"Inserisci Velocit\xc3\xa0 Angolare\\n\x1b[m\x1b[K\n'}
+[1.627721] (assignment1_rt) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.627774] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:32:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing terminating " character\n'}
+[1.627826] (assignment1_rt) StderrLine: {'line': b'   32 |                              x:\x1b[01;35m\x1b[K"\x1b[m\x1b[K\n'}
+[1.627878] (assignment1_rt) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.627945] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:32:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing terminating " character\n'}
+[1.704578] (-) TimerEvent: {}
+[1.805095] (-) TimerEvent: {}
+[1.905622] (-) TimerEvent: {}
+[2.006098] (-) TimerEvent: {}
+[2.106541] (-) TimerEvent: {}
+[2.206944] (-) TimerEvent: {}
+[2.307448] (-) TimerEvent: {}
+[2.407935] (-) TimerEvent: {}
+[2.508459] (-) TimerEvent: {}
+[2.608827] (-) TimerEvent: {}
+[2.709339] (-) TimerEvent: {}
+[2.809874] (-) TimerEvent: {}
+[2.910420] (-) TimerEvent: {}
+[3.010941] (-) TimerEvent: {}
+[3.111434] (-) TimerEvent: {}
+[3.211899] (-) TimerEvent: {}
+[3.312343] (-) TimerEvent: {}
+[3.412744] (-) TimerEvent: {}
+[3.513096] (-) TimerEvent: {}
+[3.613562] (-) TimerEvent: {}
+[3.714136] (-) TimerEvent: {}
+[3.814514] (-) TimerEvent: {}
+[3.915098] (-) TimerEvent: {}
+[4.015739] (-) TimerEvent: {}
+[4.036792] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KDistance_Check::\x1b[01;32m\x1b[KDistance_Check\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.037124] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:11:109:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTurtlesimController\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.037239] (assignment1_rt) StderrLine: {'line': b'   11 |             turtle1_pose_ = this->create_subscription<turtlesim::msg::Pose>("/turtle2/pose", 10, std::bind(&\x1b[01;31m\x1b[KTurtlesimController\x1b[m\x1b[K::turtle1_pose, this, _1));\n'}
+[4.037339] (assignment1_rt) StderrLine: {'line': b'      |                                                                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.038102] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:11:150:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.038350] (assignment1_rt) StderrLine: {'line': b'   11 |             turtle1_pose_ = this->create_subscription<turtlesim::msg::Pose>("/turtle2/pose", 10, std::bind(&TurtlesimController::turtle1_pose, this, \x1b[01;31m\x1b[K_1\x1b[m\x1b[K));\n'}
+[4.038764] (assignment1_rt) StderrLine: {'line': b'      |                                                                                                                                                      \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.038853] (assignment1_rt) StderrLine: {'line': b'      |                                                                                                                                                      \x1b[32m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\n'}
+[4.038925] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:19\x1b[m\x1b[K,\n'}
+[4.038993] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25\x1b[m\x1b[K,\n'}
+[4.039075] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[4.039143] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K,\n'}
+[4.039210] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:1\x1b[m\x1b[K:\n'}
+[4.039277] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/functional:294:48:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[4.039344] (assignment1_rt) StderrLine: {'line': b'  294 |     _GLIBCXX_PLACEHOLDER const _Placeholder<1> \x1b[01;36m\x1b[K_1\x1b[m\x1b[K;\n'}
+[4.039411] (assignment1_rt) StderrLine: {'line': b'      |                                                \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.039477] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:12:109:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTurtlesimController\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.039543] (assignment1_rt) StderrLine: {'line': b'   12 |             turtle2_pose_ = this->create_subscription<turtlesim::msg::Pose>("/turtle2/pose", 10, std::bind(&\x1b[01;31m\x1b[KTurtlesimController\x1b[m\x1b[K::turtle2_pose, this, _1));\n'}
+[4.039695] (assignment1_rt) StderrLine: {'line': b'      |                                                                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.045617] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:13:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktimer_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktimer_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.045953] (assignment1_rt) StderrLine: {'line': b'   13 |             \x1b[01;31m\x1b[Ktimer_\x1b[m\x1b[K = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&Distance_Check::timer_callback, this));\n'}
+[4.046060] (assignment1_rt) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.046159] (assignment1_rt) StderrLine: {'line': b'      |             \x1b[32m\x1b[Ktimer_t\x1b[m\x1b[K\n'}
+[4.059388] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Distance_Check::\x1b[01;32m\x1b[Ktimer_callback\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.059651] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:17:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid operands of types \xe2\x80\x98\x1b[01m\x1b[Kturtlesim::msg::Pose_<std::allocator<void> >::_x_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kturtlesim::msg::Pose_<std::allocator<void> >::_y_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99} to binary \xe2\x80\x98\x1b[01m\x1b[Koperator^\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.059746] (assignment1_rt) StderrLine: {'line': b'   17 |             distance = sqrt(\x1b[32m\x1b[K(pos_t2.x-pos_t1.x)\x1b[m\x1b[K\x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[34m\x1b[K2 + (pos_t2.y-pos_t1.y)\x1b[m\x1b[K^2);\n'}
+[4.059880] (assignment1_rt) StderrLine: {'line': b'      |                             \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[34m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.060016] (assignment1_rt) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[K|\x1b[m\x1b[K            \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[4.060183] (assignment1_rt) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[K|\x1b[m\x1b[K            \x1b[34m\x1b[Kturtlesim::msg::Pose_<std::allocator<void> >::_y_type {aka float}\x1b[m\x1b[K\n'}
+[4.060366] (assignment1_rt) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[Kturtlesim::msg::Pose_<std::allocator<void> >::_x_type {aka float}\x1b[m\x1b[K\n'}
+[4.060650] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:17:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around arithmetic in operand of \xe2\x80\x98\x1b[01m\x1b[K^\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.060834] (assignment1_rt) StderrLine: {'line': b'   17 |             distance = sqrt((pos_t2.x-pos_t1.x)^\x1b[01;35m\x1b[K2 + (pos_t2.y-pos_t1.y)\x1b[m\x1b[K^2);\n'}
+[4.060948] (assignment1_rt) StderrLine: {'line': b'      |                                                 \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.115906] (-) TimerEvent: {}
+[4.144441] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:65:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 after class definition\n'}
+[4.144796] (assignment1_rt) StderrLine: {'line': b'   65 | }\n'}
+[4.144950] (assignment1_rt) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.145017] (assignment1_rt) StderrLine: {'line': b'      |  \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[4.145099] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:62:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[4.145151] (assignment1_rt) StderrLine: {'line': b'   62 |                                                  \x1b[01;31m\x1b[K0.0\x1b[m\x1b[K , 0.0 , 0.0};\n'}
+[4.145210] (assignment1_rt) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.145276] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:61:49:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.145332] (assignment1_rt) StderrLine: {'line': b'   61 |         geometry_msgs::msg::Twist stop_turtle = \x1b[01;36m\x1b[K{\x1b[m\x1b[K0.0 , 0.0 , 0.0\n'}
+[4.145389] (assignment1_rt) StderrLine: {'line': b'      |                                                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.145444] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:62:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcould not convert \xe2\x80\x98\x1b[01m\x1b[K{0.0, 0.0, 0.0}\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Twist\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Twist_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[4.145501] (assignment1_rt) StderrLine: {'line': b'   62 |                                                  \x1b[01;31m\x1b[K0.0\x1b[m\x1b[K , 0.0 , 0.0};\n'}
+[4.145554] (assignment1_rt) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.145609] (assignment1_rt) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[4.145657] (assignment1_rt) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\n'}
+[4.145722] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:62:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[4.162370] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KInput_Controller::\x1b[01;32m\x1b[KInput_Controller\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.162595] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:11:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktimer_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktimer_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.162656] (assignment1_rt) StderrLine: {'line': b'   11 |             \x1b[01;31m\x1b[Ktimer_\x1b[m\x1b[K = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&Distance_Check::input_loop, this));\n'}
+[4.162709] (assignment1_rt) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.162761] (assignment1_rt) StderrLine: {'line': b'      |             \x1b[32m\x1b[Ktimer_t\x1b[m\x1b[K\n'}
+[4.162811] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:11:90:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDistance_Check\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.162889] (assignment1_rt) StderrLine: {'line': b'   11 |             timer_ = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&\x1b[01;31m\x1b[KDistance_Check\x1b[m\x1b[K::input_loop, this));\n'}
+[4.162944] (assignment1_rt) StderrLine: {'line': b'      |                                                                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.163231] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Input_Controller::\x1b[01;32m\x1b[Kinput_loop\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.163495] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:18:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.163583] (assignment1_rt) StderrLine: {'line': b'   18 |                              1\x1b[01;31m\x1b[K)\x1b[m\x1b[K Turtle 1\\n\n'}
+[4.163776] (assignment1_rt) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.163846] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:24:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kfound \xe2\x80\x98\x1b[01m\x1b[K:\x1b[m\x1b[K\xe2\x80\x99 in nested-name-specifier, expected \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.163982] (assignment1_rt) StderrLine: {'line': b'   24 |                              x\x1b[01;31m\x1b[K:\x1b[m\x1b[K"\n'}
+[4.164134] (assignment1_rt) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.164538] (assignment1_rt) StderrLine: {'line': b'      |                               \x1b[32m\x1b[K::\x1b[m\x1b[K\n'}
+[4.165137] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:24:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.165373] (assignment1_rt) StderrLine: {'line': b'   24 |                              \x1b[01;31m\x1b[Kx\x1b[m\x1b[K:"\n'}
+[4.165673] (assignment1_rt) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.165789] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:27:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.165897] (assignment1_rt) StderrLine: {'line': b'   27 |                 \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::cin >> vel_input.linear.y;\n'}
+[4.166113] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.166248] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:29:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.166378] (assignment1_rt) StderrLine: {'line': b'   29 |                 \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::cin >> vel_input.linear.z;\n'}
+[4.166481] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.166608] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:32:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kfound \xe2\x80\x98\x1b[01m\x1b[K:\x1b[m\x1b[K\xe2\x80\x99 in nested-name-specifier, expected \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.166726] (assignment1_rt) StderrLine: {'line': b'   32 |                              x\x1b[01;31m\x1b[K:\x1b[m\x1b[K"\n'}
+[4.166837] (assignment1_rt) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.166958] (assignment1_rt) StderrLine: {'line': b'      |                               \x1b[32m\x1b[K::\x1b[m\x1b[K\n'}
+[4.167053] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:32:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.167160] (assignment1_rt) StderrLine: {'line': b'   32 |                              \x1b[01;31m\x1b[Kx\x1b[m\x1b[K:"\n'}
+[4.167245] (assignment1_rt) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.167331] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:35:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.167406] (assignment1_rt) StderrLine: {'line': b'   35 |                 \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::cin >> vel_input.angular.y;\n'}
+[4.167603] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.167967] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:37:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.168071] (assignment1_rt) StderrLine: {'line': b'   37 |                 \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::cin >> vel_input.angular.z;\n'}
+[4.168165] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.168260] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Input_Controller::\x1b[01;32m\x1b[Ktimer_callback\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.168357] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:54:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdistance\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::distance\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.168434] (assignment1_rt) StderrLine: {'line': b'   54 |             \x1b[01;31m\x1b[Kdistance\x1b[m\x1b[K = sqrt((pos_t2.x-pos_t1.x)^2 + (pos_t2.y-pos_t1.y)^2);\n'}
+[4.168499] (assignment1_rt) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.168565] (assignment1_rt) StderrLine: {'line': b'      |             \x1b[32m\x1b[Kstd::distance\x1b[m\x1b[K\n'}
+[4.168630] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_construct.h:62\x1b[m\x1b[K,\n'}
+[4.168696] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_tempbuf.h:61\x1b[m\x1b[K,\n'}
+[4.168761] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:66\x1b[m\x1b[K,\n'}
+[4.168855] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169\x1b[m\x1b[K,\n'}
+[4.168924] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:1\x1b[m\x1b[K:\n'}
+[4.168995] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator_base_funcs.h:148:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::distance\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[4.169066] (assignment1_rt) StderrLine: {'line': b'  148 |     \x1b[01;36m\x1b[Kdistance\x1b[m\x1b[K(_InputIterator __first, _InputIterator __last)\n'}
+[4.169135] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.173298] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:54:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpos_t2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kfpos_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.173478] (assignment1_rt) StderrLine: {'line': b'   54 |             distance = sqrt((\x1b[01;31m\x1b[Kpos_t2\x1b[m\x1b[K.x-pos_t1.x)^2 + (pos_t2.y-pos_t1.y)^2);\n'}
+[4.173575] (assignment1_rt) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.173660] (assignment1_rt) StderrLine: {'line': b'      |                              \x1b[32m\x1b[Kfpos_t\x1b[m\x1b[K\n'}
+[4.179553] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:54:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpos_t1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kfpos_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.179958] (assignment1_rt) StderrLine: {'line': b'   54 |             distance = sqrt((pos_t2.x-\x1b[01;31m\x1b[Kpos_t1\x1b[m\x1b[K.x)^2 + (pos_t2.y-pos_t1.y)^2);\n'}
+[4.180087] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.180185] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[32m\x1b[Kfpos_t\x1b[m\x1b[K\n'}
+[4.187510] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:55:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kt1_publisher_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.187817] (assignment1_rt) StderrLine: {'line': b'   55 |             \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K->publish(distance);\n'}
+[4.187878] (assignment1_rt) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.187933] (assignment1_rt) StderrLine: {'line': b'      |             \x1b[32m\x1b[Kt1_publisher_\x1b[m\x1b[K\n'}
+[4.216068] (-) TimerEvent: {}
+[4.316540] (-) TimerEvent: {}
+[4.416977] (-) TimerEvent: {}
+[4.517452] (-) TimerEvent: {}
+[4.617978] (-) TimerEvent: {}
+[4.718447] (-) TimerEvent: {}
+[4.818904] (-) TimerEvent: {}
+[4.919330] (-) TimerEvent: {}
+[5.019732] (-) TimerEvent: {}
+[5.120211] (-) TimerEvent: {}
+[5.220787] (-) TimerEvent: {}
+[5.257125] (assignment1_rt) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/distance.dir/build.make:76: CMakeFiles/distance.dir/src/distance_node.cpp.o] Error 1\n'}
+[5.257469] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2\n'}
+[5.257605] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[5.321048] (-) TimerEvent: {}
+[5.378548] (assignment1_rt) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1\n'}
+[5.378824] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2\n'}
+[5.379011] (assignment1_rt) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.381616] (assignment1_rt) CommandEnded: {'returncode': 2}
+[5.393764] (assignment1_rt) JobEnded: {'identifier': 'assignment1_rt', 'rc': 2}
+[5.404689] (-) EventReactorShutdown: {}

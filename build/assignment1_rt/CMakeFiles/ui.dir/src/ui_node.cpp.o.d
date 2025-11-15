@@ -700,4 +700,10 @@ CMakeFiles/ui.dir/src/ui_node.cpp.o: \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/float32.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /usr/include/c++/13/math.h

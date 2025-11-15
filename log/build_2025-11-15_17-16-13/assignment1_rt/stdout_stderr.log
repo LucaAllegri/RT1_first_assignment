@@ -1,0 +1,94 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/distance.dir/src/distance_node.cpp.o[0m
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:58:67:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{{0.0, 0.0, 0.0}, {0.0, 0.0, 0.0}}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kgeometry_msgs::msg::Twist[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Twist_<std::allocator<void> >[m[K’}
+   58 |                                                  {0.0 , 0.0 , 0.0}[01;31m[K}[m[K;
+      |                                                                   [01;31m[K^[m[K
+      |                                                                   [01;31m[K|[m[K
+      |                                                                   [01;31m[K<brace-enclosed initializer list>[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In constructor ‘[01m[KInput_Controller::[01;32m[KInput_Controller[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:11:90:[m[K [01;31m[Kerror: [m[K‘[01m[KDistance_Check[m[K’ has not been declared
+   11 |             timer_ = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&[01;31m[KDistance_Check[m[K::input_loop, this));
+      |                                                                                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kinput_loop[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:21:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+   21 |                 [01;31m[Kstd[m[K::cin >> vel_input.linear.x;
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:23:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+   23 |                 [01;31m[Kstd[m[K::cin >> vel_input.linear.y;
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:25:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+   25 |                 [01;31m[Kstd[m[K::cin >> vel_input.linear.z;
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:28:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+   28 |                 [01;31m[Kstd[m[K::cin >> vel_input.angular.x;
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:30:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+   30 |                 [01;31m[Kstd[m[K::cin >> vel_input.angular.y;
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:32:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+   32 |                 [01;31m[Kstd[m[K::cin >> vel_input.angular.z;
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Ktimer_callback[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:49:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kdistance[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::distance[m[K’?
+   49 |             [01;31m[Kdistance[m[K = sqrt((pos_t2.x-pos_t1.x)^2 + (pos_t2.y-pos_t1.y)^2);
+      |             [01;31m[K^~~~~~~~[m[K
+      |             [32m[Kstd::distance[m[K
+In file included from [01m[K/usr/include/c++/13/bits/stl_construct.h:62[m[K,
+                 from [01m[K/usr/include/c++/13/bits/stl_tempbuf.h:61[m[K,
+                 from [01m[K/usr/include/c++/13/memory:66[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K,
+                 from [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:1[m[K:
+[01m[K/usr/include/c++/13/bits/stl_iterator_base_funcs.h:148:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::distance[m[K’ declared here
+  148 |     [01;36m[Kdistance[m[K(_InputIterator __first, _InputIterator __last)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:49:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kpos_t2[m[K’ was not declared in this scope; did you mean ‘[01m[Kfpos_t[m[K’?
+   49 |             distance = sqrt(([01;31m[Kpos_t2[m[K.x-pos_t1.x)^2 + (pos_t2.y-pos_t1.y)^2);
+      |                              [01;31m[K^~~~~~[m[K
+      |                              [32m[Kfpos_t[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:49:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kpos_t1[m[K’ was not declared in this scope; did you mean ‘[01m[Kfpos_t[m[K’?
+   49 |             distance = sqrt((pos_t2.x-[01;31m[Kpos_t1[m[K.x)^2 + (pos_t2.y-pos_t1.y)^2);
+      |                                       [01;31m[K^~~~~~[m[K
+      |                                       [32m[Kfpos_t[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:[m[K In constructor ‘[01m[KDistance_Check::[01;32m[KDistance_Check[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:11:109:[m[K [01;31m[Kerror: [m[K‘[01m[KTurtlesimController[m[K’ has not been declared
+   11 |             turtle1_pose_ = this->create_subscription<turtlesim::msg::Pose>("/turtle2/pose", 10, std::bind(&[01;31m[KTurtlesimController[m[K::turtle1_pose, this, _1));
+      |                                                                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:11:150:[m[K [01;31m[Kerror: [m[K‘[01m[K_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::placeholders::_1[m[K’?
+   11 |             turtle1_pose_ = this->create_subscription<turtlesim::msg::Pose>("/turtle2/pose", 10, std::bind(&TurtlesimController::turtle1_pose, this, [01;31m[K_1[m[K));
+      |                                                                                                                                                      [01;31m[K^~[m[K
+      |                                                                                                                                                      [32m[Kstd::placeholders::_1[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:19[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:1[m[K:
+[01m[K/usr/include/c++/13/functional:294:48:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::placeholders::_1[m[K’ declared here
+  294 |     _GLIBCXX_PLACEHOLDER const _Placeholder<1> [01;36m[K_1[m[K;
+      |                                                [01;36m[K^~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:12:109:[m[K [01;31m[Kerror: [m[K‘[01m[KTurtlesimController[m[K’ has not been declared
+   12 |             turtle2_pose_ = this->create_subscription<turtlesim::msg::Pose>("/turtle2/pose", 10, std::bind(&[01;31m[KTurtlesimController[m[K::turtle2_pose, this, _1));
+      |                                                                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:50:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kt1_publisher_[m[K’?
+   50 |             [01;31m[Kpublisher_[m[K->publish(distance);
+      |             [01;31m[K^~~~~~~~~~[m[K
+      |             [32m[Kt1_publisher_[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:13:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+   13 |             [01;31m[Ktimer_[m[K = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&Distance_Check::timer_callback, this));
+      |             [01;31m[K^~~~~~[m[K
+      |             [32m[Ktimer_t[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:[m[K In member function ‘[01m[Kvoid Distance_Check::[01;32m[Ktimer_callback[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:17:48:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kturtlesim::msg::Pose_<std::allocator<void> >::_x_type[m[K’ {aka ‘[01m[Kfloat[m[K’} and ‘[01m[Kturtlesim::msg::Pose_<std::allocator<void> >::_y_type[m[K’ {aka ‘[01m[Kfloat[m[K’} to binary ‘[01m[Koperator^[m[K’
+   17 |             distance = sqrt([32m[K(pos_t2.x-pos_t1.x)[m[K[01;31m[K^[m[K[34m[K2 + (pos_t2.y-pos_t1.y)[m[K^2);
+      |                             [32m[K~~~~~~~~~~~~~~~~~~~[m[K[01;31m[K^[m[K[34m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                      [32m[K|[m[K            [34m[K|[m[K
+      |                                      [32m[K|[m[K            [34m[Kturtlesim::msg::Pose_<std::allocator<void> >::_y_type {aka float}[m[K
+      |                                      [32m[Kturtlesim::msg::Pose_<std::allocator<void> >::_x_type {aka float}[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:17:51:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around arithmetic in operand of ‘[01m[K^[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+   17 |             distance = sqrt((pos_t2.x-pos_t1.x)^[01;35m[K2 + (pos_t2.y-pos_t1.y)[m[K^2);
+      |                                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/distance.dir/build.make:76: CMakeFiles/distance.dir/src/distance_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

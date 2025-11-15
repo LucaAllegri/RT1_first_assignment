@@ -105,6 +105,12 @@ ui: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 ui: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 ui: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 ui: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_py.so
+ui: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
+ui: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
+ui: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+ui: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+ui: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so
+ui: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_py.so
 ui: /opt/ros/jazzy/lib/liblibstatistics_collector.so
 ui: /opt/ros/jazzy/lib/librcl.so
 ui: /opt/ros/jazzy/lib/librmw_implementation.so
@@ -168,11 +174,8 @@ ui: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 ui: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_generator_c.so
 ui: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_c.so
 ui: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so
-ui: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
-ui: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-ui: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
-ui: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-ui: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so
+ui: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_c.so
+ui: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
 ui: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 ui: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_c.so
 ui: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
@@ -187,9 +190,7 @@ ui: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_c.so
 ui: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 ui: /opt/ros/jazzy/lib/librosidl_typesupport_cpp.so
 ui: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_py.so
-ui: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_c.so
 ui: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
-ui: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
 ui: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 ui: /opt/ros/jazzy/lib/librosidl_typesupport_c.so
 ui: /opt/ros/jazzy/lib/librcpputils.so

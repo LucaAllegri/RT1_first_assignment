@@ -1,0 +1,23 @@
+[ 50%] Built target distance
+[ 75%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:71:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs::msg::Float32 Input_Controller::actual_distance[m[K’ conflicts with a previous declaration
+   71 |         std_msgs::msg::Float32 [01;31m[Kactual_distance[m[K;
+      |                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:61:14:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid Input_Controller::[01;32m[Kactual_distance[m[K(std_msgs::msg::Float32_<std::allocator<void> >::SharedPtr)[m[K’
+   61 |         void [01;36m[Kactual_distance[m[K(const std_msgs::msg::Float32::SharedPtr msg){
+      |              [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In constructor ‘[01m[KInput_Controller::[01;32m[KInput_Controller[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:22:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kvoid Input_Controller::[01;32m[Kactual_distance[m[K(std_msgs::msg::Float32_<std::allocator<void> >::SharedPtr)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   22 |             [01;31m[Kactual_distance[m[K =11.0;
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kinput_loop[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:27:19:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kvoid Input_Controller::[01;32m[Kactual_distance[m[K(std_msgs::msg::Float32_<std::allocator<void> >::SharedPtr)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   27 |             while([01;31m[Kactual_distance[m[K > 1.0){
+      |                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kactual_distance[m[K(std_msgs::msg::Float32_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:62:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst std_msgs::msg::Float32_<std::allocator<void> >::SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<std_msgs::msg::Float32_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kdata[m[K’
+   62 |             actual_distance = msg.[01;31m[Kdata[m[K;
+      |                                   [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

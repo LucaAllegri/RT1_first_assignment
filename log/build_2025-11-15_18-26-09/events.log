@@ -1,0 +1,144 @@
+[0.000000] (-) TimerEvent: {}
+[0.000416] (assignment1_rt) JobQueued: {'identifier': 'assignment1_rt', 'dependencies': OrderedDict()}
+[0.001398] (assignment1_rt) JobStarted: {'identifier': 'assignment1_rt'}
+[0.008934] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'cmake'}
+[0.009713] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'build'}
+[0.010790] (assignment1_rt) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luchino/RT_first_assignment/build/assignment1_rt', '--', '-j8', '-l8'], 'cwd': '/home/luchino/RT_first_assignment/build/assignment1_rt', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'luchino', 'GIT_ASKPASS': '/home/luchino/.vscode-server/bin/ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/luchino', 'TERM_PROGRAM_VERSION': '1.106.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-1619c237-1e75-4cf3-8ee6-c7f7ee2fbdfd.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/luchino/.vscode-server/bin/ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/luchino/.vscode-server/bin/ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/luchino/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luchino', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/4679_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/luchino/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/luchino/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/luchino/.vscode-server/bin/ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/Radiance/bin:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/c/Program Files/MySQL/MySQL Server 9.0/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/runtime/win64:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/lucaa/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lucaa/AppData/Roaming/npm:/mnt/c/Users/lucaa/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/lucaa/AppData/Roaming/Programs/Zero Install:/mnt/c/Users/lucaa/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/lucaa/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-9a94ca708d272173.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/luchino/.vscode-server/data/User/workspaceStorage/c8a841b907075387caedaf67b70a8506/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4ff4c84477.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/luchino/ros_ws/install/turtlesim_controller:/home/luchino/ros_ws/install/first_package_py:/home/luchino/ros_ws/install/first_package_cpp:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/luchino/RT_first_assignment/build/assignment1_rt', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luchino/ros_ws/install/first_package_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/luchino/ros_ws/install/turtlesim_controller:/home/luchino/ros_ws/install/first_package_cpp:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:'}), 'shell': False}
+[0.061749] (assignment1_rt) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.100176] (-) TimerEvent: {}
+[0.200532] (-) TimerEvent: {}
+[0.245472] (assignment1_rt) StdoutLine: {'line': b'-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.300665] (-) TimerEvent: {}
+[0.362493] (assignment1_rt) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.371103] (assignment1_rt) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.381759] (assignment1_rt) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.393534] (assignment1_rt) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.401027] (-) TimerEvent: {}
+[0.443920] (assignment1_rt) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.445306] (assignment1_rt) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.501172] (-) TimerEvent: {}
+[0.601458] (assignment1_rt) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.601668] (-) TimerEvent: {}
+[0.701913] (-) TimerEvent: {}
+[0.739355] (assignment1_rt) StdoutLine: {'line': b'-- Found turtlesim: 1.8.3 (/opt/ros/jazzy/share/turtlesim/cmake)\n'}
+[0.782765] (assignment1_rt) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[0.802301] (-) TimerEvent: {}
+[0.813370] (assignment1_rt) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[0.897483] (assignment1_rt) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.897833] (assignment1_rt) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.897995] (assignment1_rt) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.898289] (assignment1_rt) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.898482] (assignment1_rt) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[0.898725] (assignment1_rt) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.899222] (assignment1_rt) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.899988] (assignment1_rt) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.900121] (assignment1_rt) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.900293] (assignment1_rt) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.901588] (assignment1_rt) StdoutLine: {'line': b'-- Configuring done (0.9s)\n'}
+[0.902391] (-) TimerEvent: {}
+[0.932097] (assignment1_rt) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.939067] (assignment1_rt) StdoutLine: {'line': b'-- Build files have been written to: /home/luchino/RT_first_assignment/build/assignment1_rt\n'}
+[0.991361] (assignment1_rt) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/distance.dir/src/distance_node.cpp.o\x1b[0m\n'}
+[0.991563] (assignment1_rt) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o\x1b[0m\n'}
+[1.002566] (-) TimerEvent: {}
+[1.102925] (-) TimerEvent: {}
+[1.203398] (-) TimerEvent: {}
+[1.303846] (-) TimerEvent: {}
+[1.404387] (-) TimerEvent: {}
+[1.504854] (-) TimerEvent: {}
+[1.605468] (-) TimerEvent: {}
+[1.705996] (-) TimerEvent: {}
+[1.806431] (-) TimerEvent: {}
+[1.906824] (-) TimerEvent: {}
+[2.007205] (-) TimerEvent: {}
+[2.107588] (-) TimerEvent: {}
+[2.208085] (-) TimerEvent: {}
+[2.308528] (-) TimerEvent: {}
+[2.408932] (-) TimerEvent: {}
+[2.509415] (-) TimerEvent: {}
+[2.609725] (-) TimerEvent: {}
+[2.710134] (-) TimerEvent: {}
+[2.810589] (-) TimerEvent: {}
+[2.911036] (-) TimerEvent: {}
+[3.011389] (-) TimerEvent: {}
+[3.111713] (-) TimerEvent: {}
+[3.212125] (-) TimerEvent: {}
+[3.312464] (-) TimerEvent: {}
+[3.412943] (-) TimerEvent: {}
+[3.513315] (-) TimerEvent: {}
+[3.613731] (-) TimerEvent: {}
+[3.714100] (-) TimerEvent: {}
+[3.814572] (-) TimerEvent: {}
+[3.916545] (-) TimerEvent: {}
+[4.016587] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KDistance_Check::\x1b[01;32m\x1b[KDistance_Check\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.017498] (-) TimerEvent: {}
+[4.017596] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:13:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kt1_vel_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kt1_pose_pub_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.017670] (assignment1_rt) StderrLine: {'line': b'   13 |             \x1b[01;31m\x1b[Kt1_vel_pub_\x1b[m\x1b[K = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);\n'}
+[4.017810] (assignment1_rt) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.017863] (assignment1_rt) StderrLine: {'line': b'      |             \x1b[32m\x1b[Kt1_pose_pub_\x1b[m\x1b[K\n'}
+[4.023234] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:14:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kt2_vel_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kt2_pose_pub_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.023487] (assignment1_rt) StderrLine: {'line': b'   14 |             \x1b[01;31m\x1b[Kt2_vel_pub_\x1b[m\x1b[K = this->create_publisher<geometry_msgs::msg::Twist>("/turtle2/cmd_vel", 10);\n'}
+[4.023576] (assignment1_rt) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.023648] (assignment1_rt) StderrLine: {'line': b'      |             \x1b[32m\x1b[Kt2_pose_pub_\x1b[m\x1b[K\n'}
+[4.026235] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KInput_Controller::\x1b[01;32m\x1b[KInput_Controller\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.026460] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:13:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdistance_sub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.026540] (assignment1_rt) StderrLine: {'line': b'   13 |             \x1b[01;31m\x1b[Kdistance_sub_\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::Float32>("distance", 10, std::bind(&Distance_Check::turtle1_pose, this, _1));\n'}
+[4.026615] (assignment1_rt) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.026672] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:13:106:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDistance_Check\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.026722] (assignment1_rt) StderrLine: {'line': b'   13 | iption<std_msgs::msg::Float32>("distance", 10, std::bind(&\x1b[01;31m\x1b[KDistance_Check\x1b[m\x1b[K::turtle1_pose, this, _1));\n'}
+[4.026769] (assignment1_rt) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.026851] (assignment1_rt) StderrLine: {'line': b'\n'}
+[4.051333] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Distance_Check::\x1b[01;32m\x1b[Ktimer_callback\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.051557] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:30:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kt1_vel_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kt1_pose_pub_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.051614] (assignment1_rt) StderrLine: {'line': b'   30 |                 \x1b[01;31m\x1b[Kt1_vel_pub_\x1b[m\x1b[K->publish(stop_turtle);\n'}
+[4.051662] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.051708] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[32m\x1b[Kt1_pose_pub_\x1b[m\x1b[K\n'}
+[4.057576] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:31:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kt2_vel_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kt2_pose_pub_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.057790] (assignment1_rt) StderrLine: {'line': b'   31 |                 \x1b[01;31m\x1b[Kt2_vel_pub_\x1b[m\x1b[K->publish(stop_turtle);\n'}
+[4.057843] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.057890] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[32m\x1b[Kt2_pose_pub_\x1b[m\x1b[K\n'}
+[4.066363] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Distance_Check::\x1b[01;32m\x1b[Kturtle1_pose\x1b[m\x1b[K(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.066561] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:39:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kt1_vel_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kt1_pose_pub_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.066611] (assignment1_rt) StderrLine: {'line': b'   39 |                 \x1b[01;31m\x1b[Kt1_vel_pub_\x1b[m\x1b[K->publish(stop_turtle);\n'}
+[4.066658] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.066704] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[32m\x1b[Kt1_pose_pub_\x1b[m\x1b[K\n'}
+[4.072586] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Distance_Check::\x1b[01;32m\x1b[Kturtle2_pose\x1b[m\x1b[K(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.072809] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:46:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kt2_vel_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kt2_pose_pub_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.072879] (assignment1_rt) StderrLine: {'line': b'   46 |                 \x1b[01;31m\x1b[Kt2_vel_pub_\x1b[m\x1b[K->publish(stop_turtle);\n'}
+[4.072956] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.073010] (assignment1_rt) StderrLine: {'line': b'      |                 \x1b[32m\x1b[Kt2_pose_pub_\x1b[m\x1b[K\n'}
+[4.117664] (-) TimerEvent: {}
+[4.218119] (-) TimerEvent: {}
+[4.318481] (-) TimerEvent: {}
+[4.418848] (-) TimerEvent: {}
+[4.519298] (-) TimerEvent: {}
+[4.619714] (-) TimerEvent: {}
+[4.720075] (-) TimerEvent: {}
+[4.820424] (-) TimerEvent: {}
+[4.920802] (-) TimerEvent: {}
+[5.021166] (-) TimerEvent: {}
+[5.121472] (-) TimerEvent: {}
+[5.221845] (-) TimerEvent: {}
+[5.318108] (assignment1_rt) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1\n'}
+[5.318439] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2\n'}
+[5.318598] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[5.322056] (-) TimerEvent: {}
+[5.422475] (-) TimerEvent: {}
+[5.522795] (-) TimerEvent: {}
+[5.623202] (-) TimerEvent: {}
+[5.723559] (-) TimerEvent: {}
+[5.824011] (-) TimerEvent: {}
+[5.924464] (-) TimerEvent: {}
+[6.024821] (-) TimerEvent: {}
+[6.125242] (-) TimerEvent: {}
+[6.225560] (-) TimerEvent: {}
+[6.326021] (-) TimerEvent: {}
+[6.426484] (-) TimerEvent: {}
+[6.526939] (-) TimerEvent: {}
+[6.624632] (assignment1_rt) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/distance.dir/build.make:76: CMakeFiles/distance.dir/src/distance_node.cpp.o] Error 1\n'}
+[6.625014] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2\n'}
+[6.625231] (assignment1_rt) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.627027] (-) TimerEvent: {}
+[6.630366] (assignment1_rt) CommandEnded: {'returncode': 2}
+[6.641841] (assignment1_rt) JobEnded: {'identifier': 'assignment1_rt', 'rc': 2}
+[6.652795] (-) EventReactorShutdown: {}

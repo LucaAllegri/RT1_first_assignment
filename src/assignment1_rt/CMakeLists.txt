@@ -15,12 +15,16 @@ find_package(std_msgs REQUIRED)
 add_executable(ui src/ui_node.cpp)  
 add_executable(distance src/distance_node.cpp) 
 
-ament_target_dependencies(ui rclcpp turtlesim geometry_msgs)
-ament_target_dependencies(distance rclcpp turtlesim std_msgs)
+ament_target_dependencies(ui rclcpp turtlesim geometry_msgs std_msgs)
+ament_target_dependencies(distance rclcpp turtlesim geometry_msgs std_msgs)
 
 install(TARGETS 
   ui
   distance
+  DESTINATION lib/${PROJECT_NAME}
+)
+install( 
+  PROGRAMS scripts/turtle_spawn.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

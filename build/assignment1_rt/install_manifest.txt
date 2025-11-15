@@ -1,3 +1,6 @@
+/home/luchino/RT_first_assignment/install/assignment1_rt/lib/assignment1_rt/ui
+/home/luchino/RT_first_assignment/install/assignment1_rt/lib/assignment1_rt/distance
+/home/luchino/RT_first_assignment/install/assignment1_rt/lib/assignment1_rt/turtle_spawn.py
 /home/luchino/RT_first_assignment/install/assignment1_rt/share/ament_index/resource_index/package_run_dependencies/assignment1_rt
 /home/luchino/RT_first_assignment/install/assignment1_rt/share/ament_index/resource_index/parent_prefix_path/assignment1_rt
 /home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/environment/ament_prefix_path.sh

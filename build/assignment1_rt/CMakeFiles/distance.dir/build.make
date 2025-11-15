@@ -105,6 +105,12 @@ distance: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.s
 distance: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 distance: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 distance: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_py.so
+distance: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
+distance: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
+distance: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+distance: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+distance: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so
+distance: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_py.so
 distance: /opt/ros/jazzy/lib/liblibstatistics_collector.so
 distance: /opt/ros/jazzy/lib/librcl.so
 distance: /opt/ros/jazzy/lib/librmw_implementation.so
@@ -168,11 +174,8 @@ distance: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 distance: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_generator_c.so
 distance: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_c.so
 distance: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so
-distance: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
-distance: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-distance: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
-distance: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-distance: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so
+distance: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_c.so
+distance: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
 distance: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 distance: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_c.so
 distance: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
@@ -187,9 +190,7 @@ distance: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_c.so
 distance: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 distance: /opt/ros/jazzy/lib/librosidl_typesupport_cpp.so
 distance: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_py.so
-distance: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_c.so
 distance: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
-distance: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
 distance: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 distance: /opt/ros/jazzy/lib/librosidl_typesupport_c.so
 distance: /opt/ros/jazzy/lib/librcpputils.so

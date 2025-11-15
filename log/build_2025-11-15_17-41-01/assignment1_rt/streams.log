@@ -1,0 +1,25 @@
+[0.010s] Invoking command in '/home/luchino/RT_first_assignment/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8
+[0.058s] [ 50%] Built target distance
+[0.063s] [ 75%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[2.096s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:53:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ does not name a type
+[2.097s]    53 |         [01;31m[Kstop_turtle[m[K.linear.x = 0.0;
+[2.097s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.098s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:54:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ does not name a type
+[2.098s]    54 |         [01;31m[Kstop_turtle[m[K.linear.y = 0.0;
+[2.098s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.099s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:55:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ does not name a type
+[2.099s]    55 |         [01;31m[Kstop_turtle[m[K.linear.z = 0.0;
+[2.099s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.101s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ does not name a type
+[2.101s]    57 |         [01;31m[Kstop_turtle[m[K.angular.x = 0.0;
+[2.101s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.102s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:58:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ does not name a type
+[2.102s]    58 |         [01;31m[Kstop_turtle[m[K.angular.y = 0.0;
+[2.102s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.104s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ does not name a type
+[2.104s]    59 |         [01;31m[Kstop_turtle[m[K.angular.z = 0.0;
+[2.104s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.990s] gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+[2.991s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+[2.991s] gmake: *** [Makefile:146: all] Error 2
+[2.994s] Invoked command in '/home/luchino/RT_first_assignment/build/assignment1_rt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8

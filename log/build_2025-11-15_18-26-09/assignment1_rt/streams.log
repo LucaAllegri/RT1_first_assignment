@@ -1,0 +1,71 @@
+[0.012s] Invoking command in '/home/luchino/RT_first_assignment/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8
+[0.060s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.244s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.361s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.370s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.380s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.392s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.443s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.444s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.600s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.738s] -- Found turtlesim: 1.8.3 (/opt/ros/jazzy/share/turtlesim/cmake)
+[0.782s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.812s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.896s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.897s] -- Configured cppcheck include dirs: 
+[0.897s] -- Configured cppcheck exclude dirs and/or files: 
+[0.897s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.897s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.897s] -- Added test 'lint_cmake' to check CMake code style
+[0.898s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.899s] -- Added test 'uncrustify' to check C / C++ code style
+[0.899s] -- Configured uncrustify additional arguments: 
+[0.899s] -- Added test 'xmllint' to check XML markup files
+[0.900s] -- Configuring done (0.9s)
+[0.931s] -- Generating done (0.0s)
+[0.938s] -- Build files have been written to: /home/luchino/RT_first_assignment/build/assignment1_rt
+[0.990s] [ 50%] [32mBuilding CXX object CMakeFiles/distance.dir/src/distance_node.cpp.o[0m
+[0.990s] [ 50%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[4.016s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:[m[K In constructor ‘[01m[KDistance_Check::[01;32m[KDistance_Check[m[K()[m[K’:
+[4.016s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:13:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kt1_vel_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kt1_pose_pub_[m[K’?
+[4.016s]    13 |             [01;31m[Kt1_vel_pub_[m[K = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
+[4.016s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[4.016s]       |             [32m[Kt1_pose_pub_[m[K
+[4.022s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:14:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kt2_vel_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kt2_pose_pub_[m[K’?
+[4.022s]    14 |             [01;31m[Kt2_vel_pub_[m[K = this->create_publisher<geometry_msgs::msg::Twist>("/turtle2/cmd_vel", 10);
+[4.022s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[4.022s]       |             [32m[Kt2_pose_pub_[m[K
+[4.025s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In constructor ‘[01m[KInput_Controller::[01;32m[KInput_Controller[m[K()[m[K’:
+[4.025s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:13:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kdistance_sub_[m[K’ was not declared in this scope
+[4.025s]    13 |             [01;31m[Kdistance_sub_[m[K = this->create_subscription<std_msgs::msg::Float32>("distance", 10, std::bind(&Distance_Check::turtle1_pose, this, _1));
+[4.025s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[4.025s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:13:106:[m[K [01;31m[Kerror: [m[K‘[01m[KDistance_Check[m[K’ has not been declared
+[4.025s]    13 | iption<std_msgs::msg::Float32>("distance", 10, std::bind(&[01;31m[KDistance_Check[m[K::turtle1_pose, this, _1));
+[4.025s]       |                                                           [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.025s] 
+[4.050s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:[m[K In member function ‘[01m[Kvoid Distance_Check::[01;32m[Ktimer_callback[m[K()[m[K’:
+[4.050s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:30:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kt1_vel_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kt1_pose_pub_[m[K’?
+[4.050s]    30 |                 [01;31m[Kt1_vel_pub_[m[K->publish(stop_turtle);
+[4.050s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[4.050s]       |                 [32m[Kt1_pose_pub_[m[K
+[4.056s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:31:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kt2_vel_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kt2_pose_pub_[m[K’?
+[4.056s]    31 |                 [01;31m[Kt2_vel_pub_[m[K->publish(stop_turtle);
+[4.056s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[4.056s]       |                 [32m[Kt2_pose_pub_[m[K
+[4.065s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:[m[K In member function ‘[01m[Kvoid Distance_Check::[01;32m[Kturtle1_pose[m[K(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.065s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:39:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kt1_vel_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kt1_pose_pub_[m[K’?
+[4.065s]    39 |                 [01;31m[Kt1_vel_pub_[m[K->publish(stop_turtle);
+[4.065s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[4.065s]       |                 [32m[Kt1_pose_pub_[m[K
+[4.071s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:[m[K In member function ‘[01m[Kvoid Distance_Check::[01;32m[Kturtle2_pose[m[K(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.071s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:46:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kt2_vel_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kt2_pose_pub_[m[K’?
+[4.071s]    46 |                 [01;31m[Kt2_vel_pub_[m[K->publish(stop_turtle);
+[4.072s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[4.072s]       |                 [32m[Kt2_pose_pub_[m[K
+[5.317s] gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+[5.317s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+[5.317s] gmake[1]: *** Waiting for unfinished jobs....
+[6.624s] gmake[2]: *** [CMakeFiles/distance.dir/build.make:76: CMakeFiles/distance.dir/src/distance_node.cpp.o] Error 1
+[6.624s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2
+[6.624s] gmake: *** [Makefile:146: all] Error 2
+[6.629s] Invoked command in '/home/luchino/RT_first_assignment/build/assignment1_rt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8

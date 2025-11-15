@@ -1,0 +1,23 @@
+[ 50%] Built target distance
+[ 75%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:53:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ does not name a type
+   53 |         [01;31m[Kstop_turtle[m[K.linear.x = 0.0;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:54:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ does not name a type
+   54 |         [01;31m[Kstop_turtle[m[K.linear.y = 0.0;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:55:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ does not name a type
+   55 |         [01;31m[Kstop_turtle[m[K.linear.z = 0.0;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ does not name a type
+   57 |         [01;31m[Kstop_turtle[m[K.angular.x = 0.0;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:58:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ does not name a type
+   58 |         [01;31m[Kstop_turtle[m[K.angular.y = 0.0;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ does not name a type
+   59 |         [01;31m[Kstop_turtle[m[K.angular.z = 0.0;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

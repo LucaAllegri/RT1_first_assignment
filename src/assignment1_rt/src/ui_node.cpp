@@ -1,39 +1,45 @@
 #include "rclcpp/rclcpp.hpp"
 #include "turtlesim/msg/pose.hpp"
 #include "geometry_msgs/msg/twist.hpp"
+#include "std_msgs/msg/float32.hpp"
 #include <math.h>
+using std::placeholders::_1;
 
 class Input_Controller : public rclcpp::Node{
     public:
         Input_Controller(): Node("input_controller"){
             t1_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
             t2_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle2/cmd_vel", 10);
-            timer_ = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&Distance_Check::input_loop, this));
+            distance_sub_ = this->create_subscription<std_msgs::msg::Float32>("distance", 10, std::bind(&Input_Controller::check_distance, this, _1));
+            timer_ = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&Input_Controller::input_loop, this));
+            stop_turtle.linear.x = 0.0;
+            stop_turtle.linear.y = 0.0;
+            stop_turtle.linear.z = 0.0;
+
+            stop_turtle.angular.x = 0.0;
+            stop_turtle.angular.y = 0.0;
+            stop_turtle.angular.z = 0.0;
+            actual_distance =11.0;
         }
 
     private:
         void input_loop(){
-            while(1){
-                std::cout<< "Quale tartaruga vuoi muovere?\n
-                             1) Turtle 1\n
-                             2) Turtle 2\n
-                             :";
+            while(actual_distance > 1.0){
+                std::cout<< "Quale tartaruga vuoi muovere?\n1) Turtle 1\n2) Turtle 2\n:";
                 std::cin >> n_turtle;
 
-                std::cout<< "Inserisci Velocità Lineare\n
-                             x:"
+                std::cout<< "Inserisci Velocità Lineare\nx:";
                 std::cin >> vel_input.linear.x;
-                std::cout<< "\ny:"
+                std::cout<< "y:";
                 std::cin >> vel_input.linear.y;
-                std::cout<< "\nz:"
+                std::cout<< "z:";
                 std::cin >> vel_input.linear.z;
 
-                std::cout<< "Inserisci Velocità Angolare\n
-                             x:"
+                std::cout<< "Inserisci Velocità Angolare\nx:";
                 std::cin >> vel_input.angular.x;
-                std::cout<< "\ny:"
+                std::cout<< "y:";
                 std::cin >> vel_input.angular.y;
-                std::cout<< "\nz:"
+                std::cout<< "z:";
                 std::cin >> vel_input.angular.z;
 
                 if(n_turtle == 1){
@@ -48,21 +54,24 @@ class Input_Controller : public rclcpp::Node{
 
             }
 
+            std::cout<< "LE DUE TARTARUGHE SONO TROPPO VICINE!!";
+
         }
 
-        void timer_callback(){
-            distance = sqrt((pos_t2.x-pos_t1.x)^2 + (pos_t2.y-pos_t1.y)^2);
-            publisher_->publish(distance);
+        void check_distance(const std_msgs::msg::Float32::SharedPtr msg){
+            actual_distance = msg->data;
         }
 
         rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr t1_publisher_;
         rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr t2_publisher_;
+        rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr distance_sub_;
         geometry_msgs::msg::Twist vel_input;
-        geometry_msgs::msg::Twist stop_turtle = {0.0 , 0.0 , 0.0
-                                                 0.0 , 0.0 , 0.0};
+        rclcpp::TimerBase::SharedPtr timer_;
+        geometry_msgs::msg::Twist stop_turtle;
+        float actual_distance;
         int n_turtle;
 
-}
+};
 
 
 int main(int argc, char * argv[]){

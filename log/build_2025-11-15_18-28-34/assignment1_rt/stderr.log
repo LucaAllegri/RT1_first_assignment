@@ -1,0 +1,7 @@
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In constructor ‘[01m[KInput_Controller::[01;32m[KInput_Controller[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:13:106:[m[K [01;31m[Kerror: [m[K‘[01m[KDistance_Check[m[K’ has not been declared
+   13 |             distance_sub_ = this->create_subscription<std_msgs::msg::Float32>("distance", 10, std::bind(&[01;31m[KDistance_Check[m[K::turtle1_pose, this, _1));
+      |                                                                                                          [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

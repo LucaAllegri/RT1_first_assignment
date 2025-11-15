@@ -1,0 +1,21 @@
+[0.011s] Invoking command in '/home/luchino/RT_first_assignment/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8
+[0.060s] [ 25%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[0.061s] [ 75%] Built target distance
+[2.027s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:53:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ does not name a type
+[2.027s]    53 |         [01;31m[Kstop_turtle[m[K.linear = {0.0,0.0,0.0};
+[2.027s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.027s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:53:43:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.027s]    53 |         stop_turtle.linear = {0.0,0.0,0.0}[01;35m[K;[m[K
+[2.027s]       |                                           [01;35m[K^[m[K
+[2.028s]       |                                           [31m[K-[m[K
+[2.030s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:54:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ does not name a type
+[2.030s]    54 |         [01;31m[Kstop_turtle[m[K.angular = {0.0,0.0,0.0};
+[2.030s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.030s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:54:44:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.030s]    54 |         stop_turtle.angular = {0.0,0.0,0.0}[01;35m[K;[m[K
+[2.030s]       |                                            [01;35m[K^[m[K
+[2.030s]       |                                            [31m[K-[m[K
+[2.899s] gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+[2.899s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+[2.899s] gmake: *** [Makefile:146: all] Error 2
+[2.901s] Invoked command in '/home/luchino/RT_first_assignment/build/assignment1_rt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8

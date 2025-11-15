@@ -1,0 +1,19 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[ 75%] Built target distance
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:53:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ does not name a type
+   53 |         [01;31m[Kstop_turtle[m[K.linear = {0.0,0.0,0.0};
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:53:43:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   53 |         stop_turtle.linear = {0.0,0.0,0.0}[01;35m[K;[m[K
+      |                                           [01;35m[K^[m[K
+      |                                           [31m[K-[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:54:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ does not name a type
+   54 |         [01;31m[Kstop_turtle[m[K.angular = {0.0,0.0,0.0};
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:54:44:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   54 |         stop_turtle.angular = {0.0,0.0,0.0}[01;35m[K;[m[K
+      |                                            [01;35m[K^[m[K
+      |                                            [31m[K-[m[K
+gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
