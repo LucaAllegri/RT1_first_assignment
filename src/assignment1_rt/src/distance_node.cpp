@@ -54,7 +54,7 @@ class Distance_Check: public rclcpp::Node{
             //RCLCPP_INFO(this->get_logger(), "The position of the turtle 2 (x,y): '%f', '%f", msg->x, msg->y);
             pos_t2.x = msg->x;
             pos_t2.y = msg->y;
-            if(pos_t1.x > 10.0 || pos_t1.x < 1.0 || pos_t1.y > 10.0 || pos_t1.y < 1.0){
+            if(pos_t2.x > 10.0 || pos_t2.x < 1.0 || pos_t2.y > 10.0 || pos_t2.y < 1.0){
                 t2_vel_pub_->publish(stop_turtle);
                 boundaries.data = true;
                 boundaries_pub_->publish(boundaries);

@@ -44,7 +44,7 @@ class Input_Controller : public rclcpp::Node{
             while(actual_distance.data > 1.0 && !boundaries.data){
                 std::cout<< "Quale tartaruga vuoi muovere?\n1) Turtle 1\n2) Turtle 2\n:";
                 std::cin >> n_turtle;
-                if(n_turtle != 1 || n_turtle !=2){
+                if(n_turtle == 1 || n_turtle ==2){
                     std::cout<< "Inserisci Velocità Lineare\nx:";
                     std::cin >> vel_input.linear.x;
                     std::cout<< "y:";
