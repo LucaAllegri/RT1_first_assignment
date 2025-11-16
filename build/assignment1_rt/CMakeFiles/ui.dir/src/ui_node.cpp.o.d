@@ -706,4 +706,9 @@ CMakeFiles/ui.dir/src/ui_node.cpp.o: \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/bool.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
  /usr/include/c++/13/math.h
