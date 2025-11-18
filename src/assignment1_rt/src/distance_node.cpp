@@ -48,7 +48,6 @@ class Distance_Check: public rclcpp::Node{
             pos_t1.x = msg->x;
             pos_t1.y = msg->y;
             
-            //CHECK BOUNDARIES
             if(pos_t1.x > 10.0 || pos_t1.x < 1.0 || pos_t1.y > 10.0 || pos_t1.y < 1.0){
                 t1_vel_pub_->publish(stop_turtle);
                 boundaries.data = true;
