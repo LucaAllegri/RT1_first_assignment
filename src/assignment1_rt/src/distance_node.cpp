@@ -37,6 +37,9 @@ class Distance_Check: public rclcpp::Node{
             if(distance.data < 1.0){
                 t1_vel_pub_->publish(stop_turtle);
                 t2_vel_pub_->publish(stop_turtle);
+                RCLCPP_INFO(this->get_logger(), "Tartarughe troppo vicine! Arresto del nodo in corso.");
+                distance_pub_->publish(distance);
+                rclcpp::shutdown();
             }
             distance_pub_->publish(distance);
         }
@@ -44,21 +47,31 @@ class Distance_Check: public rclcpp::Node{
             //RCLCPP_INFO(this->get_logger(), "The position of the turtle 1 (x,y): '%f', '%f", msg->x, msg->y);
             pos_t1.x = msg->x;
             pos_t1.y = msg->y;
+            
+            //CHECK BOUNDARIES
             if(pos_t1.x > 10.0 || pos_t1.x < 1.0 || pos_t1.y > 10.0 || pos_t1.y < 1.0){
                 t1_vel_pub_->publish(stop_turtle);
                 boundaries.data = true;
+                RCLCPP_INFO(this->get_logger(), "Turtle 1 troppo vicina ad un bordo! Arresto del nodo in corso.");
                 boundaries_pub_->publish(boundaries);
+                rclcpp::shutdown();
             }
+            boundaries_pub_->publish(boundaries);
         } 
         void turtle2_pose(const turtlesim::msg::Pose::SharedPtr msg){
             //RCLCPP_INFO(this->get_logger(), "The position of the turtle 2 (x,y): '%f', '%f", msg->x, msg->y);
             pos_t2.x = msg->x;
             pos_t2.y = msg->y;
+
+            //CHECK BOUNDARIES
             if(pos_t2.x > 10.0 || pos_t2.x < 1.0 || pos_t2.y > 10.0 || pos_t2.y < 1.0){
                 t2_vel_pub_->publish(stop_turtle);
                 boundaries.data = true;
+                RCLCPP_INFO(this->get_logger(), "Turtle 2 troppo vicina ad un bordo! Arresto del nodo in corso.");
                 boundaries_pub_->publish(boundaries);
+                rclcpp::shutdown();
             }
+            boundaries_pub_->publish(boundaries);
         } 
         rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr t1_pose_sub_;
         rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr t2_pose_sub_;
@@ -81,7 +94,18 @@ class Distance_Check: public rclcpp::Node{
 
 int main(int argc, char * argv[]){
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<Distance_Check>());
-    rclcpp::shutdown();
+    auto node = std::make_shared<Distance_Check>();
+
+    while(rclcpp::ok()){
+        rclcpp::spin_some(node);
+    }
+    
     return 0;
 }
+
+
+
+/*CHIEDERE SE QUANDO UNA TARTARUGA SI AVVICINA TROPPO 
+ALL'ALTRA LE FERMO TUTTE DUE O AGGIUNGO UN'ALTRA COMUNICAZIONE 
+TRA I DUE NODI PER FERMARE LA SOLA TARTARUGA IN MOVIMENTO
+*/

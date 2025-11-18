@@ -14,8 +14,9 @@ class Input_Controller : public rclcpp::Node{
             distance_sub_ = this->create_subscription<std_msgs::msg::Float32>("distance", 10, std::bind(&Input_Controller::check_distance, this, _1));
             boundaries_sub_ = this->create_subscription<std_msgs::msg::Bool>("boundaries", 10, std::bind(&Input_Controller::check_boundaries, this, _1));
 
-            timer_ = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&Input_Controller::input_loop, this));
-
+            input_timer_ = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&Input_Controller::input_timer_callback, this));
+            stop_timer_ = nullptr;
+            
             stop_turtle.linear.x = 0.0;
             stop_turtle.linear.y = 0.0;
             stop_turtle.linear.z = 0.0;
@@ -24,9 +25,12 @@ class Input_Controller : public rclcpp::Node{
             stop_turtle.angular.y = 0.0;
             stop_turtle.angular.z = 0.0;
 
-            actual_distance.data =11.0;
+            //actual_distance.data =11.0;
 
-            boundaries.data = false;
+            //boundaries.data = false;
+
+            moving_turtle_ = 0;
+
         }
 
     private:
@@ -39,25 +43,41 @@ class Input_Controller : public rclcpp::Node{
             boundaries.data = msg->data;
         }
 
+        void stop_timer_callback(){
+            if(moving_turtle_ == 1){
+                t1_publisher_->publish(stop_turtle);
+                RCLCPP_INFO(this->get_logger(), "Stop for turtle1 after 1 second.");
+            } else if(moving_turtle_ == 2){
+                t2_publisher_->publish(stop_turtle);
+                RCLCPP_INFO(this->get_logger(), "Stop for turtle2 after 1 second.");
+            }
+            moving_turtle_ = 0;
+            stop_timer_->cancel();
+        }
 
-        void input_loop(){
-            while(actual_distance.data > 1.0 && !boundaries.data){
+
+        void input_timer_callback(){
+            if(actual_distance.data < 1.0){
+                std::cout<<"LE TARTARUGHE SONO TROPPO VICINE!!!"<<std::endl;
+                rclcpp::shutdown();
+            }else if(boundaries.data){
+                std::cout<<"UNA DELLE DUE TARTARUGHE SI E' AVVICINATA TROPPO AD UN BORDO!!!"<<std::endl;
+                rclcpp::shutdown();
+            }else{
                 std::cout<< "Quale tartaruga vuoi muovere?\n1) Turtle 1\n2) Turtle 2\n:";
                 std::cin >> n_turtle;
                 if(n_turtle == 1 || n_turtle ==2){
                     std::cout<< "Inserisci Velocità Lineare\nx:";
                     std::cin >> vel_input.linear.x;
-                    std::cout<< "y:";
-                    std::cin >> vel_input.linear.y;
-                    std::cout<< "z:";
-                    std::cin >> vel_input.linear.z;
+                    vel_input.linear.y=0;
+                    vel_input.linear.z=0;
 
-                    std::cout<< "Inserisci Velocità Angolare\nx:";
-                    std::cin >> vel_input.angular.x;
-                    std::cout<< "y:";
-                    std::cin >> vel_input.angular.y;
-                    std::cout<< "z:";
+                    std::cout<< "Inserisci Velocità Angolare\nz:";
                     std::cin >> vel_input.angular.z;
+                    vel_input.angular.x=0;
+                    vel_input.angular.y=0;
+
+                    moving_turtle_ = n_turtle;
 
                     if(n_turtle == 1){
                         t1_publisher_->publish(vel_input);
@@ -65,19 +85,17 @@ class Input_Controller : public rclcpp::Node{
                         t2_publisher_->publish(vel_input);
                     }
 
+                    stop_timer_ = this->create_wall_timer(
+                        std::chrono::milliseconds(1000), 
+                        std::bind(&Input_Controller::stop_timer_callback, this)
+                    );
+
                 }else{
                     std::cout<<"Devi inserire 1 o 2!\n";
                 }
-                t1_publisher_->publish(stop_turtle);
-                t2_publisher_->publish(stop_turtle);
-            }
 
-            if(actual_distance.data < 1.0){
-                std::cout<<"LE TARTARUGHE SONO TROPPO VICINE!!!"<<std::endl;
-            }else if(boundaries.data){
-                std::cout<<"UNA DELLE DUE TARTARUGHE SI E' AVVICINATA TROPPO AD UN BORDO!!!"<<std::endl;
             }
-
+            
         }
 
         rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr t1_publisher_;
@@ -88,12 +106,15 @@ class Input_Controller : public rclcpp::Node{
 
         geometry_msgs::msg::Twist vel_input;
 
-        rclcpp::TimerBase::SharedPtr timer_;
+        rclcpp::TimerBase::SharedPtr input_timer_;
+        rclcpp::TimerBase::SharedPtr stop_timer_;
 
         geometry_msgs::msg::Twist stop_turtle;
 
         std_msgs::msg::Float32 actual_distance;
         std_msgs::msg::Bool boundaries;
+
+        int moving_turtle_;
         int n_turtle;
 
 
@@ -102,7 +123,12 @@ class Input_Controller : public rclcpp::Node{
 
 int main(int argc, char * argv[]){
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<Input_Controller>());
+    auto node = std::make_shared<Input_Controller>();
+
+    while(rclcpp::ok()){
+        rclcpp::spin_some(node);
+    }
+
     rclcpp::shutdown();
     return 0;
 }
