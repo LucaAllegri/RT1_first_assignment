@@ -1,0 +1,11 @@
+[0.024s] Invoking command in '/home/luchino/RT_first_assignment/build/prova_rt1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/prova_rt1 -- -j8 -l8
+[0.091s] [ 50%] Built target distance
+[0.095s] [ 75%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[2.398s] [01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kinput_timer_callback[m[K()[m[K’:
+[2.398s] [01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:91:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kboun[m[K’ was not declared in this scope
+[2.398s]    91 |                 [01;31m[Kboun[m[K
+[2.398s]       |                 [01;31m[K^~~~[m[K
+[5.594s] gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+[5.594s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+[5.595s] gmake: *** [Makefile:146: all] Error 2
+[5.597s] Invoked command in '/home/luchino/RT_first_assignment/build/prova_rt1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/prova_rt1 -- -j8 -l8

@@ -1,0 +1,25 @@
+[0.042s] Invoking command in '/home/luchino/RT_first_assignment/build/prova_rt1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/prova_rt1 -- -j8 -l8
+[0.131s] [ 50%] Built target ui
+[0.134s] [100%] Built target distance
+[0.143s] Invoked command in '/home/luchino/RT_first_assignment/build/prova_rt1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/prova_rt1 -- -j8 -l8
+[0.152s] Invoking command in '/home/luchino/RT_first_assignment/build/prova_rt1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --install /home/luchino/RT_first_assignment/build/prova_rt1
+[0.160s] -- Install configuration: ""
+[0.160s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/lib/prova_rt1/ui
+[0.160s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/lib/prova_rt1/distance
+[0.161s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/lib/prova_rt1/turtle_spawn.py
+[0.161s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/ament_index/resource_index/package_run_dependencies/prova_rt1
+[0.162s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/ament_index/resource_index/parent_prefix_path/prova_rt1
+[0.162s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/environment/ament_prefix_path.sh
+[0.162s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/environment/ament_prefix_path.dsv
+[0.162s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/environment/path.sh
+[0.162s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/environment/path.dsv
+[0.163s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/local_setup.bash
+[0.163s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/local_setup.sh
+[0.163s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/local_setup.zsh
+[0.163s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/local_setup.dsv
+[0.163s] -- Installing: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/package.dsv
+[0.163s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/ament_index/resource_index/packages/prova_rt1
+[0.163s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/cmake/prova_rt1Config.cmake
+[0.163s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/cmake/prova_rt1Config-version.cmake
+[0.163s] -- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/package.xml
+[0.165s] Invoked command in '/home/luchino/RT_first_assignment/build/prova_rt1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --install /home/luchino/RT_first_assignment/build/prova_rt1

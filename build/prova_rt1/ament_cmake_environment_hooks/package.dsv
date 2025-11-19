@@ -1,0 +1,4 @@
+source;share/prova_rt1/local_setup.bash
+source;share/prova_rt1/local_setup.dsv
+source;share/prova_rt1/local_setup.sh
+source;share/prova_rt1/local_setup.zsh

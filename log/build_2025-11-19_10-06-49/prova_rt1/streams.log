@@ -1,0 +1,15 @@
+[0.015s] Invoking command in '/home/luchino/RT_first_assignment/build/prova_rt1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/prova_rt1 -- -j8 -l8
+[0.090s] [ 50%] Built target distance
+[0.095s] [ 75%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[2.502s] [01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kcheck_distance[m[K(std_msgs::msg::Float32_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.503s] [01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:39:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<rclcpp::Subscription<std_msgs::msg::Float32_<std::allocator<void> > >, __gnu_cxx::_S_atomic, false, false>::element_type = class rclcpp::Subscription<std_msgs::msg::Float32_<std::allocator<void> > >[m[K’ {aka ‘[01m[Kclass rclcpp::Subscription<std_msgs::msg::Float32_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kcancel[m[K’
+[2.503s]    39 |             distance_sub_ ->[01;31m[Kcancel[m[K();
+[2.503s]       |                             [01;31m[K^~~~~~[m[K
+[2.505s] [01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kcheck_boundaries[m[K(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.505s] [01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:48:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<rclcpp::Subscription<std_msgs::msg::Bool_<std::allocator<void> > >, __gnu_cxx::_S_atomic, false, false>::element_type = class rclcpp::Subscription<std_msgs::msg::Bool_<std::allocator<void> > >[m[K’ {aka ‘[01m[Kclass rclcpp::Subscription<std_msgs::msg::Bool_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kcancel[m[K’
+[2.505s]    48 |             boundaries_sub_ ->[01;31m[Kcancel[m[K();
+[2.506s]       |                               [01;31m[K^~~~~~[m[K
+[5.645s] gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+[5.645s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+[5.645s] gmake: *** [Makefile:146: all] Error 2
+[5.647s] Invoked command in '/home/luchino/RT_first_assignment/build/prova_rt1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/prova_rt1 -- -j8 -l8

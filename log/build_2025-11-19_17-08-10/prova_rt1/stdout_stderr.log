@@ -1,0 +1,24 @@
+[ 50%] Built target distance
+[ 75%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ui[0m
+[100%] Built target ui
+-- Install configuration: ""
+-- Installing: /home/luchino/RT_first_assignment/install/prova_rt1/lib/prova_rt1/ui
+-- Set non-toolchain portion of runtime path of "/home/luchino/RT_first_assignment/install/prova_rt1/lib/prova_rt1/ui" to ""
+-- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/lib/prova_rt1/distance
+-- Installing: /home/luchino/RT_first_assignment/install/prova_rt1/lib/prova_rt1/turtle_spawn.py
+-- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/ament_index/resource_index/package_run_dependencies/prova_rt1
+-- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/ament_index/resource_index/parent_prefix_path/prova_rt1
+-- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/environment/ament_prefix_path.sh
+-- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/environment/path.sh
+-- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/environment/path.dsv
+-- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/local_setup.bash
+-- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/local_setup.sh
+-- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/local_setup.zsh
+-- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/local_setup.dsv
+-- Installing: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/package.dsv
+-- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/ament_index/resource_index/packages/prova_rt1
+-- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/cmake/prova_rt1Config.cmake
+-- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/cmake/prova_rt1Config-version.cmake
+-- Up-to-date: /home/luchino/RT_first_assignment/install/prova_rt1/share/prova_rt1/package.xml

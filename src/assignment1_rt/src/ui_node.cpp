@@ -25,9 +25,9 @@ class Input_Controller : public rclcpp::Node{
             stop_turtle.angular.y = 0.0;
             stop_turtle.angular.z = 0.0;
 
-            //actual_distance.data =11.0;
+            actual_distance.data =11.0;
 
-            //boundaries.data = false;
+            boundaries.data = false;
 
             moving_turtle_ = 0;
 
@@ -57,6 +57,8 @@ class Input_Controller : public rclcpp::Node{
 
 
         void input_timer_callback(){
+            std::cout<<"actual_distance = "<< actual_distance.data <<std::endl;
+            std::cout<<"boundaries = "<< boundaries.data <<std::endl;
             if(actual_distance.data < 1.0){
                 std::cout<<"LE TARTARUGHE SONO TROPPO VICINE!!!"<<std::endl;
                 rclcpp::shutdown();
@@ -116,7 +118,6 @@ class Input_Controller : public rclcpp::Node{
 
         int moving_turtle_;
         int n_turtle;
-
 
 };
 

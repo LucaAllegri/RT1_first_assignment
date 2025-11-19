@@ -1,0 +1,13 @@
+[ 50%] Built target distance
+[ 75%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kcheck_distance[m[K(std_msgs::msg::Float32_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:39:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<rclcpp::Subscription<std_msgs::msg::Float32_<std::allocator<void> > >, __gnu_cxx::_S_atomic, false, false>::element_type = class rclcpp::Subscription<std_msgs::msg::Float32_<std::allocator<void> > >[m[K’ {aka ‘[01m[Kclass rclcpp::Subscription<std_msgs::msg::Float32_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kcancel[m[K’
+   39 |             distance_sub_->[01;31m[Kcancel[m[K();
+      |                            [01;31m[K^~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kcheck_boundaries[m[K(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:48:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<rclcpp::Subscription<std_msgs::msg::Bool_<std::allocator<void> > >, __gnu_cxx::_S_atomic, false, false>::element_type = class rclcpp::Subscription<std_msgs::msg::Bool_<std::allocator<void> > >[m[K’ {aka ‘[01m[Kclass rclcpp::Subscription<std_msgs::msg::Bool_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kcancel[m[K’
+   48 |             boundaries_sub_->[01;31m[Kcancel[m[K();
+      |                              [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

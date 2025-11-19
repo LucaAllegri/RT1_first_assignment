@@ -1,0 +1,15 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/distance.dir/src/distance_node.cpp.o[0m
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kinput_timer_callback[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:59:43:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K![m[K’ token
+   59 |             if(actual_distance.data > 1.0 [01;31m[K![m[Kboundaries.data){
+      |                                           [01;31m[K^[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:59:15:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+   59 |             if[01;36m[K([m[Kactual_distance.data > 1.0 !boundaries.data){
+      |               [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 75%] [32m[1mLinking CXX executable distance[0m
+[ 75%] Built target distance
+gmake: *** [Makefile:146: all] Error 2

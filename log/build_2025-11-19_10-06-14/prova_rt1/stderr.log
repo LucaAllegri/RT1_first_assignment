@@ -1,0 +1,117 @@
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:[m[K In constructor ‘[01m[KInput_Controller::[01;32m[KInput_Controller[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:12:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kt1_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   12 |             [01;31m[Kt1_publisher_[m[K = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+      |             [32m[Krmw_publisher_t[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:13:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kt2_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   13 |             [01;31m[Kt2_publisher_[m[K = this->create_publisher<geometry_msgs::msg::Twist>("/turtle2/cmd_vel", 10);
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+      |             [32m[Krmw_publisher_t[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:14:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kdistance_sub_[m[K’ was not declared in this scope
+   14 |             [01;31m[Kdistance_sub_[m[K = nullptr;
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:15:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kboundaries_sub_[m[K’ was not declared in this scope
+   15 |             [01;31m[Kboundaries_sub_[m[K = nullptr;
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:16:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_timer_[m[K’ was not declared in this scope
+   16 |             [01;31m[Kinput_timer_[m[K = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&Input_Controller::input_timer_callback, this));
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:17:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_timer_[m[K’ was not declared in this scope
+   17 |             [01;31m[Kstop_timer_[m[K = nullptr;
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:19:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ was not declared in this scope
+   19 |             [01;31m[Kstop_turtle[m[K.linear.x = 0.0;
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:27:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kactual_distance[m[K’ was not declared in this scope; did you mean ‘[01m[Kcheck_distance[m[K’?
+   27 |             [01;31m[Kactual_distance[m[K.data =11.0;
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |             [32m[Kcheck_distance[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:29:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kboundaries[m[K’ was not declared in this scope
+   29 |             [01;31m[Kboundaries[m[K.data = false;
+      |             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:31:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoving_turtle_[m[K’ was not declared in this scope
+   31 |             [01;31m[Kmoving_turtle_[m[K = 0;
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kcheck_distance[m[K(std_msgs::msg::Float32_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:38:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kactual_distance[m[K’ was not declared in this scope; did you mean ‘[01m[Kcheck_distance[m[K’?
+   38 |             [01;31m[Kactual_distance[m[K.data = msg->data;
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |             [32m[Kcheck_distance[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:39:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kdistance_sub_[m[K’ was not declared in this scope
+   39 |             [01;31m[Kdistance_sub_[m[K ->cancel();
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kcheck_boundaries[m[K(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:47:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kboundaries[m[K’ was not declared in this scope
+   47 |             [01;31m[Kboundaries[m[K.data = msg->data;
+      |             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:48:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kboundaries_sub_[m[K’ was not declared in this scope
+   48 |             [01;31m[Kboundaries_sub_[m[K ->cancel();
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kstop_timer_callback[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:56:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoving_turtle_[m[K’ was not declared in this scope
+   56 |             if([01;31m[Kmoving_turtle_[m[K == 1){
+      |                [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:57:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kt1_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   57 |                 [01;31m[Kt1_publisher_[m[K->publish(stop_turtle);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+      |                 [32m[Krmw_publisher_t[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:57:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ was not declared in this scope
+   57 |                 t1_publisher_->publish([01;31m[Kstop_turtle[m[K);
+      |                                        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:60:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kt2_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   60 |                 [01;31m[Kt2_publisher_[m[K->publish(stop_turtle);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+      |                 [32m[Krmw_publisher_t[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:60:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_turtle[m[K’ was not declared in this scope
+   60 |                 t2_publisher_->publish([01;31m[Kstop_turtle[m[K);
+      |                                        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:63:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoving_turtle_[m[K’ was not declared in this scope
+   63 |             [01;31m[Kmoving_turtle_[m[K = 0;
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:64:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_timer_[m[K’ was not declared in this scope
+   64 |             [01;31m[Kstop_timer_[m[K->cancel();
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kinput_timer_callback[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:69:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kdistance_sub_[m[K’ was not declared in this scope
+   69 |             [01;31m[Kdistance_sub_[m[K = this->create_subscription<std_msgs::msg::Float32>("distance", 10, std::bind(&Input_Controller::check_distance, this, _1));
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:70:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kboundaries_sub_[m[K’ was not declared in this scope
+   70 |             [01;31m[Kboundaries_sub_[m[K = this->create_subscription<std_msgs::msg::Bool>("boundaries", 10, std::bind(&Input_Controller::check_boundaries, this, _1));
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:71:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kactual_distance[m[K’ was not declared in this scope; did you mean ‘[01m[Kcheck_distance[m[K’?
+   71 |             std::cout<<"actual_distance = "<< [01;31m[Kactual_distance[m[K.data <<std::endl;
+      |                                               [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                               [32m[Kcheck_distance[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:72:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kboundaries[m[K’ was not declared in this scope
+   72 |             std::cout<<"boundaries = "<< [01;31m[Kboundaries[m[K.data <<std::endl;
+      |                                          [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:75:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kn_turtle[m[K’ was not declared in this scope
+   75 |             std::cin >> [01;31m[Kn_turtle[m[K;
+      |                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:78:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_input[m[K’ was not declared in this scope
+   78 |                 std::cin >> [01;31m[Kvel_input[m[K.linear.x;
+      |                             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:87:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoving_turtle_[m[K’ was not declared in this scope
+   87 |                 [01;31m[Kmoving_turtle_[m[K = n_turtle;
+      |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:90:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kt1_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   90 |                     [01;31m[Kt1_publisher_[m[K->publish(vel_input);
+      |                     [01;31m[K^~~~~~~~~~~~~[m[K
+      |                     [32m[Krmw_publisher_t[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:92:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kt2_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   92 |                     [01;31m[Kt2_publisher_[m[K->publish(vel_input);
+      |                     [01;31m[K^~~~~~~~~~~~~[m[K
+      |                     [32m[Krmw_publisher_t[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:95:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_timer_[m[K’ was not declared in this scope
+   95 |                 [01;31m[Kstop_timer_[m[K = this->create_wall_timer(
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:[m[K At global scope:
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:108:9:[m[K [01;31m[Kerror: [m[Kspecializing member ‘[01m[Krclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >::SharedPtr[m[K’ requires ‘[01m[Ktemplate<>[m[K’ syntax
+  108 |         [01;31m[Krclcpp[m[K::Publisher<geometry_msgs::msg::Twist>::SharedPtr t1_publisher_;
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/luchino/RT_first_assignment/src/prova_rt1/src/ui_node.cpp:127:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  127 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

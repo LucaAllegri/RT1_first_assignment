@@ -1,0 +1,28 @@
+[0.017s] Invoking command in '/home/luchino/RT_first_assignment/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8
+[0.080s] [ 50%] Built target ui
+[0.085s] [ 75%] [32mBuilding CXX object CMakeFiles/distance.dir/src/distance_node.cpp.o[0m
+[9.235s] [100%] [32m[1mLinking CXX executable distance[0m
+[9.786s] [100%] Built target distance
+[9.800s] Invoked command in '/home/luchino/RT_first_assignment/build/assignment1_rt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8
+[9.801s] Invoking command in '/home/luchino/RT_first_assignment/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --install /home/luchino/RT_first_assignment/build/assignment1_rt
+[9.811s] -- Install configuration: ""
+[9.811s] -- Up-to-date: /home/luchino/RT_first_assignment/install/assignment1_rt/lib/assignment1_rt/ui
+[9.811s] -- Installing: /home/luchino/RT_first_assignment/install/assignment1_rt/lib/assignment1_rt/distance
+[9.821s] -- Set non-toolchain portion of runtime path of "/home/luchino/RT_first_assignment/install/assignment1_rt/lib/assignment1_rt/distance" to ""
+[9.821s] -- Up-to-date: /home/luchino/RT_first_assignment/install/assignment1_rt/lib/assignment1_rt/turtle_spawn.py
+[9.822s] -- Up-to-date: /home/luchino/RT_first_assignment/install/assignment1_rt/share/ament_index/resource_index/package_run_dependencies/assignment1_rt
+[9.822s] -- Up-to-date: /home/luchino/RT_first_assignment/install/assignment1_rt/share/ament_index/resource_index/parent_prefix_path/assignment1_rt
+[9.822s] -- Up-to-date: /home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/environment/ament_prefix_path.sh
+[9.822s] -- Up-to-date: /home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/environment/ament_prefix_path.dsv
+[9.823s] -- Up-to-date: /home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/environment/path.sh
+[9.823s] -- Up-to-date: /home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/environment/path.dsv
+[9.823s] -- Up-to-date: /home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/local_setup.bash
+[9.823s] -- Up-to-date: /home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/local_setup.sh
+[9.823s] -- Up-to-date: /home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/local_setup.zsh
+[9.824s] -- Up-to-date: /home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/local_setup.dsv
+[9.824s] -- Installing: /home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/package.dsv
+[9.824s] -- Up-to-date: /home/luchino/RT_first_assignment/install/assignment1_rt/share/ament_index/resource_index/packages/assignment1_rt
+[9.824s] -- Up-to-date: /home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/cmake/assignment1_rtConfig.cmake
+[9.824s] -- Up-to-date: /home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/cmake/assignment1_rtConfig-version.cmake
+[9.824s] -- Up-to-date: /home/luchino/RT_first_assignment/install/assignment1_rt/share/assignment1_rt/package.xml
+[9.826s] Invoked command in '/home/luchino/RT_first_assignment/build/assignment1_rt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --install /home/luchino/RT_first_assignment/build/assignment1_rt

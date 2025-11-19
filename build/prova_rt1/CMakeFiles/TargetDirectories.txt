@@ -1,0 +1,11 @@
+/home/luchino/RT_first_assignment/build/prova_rt1/CMakeFiles/uninstall.dir
+/home/luchino/RT_first_assignment/build/prova_rt1/CMakeFiles/prova_rt1_uninstall.dir
+/home/luchino/RT_first_assignment/build/prova_rt1/CMakeFiles/ui.dir
+/home/luchino/RT_first_assignment/build/prova_rt1/CMakeFiles/distance.dir
+/home/luchino/RT_first_assignment/build/prova_rt1/CMakeFiles/test.dir
+/home/luchino/RT_first_assignment/build/prova_rt1/CMakeFiles/edit_cache.dir
+/home/luchino/RT_first_assignment/build/prova_rt1/CMakeFiles/rebuild_cache.dir
+/home/luchino/RT_first_assignment/build/prova_rt1/CMakeFiles/list_install_components.dir
+/home/luchino/RT_first_assignment/build/prova_rt1/CMakeFiles/install.dir
+/home/luchino/RT_first_assignment/build/prova_rt1/CMakeFiles/install/local.dir
+/home/luchino/RT_first_assignment/build/prova_rt1/CMakeFiles/install/strip.dir
