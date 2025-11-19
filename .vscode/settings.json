@@ -44,5 +44,6 @@
         "initializer_list": "cpp",
         "limits": "cpp",
         "numbers": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/home/luchino/RT_first_assignment/src/assignment1_rt"
 }
