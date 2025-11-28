@@ -22,6 +22,9 @@ class Distance_Check: public rclcpp::Node{
             distance_timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&Distance_Check::distance_timer_callback, this));
             boundaries_timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&Distance_Check::boundaries_timer_callback, this));
 
+            distance.data =11.0;
+
+            boundaries.data = false;
 
             stop_turtle.linear.x = 0.0;
             stop_turtle.angular.z = 0.0;
@@ -35,14 +38,14 @@ class Distance_Check: public rclcpp::Node{
             if(pos_t1.x > 10.0 || pos_t1.x < 1.0 || pos_t1.y > 10.0 || pos_t1.y < 1.0){
                 t1_vel_pub_->publish(stop_turtle);
                 boundaries.data = true;
-                RCLCPP_INFO(this->get_logger(), "Turtle 1 troppo vicina ad un bordo! Arresto del nodo in corso.");
+                RCLCPP_INFO(this->get_logger(), "Turtle 1 troppo vicina ad un bordo!");
 
             }
 
             if(pos_t2.x > 10.0 || pos_t2.x < 1.0 || pos_t2.y > 10.0 || pos_t2.y < 1.0){
                 t2_vel_pub_->publish(stop_turtle);
                 boundaries.data = true;
-                RCLCPP_INFO(this->get_logger(), "Turtle 2 troppo vicina ad un bordo! Arresto del nodo in corso.");
+                RCLCPP_INFO(this->get_logger(), "Turtle 2 troppo vicina ad un bordo!");
             }
             boundaries_pub_->publish(boundaries);
 
@@ -55,7 +58,7 @@ class Distance_Check: public rclcpp::Node{
             if(distance.data < 1.0){
                 t1_vel_pub_->publish(stop_turtle);
                 t2_vel_pub_->publish(stop_turtle);
-                RCLCPP_INFO(this->get_logger(), "Tartarughe troppo vicine! Arresto del nodo in corso.");
+                RCLCPP_INFO(this->get_logger(), "Tartarughe troppo vicine!.");
             }
             distance_pub_->publish(distance);
 
@@ -100,10 +103,3 @@ int main(int argc, char * argv[]){
     
     return 0;
 }
-
-
-
-/*CHIEDERE SE QUANDO UNA TARTARUGA SI AVVICINA TROPPO 
-ALL'ALTRA LE FERMO TUTTE DUE O AGGIUNGO UN'ALTRA COMUNICAZIONE 
-TRA I DUE NODI PER FERMARE LA SOLA TARTARUGA IN MOVIMENTO
-*/

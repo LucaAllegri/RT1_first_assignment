@@ -25,10 +25,6 @@ class Input_Controller : public rclcpp::Node{
             stop_turtle.angular.y = 0.0;
             stop_turtle.angular.z = 0.0;
 
-            actual_distance.data =11.0;
-
-            boundaries.data = false;
-
             moving_turtle_ = 0;
 
         }
@@ -57,46 +53,58 @@ class Input_Controller : public rclcpp::Node{
 
 
         void input_timer_callback(){
-            std::cout<<"actual_distance = "<< actual_distance.data <<std::endl;
-            std::cout<<"boundaries = "<< boundaries.data <<std::endl;
-            if(actual_distance.data < 1.0){
-                std::cout<<"LE TARTARUGHE SONO TROPPO VICINE!!!"<<std::endl;
-                rclcpp::shutdown();
-            }else if(boundaries.data){
-                std::cout<<"UNA DELLE DUE TARTARUGHE SI E' AVVICINATA TROPPO AD UN BORDO!!!"<<std::endl;
-                rclcpp::shutdown();
-            }else{
-                std::cout<< "Quale tartaruga vuoi muovere?\n1) Turtle 1\n2) Turtle 2\n:";
-                std::cin >> n_turtle;
-                if(n_turtle == 1 || n_turtle ==2){
-                    std::cout<< "Inserisci Velocità Lineare\nx:";
-                    std::cin >> vel_input.linear.x;
-                    vel_input.linear.y=0;
-                    vel_input.linear.z=0;
+            std::cout<< "Quale tartaruga vuoi muovere?\n1) Turtle 1\n2) Turtle 2\n:";
+            std::cin >> n_turtle;
+            if(n_turtle == 1 || n_turtle ==2){
+                std::cout<< "Inserisci Velocità Lineare\nx:";
+                std::cin >> vel_input.linear.x;
+                vel_input.linear.y=0;
+                vel_input.linear.z=0;
 
-                    std::cout<< "Inserisci Velocità Angolare\nz:";
-                    std::cin >> vel_input.angular.z;
-                    vel_input.angular.x=0;
-                    vel_input.angular.y=0;
+                std::cout<< "Inserisci Velocità Angolare\nz:";
+                std::cin >> vel_input.angular.z;
+                vel_input.angular.x=0;
+                vel_input.angular.y=0;
 
-                    moving_turtle_ = n_turtle;
+                moving_turtle_ = n_turtle;
 
+                if(n_turtle == 1){
+                    t1_publisher_->publish(vel_input);
+                }else if(n_turtle ==2){
+                    t2_publisher_->publish(vel_input);
+                }
+
+                stop_timer_ = this->create_wall_timer(
+                    std::chrono::milliseconds(1000), 
+                    std::bind(&Input_Controller::stop_timer_callback, this)
+                );
+
+                if(actual_distance.data < 1 || boundaries.data){   //turtle come back
+                    if (vel_input.angular.z != 0 && vel_input.angular.x != 0){
+                        vel_input.linear.x = vel_input.linear.x - 1;
+                        vel_input.linear.z = vel_input.linear.z - 1;
+                    }
+                    if (vel_input.angular.z != 0){
+                        vel_input.linear.x = 0;
+                        vel_input.linear.z = vel_input.linear.z - 1;
+                    }
+                    if (vel_input.angular.x != 0){
+                        vel_input.linear.x = vel_input.linear.x - 1;
+                        vel_input.linear.z = 0;
+                        
+                    }
+                    
                     if(n_turtle == 1){
                         t1_publisher_->publish(vel_input);
                     }else if(n_turtle ==2){
                         t2_publisher_->publish(vel_input);
                     }
-
-                    stop_timer_ = this->create_wall_timer(
-                        std::chrono::milliseconds(1000), 
-                        std::bind(&Input_Controller::stop_timer_callback, this)
-                    );
-
-                }else{
-                    std::cout<<"Devi inserire 1 o 2!\n";
                 }
 
+            }else{
+                std::cout<<"Devi inserire 1 o 2!\n";
             }
+
             
         }
 
@@ -120,7 +128,6 @@ class Input_Controller : public rclcpp::Node{
         int n_turtle;
 
 };
-
 
 int main(int argc, char * argv[]){
     rclcpp::init(argc, argv);
