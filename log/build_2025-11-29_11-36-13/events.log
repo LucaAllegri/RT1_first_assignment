@@ -1,0 +1,568 @@
+[0.000000] (-) TimerEvent: {}
+[0.000296] (assignment1_rt) JobQueued: {'identifier': 'assignment1_rt', 'dependencies': OrderedDict()}
+[0.001912] (assignment1_rt) JobStarted: {'identifier': 'assignment1_rt'}
+[0.008088] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'cmake'}
+[0.008727] (assignment1_rt) JobProgress: {'identifier': 'assignment1_rt', 'progress': 'build'}
+[0.009431] (assignment1_rt) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luchino/RT_first_assignment/build/assignment1_rt', '--', '-j8', '-l8'], 'cwd': '/home/luchino/RT_first_assignment/build/assignment1_rt', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'luchino', 'GIT_ASKPASS': '/home/luchino/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/luchino', 'OLDPWD': '/home/luchino/RT_first_assignment/install', 'TERM_PROGRAM_VERSION': '1.106.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-9a6d4856-17e7-437f-b1ab-652a6376b02d.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/luchino/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/luchino/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/luchino/RT_first_assignment/install:/home/luchino/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luchino', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/543_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/luchino/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/luchino/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/luchino/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/Radiance/bin:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/c/Program Files/MySQL/MySQL Server 9.0/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/runtime/win64:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/lucaa/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lucaa/AppData/Roaming/npm:/mnt/c/Users/lucaa/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/lucaa/AppData/Roaming/Programs/Zero Install:/mnt/c/Users/lucaa/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/lucaa/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-9a94ca708d272173.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/luchino/.vscode-server/data/User/workspaceStorage/c8a841b907075387caedaf67b70a8506/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4ff4c84477.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/luchino/RT_first_assignment/install/prova_rt1:/home/luchino/RT_first_assignment/install/assignment1_rt:/home/luchino/ros_ws/install/turtlesim_controller:/home/luchino/ros_ws/install/first_package_py:/home/luchino/ros_ws/install/first_package_cpp:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/luchino/RT_first_assignment/build/assignment1_rt', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luchino/ros_ws/install/first_package_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/luchino/RT_first_assignment/install/prova_rt1:/home/luchino/RT_first_assignment/install/assignment1_rt:/home/luchino/ros_ws/install/turtlesim_controller:/home/luchino/ros_ws/install/first_package_cpp:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:'}), 'shell': False}
+[0.084130] (assignment1_rt) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/distance.dir/src/distance_node.cpp.o\x1b[0m\n'}
+[0.084389] (assignment1_rt) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o\x1b[0m\n'}
+[0.099534] (-) TimerEvent: {}
+[0.199882] (-) TimerEvent: {}
+[0.300267] (-) TimerEvent: {}
+[0.400633] (-) TimerEvent: {}
+[0.501032] (-) TimerEvent: {}
+[0.601493] (-) TimerEvent: {}
+[0.702250] (-) TimerEvent: {}
+[0.802715] (-) TimerEvent: {}
+[0.903109] (-) TimerEvent: {}
+[1.003576] (-) TimerEvent: {}
+[1.103977] (-) TimerEvent: {}
+[1.204438] (-) TimerEvent: {}
+[1.304943] (-) TimerEvent: {}
+[1.405460] (-) TimerEvent: {}
+[1.506001] (-) TimerEvent: {}
+[1.606594] (-) TimerEvent: {}
+[1.707374] (-) TimerEvent: {}
+[1.807883] (-) TimerEvent: {}
+[1.908539] (-) TimerEvent: {}
+[2.009073] (-) TimerEvent: {}
+[2.109482] (-) TimerEvent: {}
+[2.210158] (-) TimerEvent: {}
+[2.310775] (-) TimerEvent: {}
+[2.411415] (-) TimerEvent: {}
+[2.511904] (-) TimerEvent: {}
+[2.612329] (-) TimerEvent: {}
+[2.712906] (-) TimerEvent: {}
+[2.813752] (-) TimerEvent: {}
+[2.914154] (-) TimerEvent: {}
+[2.981220] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KDistance_Check::\x1b[01;32m\x1b[KDistance_Check\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.982308] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:29:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[2.982470] (assignment1_rt) StderrLine: {'line': b'   29 |             id_turtle_moved = \x1b[01;31m\x1b[K0\x1b[m\x1b[K;\n'}
+[2.982606] (assignment1_rt) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.982774] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/int8.hpp:7\x1b[m\x1b[K,\n'}
+[2.982893] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:5\x1b[m\x1b[K:\n'}
+[2.983006] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std_msgs::msg::Int8_<std::allocator<void> >& std_msgs::msg::Int8_<std::allocator<void> >::\x1b[01;32m\x1b[Koperator=\x1b[m\x1b[K(const std_msgs::msg::Int8_<std::allocator<void> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.983116] (assignment1_rt) StderrLine: {'line': b'   35 | struct \x1b[01;36m\x1b[KInt8_\x1b[m\x1b[K\n'}
+[2.983216] (assignment1_rt) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.983318] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std_msgs::msg::Int8_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.983422] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std_msgs::msg::Int8_<std::allocator<void> >& std_msgs::msg::Int8_<std::allocator<void> >::\x1b[01;32m\x1b[Koperator=\x1b[m\x1b[K(std_msgs::msg::Int8_<std::allocator<void> >&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.983580] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.984495] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Distance_Check::\x1b[01;32m\x1b[Kdistance_timer_callback\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.984704] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator==\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[2.985149] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(\x1b[32m\x1b[Kid_turtle_moved\x1b[m\x1b[K \x1b[01;31m\x1b[K==\x1b[m\x1b[K \x1b[34m\x1b[K1\x1b[m\x1b[K){\n'}
+[2.985350] (assignment1_rt) StderrLine: {'line': b'      |                    \x1b[32m\x1b[K~~~~~~~~~~~~~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^~\x1b[m\x1b[K \x1b[34m\x1b[K~\x1b[m\x1b[K\n'}
+[2.985524] (assignment1_rt) StderrLine: {'line': b'      |                    \x1b[32m\x1b[K|\x1b[m\x1b[K                  \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[2.985946] (assignment1_rt) StderrLine: {'line': b'      |                    \x1b[32m\x1b[K|\x1b[m\x1b[K                  \x1b[34m\x1b[Kint\x1b[m\x1b[K\n'}
+[2.986173] (assignment1_rt) StderrLine: {'line': b'      |                    \x1b[32m\x1b[Kstd_msgs::msg::Int8 {aka std_msgs::msg::Int8_<std::allocator<void> >}\x1b[m\x1b[K\n'}
+[2.986626] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:111:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std_msgs::msg::Int8_<ContainerAllocator>::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const std_msgs::msg::Int8_<ContainerAllocator>&) const \x1b[35m\x1b[K[with ContainerAllocator = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.987753] (assignment1_rt) StderrLine: {'line': b'  111 |   bool \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const Int8_ & other) const\n'}
+[2.987915] (assignment1_rt) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.988014] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:111:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std_msgs::msg::Int8_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.988108] (assignment1_rt) StderrLine: {'line': b'  111 |   bool operator==(\x1b[01;36m\x1b[Kconst Int8_ & other\x1b[m\x1b[K) const\n'}
+[2.988298] (assignment1_rt) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.988497] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/memory:65\x1b[m\x1b[K,\n'}
+[2.988635] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169\x1b[m\x1b[K,\n'}
+[2.988781] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:1\x1b[m\x1b[K:\n'}
+[2.988931] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/allocator.h:237:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _T1, class _T2> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const allocator<_Tp1>&, const allocator<_T2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.989089] (assignment1_rt) StderrLine: {'line': b'  237 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const allocator<_T1>&, const allocator<_T2>&)\n'}
+[2.989200] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.989299] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/allocator.h:237:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.989448] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::allocator<_Tp1>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.989537] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[2.990323] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.990409] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_tempbuf.h:62\x1b[m\x1b[K,\n'}
+[2.990459] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:66\x1b[m\x1b[K:\n'}
+[2.990506] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:812:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _T1, class _T2> constexpr bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const pair<_T1, _T2>&, const pair<_T1, _T2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.990553] (assignment1_rt) StderrLine: {'line': b'  812 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)\n'}
+[2.990599] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.990643] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:812:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.990688] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::pair<_T1, _T2>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.990780] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[2.990859] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.990946] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[2.991294] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_uninitialized.h:63\x1b[m\x1b[K,\n'}
+[2.991352] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:69\x1b[m\x1b[K:\n'}
+[2.991476] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:448:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> constexpr bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_Iterator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.991569] (assignment1_rt) StderrLine: {'line': b'  448 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const reverse_iterator<_Iterator>& __x,\n'}
+[2.992077] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.992489] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:448:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.992609] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.992719] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[2.992845] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.992988] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:493:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.993132] (assignment1_rt) StderrLine: {'line': b'  493 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const reverse_iterator<_IteratorL>& __x,\n'}
+[2.993274] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.993399] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:493:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.993531] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.993724] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[2.994201] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.994392] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1678:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.994582] (assignment1_rt) StderrLine: {'line': b' 1678 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const move_iterator<_IteratorL>& __x,\n'}
+[2.994765] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.994943] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1678:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.995133] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.995317] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[2.995508] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.995688] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1748:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> constexpr bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorL>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.995887] (assignment1_rt) StderrLine: {'line': b' 1748 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const move_iterator<_Iterator>& __x,\n'}
+[2.996066] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.996522] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1748:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.996630] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.996740] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[2.996832] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.996918] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:36\x1b[m\x1b[K,\n'}
+[2.997003] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:78\x1b[m\x1b[K:\n'}
+[2.997089] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/tuple:1919:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const tuple<_UTypes ...>&, const tuple<_UTypes ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.997185] (assignment1_rt) StderrLine: {'line': b' 1919 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const tuple<_TElements...>& __t,\n'}
+[2.997267] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.997352] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/tuple:1919:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.997436] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::tuple<_UTypes ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.997529] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[2.997614] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.997771] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:829:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const unique_ptr<_Tp, _Dp>&, const unique_ptr<_Up, _Ep>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.997863] (assignment1_rt) StderrLine: {'line': b'  829 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const unique_ptr<_Tp, _Dp>& __x,\n'}
+[2.997945] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.998026] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:829:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.998111] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.998203] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[2.998298] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.998389] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:837:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Dp> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const unique_ptr<_Tp, _Dp>&, nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.998482] (assignment1_rt) StderrLine: {'line': b'  837 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept\n'}
+[2.998568] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.998651] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:837:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.998752] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.998857] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[2.998947] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.999033] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:845:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Dp> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(nullptr_t, const unique_ptr<_Tp, _Dp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.999121] (assignment1_rt) StderrLine: {'line': b'  845 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept\n'}
+[2.999206] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.999291] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:845:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.999376] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.999465] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[2.999547] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.999629] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/iosfwd:42\x1b[m\x1b[K,\n'}
+[2.999715] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:52\x1b[m\x1b[K,\n'}
+[2.999802] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:80\x1b[m\x1b[K:\n'}
+[2.999888] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/postypes.h:192:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _StateT> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const fpos<_StateT>&, const fpos<_StateT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.999976] (assignment1_rt) StderrLine: {'line': b'  192 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)\n'}
+[3.000063] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.000151] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/postypes.h:192:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.000238] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::fpos<_StateT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.000332] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.000418] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.000501] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:53\x1b[m\x1b[K:\n'}
+[3.000585] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:1793:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const __shared_ptr<_Tp1, _Lp>&, const __shared_ptr<_Tp2, _Lp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.000694] (assignment1_rt) StderrLine: {'line': b' 1793 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const __shared_ptr<_Tp1, _Lp>& __a,\n'}
+[3.000837] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.000930] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:1793:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.001020] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__shared_ptr<_Tp1, _Lp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.001109] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.001197] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.001285] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:1799:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const __shared_ptr<_Tp, _Lp>&, nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.001379] (assignment1_rt) StderrLine: {'line': b' 1799 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept\n'}
+[3.001498] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.001585] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:1799:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.001709] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__shared_ptr<_Tp, _Lp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.001817] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.001907] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.001986] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:1819:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(nullptr_t, const __shared_ptr<_Tp, _Lp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.002089] (assignment1_rt) StderrLine: {'line': b' 1819 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept\n'}
+[3.002161] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.002231] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:1819:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.002301] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__shared_ptr<_Tp, _Lp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.002372] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.002446] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.002511] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:555:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const shared_ptr<_Tp>&, const shared_ptr<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.002587] (assignment1_rt) StderrLine: {'line': b'  555 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept\n'}
+[3.002670] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.002773] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:555:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.002868] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.002955] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.003058] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.003145] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:561:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const shared_ptr<_Tp>&, nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.003232] (assignment1_rt) StderrLine: {'line': b'  561 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const shared_ptr<_Tp>& __a, nullptr_t) noexcept\n'}
+[3.003320] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.003405] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:561:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.003498] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.003582] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.003668] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.003752] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:582:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(nullptr_t, const shared_ptr<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.003840] (assignment1_rt) StderrLine: {'line': b'  582 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(nullptr_t, const shared_ptr<_Tp>& __a) noexcept\n'}
+[3.003928] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.004013] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:582:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.004099] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.004193] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.004283] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.004369] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:47\x1b[m\x1b[K,\n'}
+[3.004456] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/string:54\x1b[m\x1b[K,\n'}
+[3.004545] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:18\x1b[m\x1b[K,\n'}
+[3.004629] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K:\n'}
+[3.004716] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/string_view:609:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> constexpr bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(basic_string_view<_CharT, _Traits>, basic_string_view<_CharT, _Traits>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.004838] (assignment1_rt) StderrLine: {'line': b'  609 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(basic_string_view<_CharT, _Traits> __x,\n'}
+[3.004927] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.005014] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/string_view:609:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.005100] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_string_view<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.005188] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.005284] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.005371] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/string_view:616:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> constexpr bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(basic_string_view<_CharT, _Traits>, __type_identity_t<basic_string_view<_CharT, _Traits> >)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.005461] (assignment1_rt) StderrLine: {'line': b'  616 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(basic_string_view<_CharT, _Traits> __x,\n'}
+[3.005565] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.005705] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/string_view:616:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.005809] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_string_view<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.005907] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.005998] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.006091] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/string_view:642:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> constexpr bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(__type_identity_t<basic_string_view<_CharT, _Traits> >, basic_string_view<_CharT, _Traits>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.006183] (assignment1_rt) StderrLine: {'line': b'  642 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(__type_identity_t<basic_string_view<_CharT, _Traits>> __x,\n'}
+[3.006281] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.006387] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/string_view:642:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.006468] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_string_view<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.006546] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.006627] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.006709] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:3710:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.006815] (assignment1_rt) StderrLine: {'line': b' 3710 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[3.006896] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.006964] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:3710:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.007019] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.007073] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.007119] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.007165] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:3727:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.007211] (assignment1_rt) StderrLine: {'line': b' 3727 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[3.007255] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.007298] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:3727:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.007342] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.007402] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.007446] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.007490] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:3774:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const _CharT*, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.007535] (assignment1_rt) StderrLine: {'line': b' 3774 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const _CharT* __lhs,\n'}
+[3.007580] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.007624] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:3774:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.007669] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.007717] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.007761] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.007805] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/vector:66\x1b[m\x1b[K,\n'}
+[3.007864] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:19\x1b[m\x1b[K:\n'}
+[3.007909] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_vector.h:2040:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const vector<_Tp, _Alloc>&, const vector<_Tp, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.007955] (assignment1_rt) StderrLine: {'line': b' 2040 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)\n'}
+[3.007999] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.008042] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_vector.h:2040:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.008086] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<_Tp, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.008134] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.008177] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.008220] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:12\x1b[m\x1b[K,\n'}
+[3.008265] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:7\x1b[m\x1b[K,\n'}
+[3.008308] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:21\x1b[m\x1b[K:\n'}
+[3.008352] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/array:297:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, long unsigned int _Nm> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const array<_Tp, _Nm>&, const array<_Tp, _Nm>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.008398] (assignment1_rt) StderrLine: {'line': b'  297 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)\n'}
+[3.008442] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.008485] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/array:297:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.008533] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::array<_Tp, _Nm>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.008582] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.008626] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.008669] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/locale_facets.h:48\x1b[m\x1b[K,\n'}
+[3.008713] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/basic_ios.h:37\x1b[m\x1b[K,\n'}
+[3.008759] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/ios:46\x1b[m\x1b[K,\n'}
+[3.008827] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/istream:40\x1b[m\x1b[K,\n'}
+[3.008873] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/sstream:40\x1b[m\x1b[K,\n'}
+[3.008918] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:13\x1b[m\x1b[K,\n'}
+[3.008963] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:9\x1b[m\x1b[K:\n'}
+[3.009006] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/streambuf_iterator.h:234:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const istreambuf_iterator<_CharT, _Traits>&, const istreambuf_iterator<_CharT, _Traits>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.009052] (assignment1_rt) StderrLine: {'line': b'  234 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const istreambuf_iterator<_CharT, _Traits>& __a,\n'}
+[3.009095] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.009138] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/streambuf_iterator.h:234:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.009181] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::istreambuf_iterator<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.009229] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.009274] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.009316] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/functional:59\x1b[m\x1b[K,\n'}
+[3.009360] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:19\x1b[m\x1b[K,\n'}
+[3.009404] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25\x1b[m\x1b[K,\n'}
+[3.009447] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K:\n'}
+[3.009491] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_function.h:737:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Res, class ... _Args> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const function<_Res(_ArgTypes ...)>&, nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.009535] (assignment1_rt) StderrLine: {'line': b'  737 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const function<_Res(_Args...)>& __f, nullptr_t) noexcept\n'}
+[3.009578] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.009621] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_function.h:737:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.009729] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::function<_Res(_ArgTypes ...)>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.009788] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.009833] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.009878] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_function.h:744:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Res, class ... _Args> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(nullptr_t, const function<_Res(_ArgTypes ...)>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.009923] (assignment1_rt) StderrLine: {'line': b'  744 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(nullptr_t, const function<_Res(_Args...)>& __f) noexcept\n'}
+[3.009966] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.010009] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_function.h:744:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.010053] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::function<_Res(_ArgTypes ...)>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.010102] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.010146] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.010191] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/unordered_map:41\x1b[m\x1b[K,\n'}
+[3.010235] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/functional:63\x1b[m\x1b[K:\n'}
+[3.010277] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unordered_map.h:2143:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key1, class _Tp1, class _Hash1, class _Pred1, class _Alloc1> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&, const unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.010323] (assignment1_rt) StderrLine: {'line': b' 2143 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,\n'}
+[3.010367] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.010410] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unordered_map.h:2143:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.010454] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.010499] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.010543] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.010592] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unordered_map.h:2157:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key1, class _Tp1, class _Hash1, class _Pred1, class _Alloc1> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&, const unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.010640] (assignment1_rt) StderrLine: {'line': b' 2157 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,\n'}
+[3.010684] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.010728] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unordered_map.h:2157:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.010772] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.010839] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.010886] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.010930] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/unordered_set:41\x1b[m\x1b[K,\n'}
+[3.010973] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/context.hpp:26\x1b[m\x1b[K,\n'}
+[3.011017] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:24\x1b[m\x1b[K:\n'}
+[3.011061] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unordered_set.h:1813:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Value1, class _Hash1, class _Pred1, class _Alloc1> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>&, const unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.011107] (assignment1_rt) StderrLine: {'line': b' 1813 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const unordered_set<_Value, _Hash, _Pred, _Alloc>& __x,\n'}
+[3.011150] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.011194] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unordered_set.h:1813:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.011238] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.011283] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.011326] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.011369] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unordered_set.h:1827:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Value1, class _Hash1, class _Pred1, class _Alloc1> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>&, const unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.011423] (assignment1_rt) StderrLine: {'line': b' 1827 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const unordered_multiset<_Value, _Hash, _Pred, _Alloc>& __x,\n'}
+[3.011468] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.011512] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unordered_set.h:1827:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.011556] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.011601] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.011645] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.011688] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/set:63\x1b[m\x1b[K,\n'}
+[3.011732] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21\x1b[m\x1b[K,\n'}
+[3.011774] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.011819] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K:\n'}
+[3.011866] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_set.h:987:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const set<_Key, _Compare, _Allocator>&, const set<_Key, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.011911] (assignment1_rt) StderrLine: {'line': b'  987 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const set<_Key, _Compare, _Alloc>& __x,\n'}
+[3.011956] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.012024] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_set.h:987:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.012095] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::set<_Key, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.012144] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.012200] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.012244] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/set:64\x1b[m\x1b[K:\n'}
+[3.012288] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_multiset.h:973:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const multiset<_Key, _Compare, _Allocator>&, const multiset<_Key, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.012339] (assignment1_rt) StderrLine: {'line': b'  973 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const multiset<_Key, _Compare, _Alloc>& __x,\n'}
+[3.012383] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.012427] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_multiset.h:973:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.012471] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::multiset<_Key, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.012520] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.012564] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.012608] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/list:65\x1b[m\x1b[K,\n'}
+[3.012652] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:23\x1b[m\x1b[K,\n'}
+[3.012698] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K:\n'}
+[3.012741] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_list.h:2123:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const __cxx11::list<_Tp, _Alloc>&, const __cxx11::list<_Tp, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.012796] (assignment1_rt) StderrLine: {'line': b' 2123 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)\n'}
+[3.012850] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.012896] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_list.h:2123:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.012940] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::list<_Tp, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.012992] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.013036] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.013081] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/map:63\x1b[m\x1b[K,\n'}
+[3.013124] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:24\x1b[m\x1b[K:\n'}
+[3.013168] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_map.h:1513:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const map<_Key, _Tp, _Compare, _Allocator>&, const map<_Key, _Tp, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.013217] (assignment1_rt) StderrLine: {'line': b' 1513 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const map<_Key, _Tp, _Compare, _Alloc>& __x,\n'}
+[3.013265] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.013310] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_map.h:1513:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.013354] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::map<_Key, _Tp, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.013399] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.013443] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.013486] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/map:64\x1b[m\x1b[K:\n'}
+[3.013529] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_multimap.h:1134:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const multimap<_Key, _Tp, _Compare, _Allocator>&, const multimap<_Key, _Tp, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.013574] (assignment1_rt) StderrLine: {'line': b' 1134 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,\n'}
+[3.013618] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.013688] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_multimap.h:1134:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.013736] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::multimap<_Key, _Tp, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.013783] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.013828] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.013872] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[3.013916] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.013959] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.014001] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.014044] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.014088] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22\x1b[m\x1b[K,\n'}
+[3.014134] (-) TimerEvent: {}
+[3.014242] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38\x1b[m\x1b[K:\n'}
+[3.014299] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1236:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr std::__optional_eq_t<_Tp, _Up> std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const optional<_Tp>&, const optional<_Up>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.014346] (assignment1_rt) StderrLine: {'line': b' 1236 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)\n'}
+[3.014391] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.014434] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1236:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.014479] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.014539] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.014587] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.014640] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1296:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const optional<_Tp>&, nullopt_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.014687] (assignment1_rt) StderrLine: {'line': b' 1296 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const optional<_Tp>& __lhs, nullopt_t) noexcept\n'}
+[3.014733] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.014777] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1296:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.014844] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.014900] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.014945] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.014990] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1307:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(nullopt_t, const optional<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.015035] (assignment1_rt) StderrLine: {'line': b' 1307 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(nullopt_t, const optional<_Tp>& __rhs) noexcept\n'}
+[3.015079] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.015123] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1307:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.015169] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.015214] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.015258] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.015301] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1364:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr std::__optional_eq_t<_Tp, _Up> std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const optional<_Tp>&, const _Up&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.015344] (assignment1_rt) StderrLine: {'line': b' 1364 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const optional<_Tp>& __lhs, const _Up& __rhs)\n'}
+[3.015386] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.015431] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1364:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.015474] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.015518] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.015561] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.015610] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1370:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr std::__optional_eq_t<_Up, _Tp> std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const _Up&, const optional<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.015654] (assignment1_rt) StderrLine: {'line': b' 1370 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const _Up& __lhs, const optional<_Tp>& __rhs)\n'}
+[3.015698] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.015743] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1370:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.015786] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.015830] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.015874] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.015916] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:29\x1b[m\x1b[K:\n'}
+[3.015960] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/variant:1266:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _Types> constexpr bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const variant<_Types ...>&, const variant<_Types ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.016006] (assignment1_rt) StderrLine: {'line': b' 1266 |   \x1b[01;36m\x1b[K_VARIANT_RELATION_FUNCTION_TEMPLATE\x1b[m\x1b[K(==, equal)\n'}
+[3.016050] (assignment1_rt) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.016093] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/variant:1266:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.016139] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::variant<_Types ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.016190] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.016234] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.016277] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/deque:66\x1b[m\x1b[K,\n'}
+[3.016320] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_entities_collection.hpp:18\x1b[m\x1b[K,\n'}
+[3.016365] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:39\x1b[m\x1b[K:\n'}
+[3.016409] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_deque.h:2290:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const deque<_Tp, _Alloc>&, const deque<_Tp, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.016453] (assignment1_rt) StderrLine: {'line': b' 2290 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const deque<_Tp, _Alloc>& __x, const deque<_Tp, _Alloc>& __y)\n'}
+[3.016496] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.016538] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_deque.h:2290:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.016582] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::deque<_Tp, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.016627] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.016670] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.016713] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/queue:66\x1b[m\x1b[K,\n'}
+[3.016767] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_queue.hpp:18\x1b[m\x1b[K,\n'}
+[3.016832] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_executor.hpp:27\x1b[m\x1b[K,\n'}
+[3.016881] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:24\x1b[m\x1b[K:\n'}
+[3.016925] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_queue.h:380:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Seq> bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const queue<_Tp, _Seq>&, const queue<_Tp, _Seq>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.016973] (assignment1_rt) StderrLine: {'line': b'  380 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)\n'}
+[3.017018] (assignment1_rt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.017061] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_queue.h:380:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.017105] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::queue<_Tp, _Seq>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.017154] (assignment1_rt) StderrLine: {'line': b'   57 |                 if(id_turtle_moved == \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.017197] (assignment1_rt) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.017240] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/ios_base.h:46\x1b[m\x1b[K,\n'}
+[3.017283] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/ios:44\x1b[m\x1b[K:\n'}
+[3.017325] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/system_error:449:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const error_code&, const error_code&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.017369] (assignment1_rt) StderrLine: {'line': b'  449 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const error_code& __lhs, const error_code& __rhs) noexcept\n'}
+[3.017412] (assignment1_rt) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.017456] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/system_error:449:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_code&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.017501] (assignment1_rt) StderrLine: {'line': b'  449 |   operator==(\x1b[01;36m\x1b[Kconst error_code& __lhs\x1b[m\x1b[K, const error_code& __rhs) noexcept\n'}
+[3.017544] (assignment1_rt) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[3.017590] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/system_error:465:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const error_code&, const error_condition&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.017679] (assignment1_rt) StderrLine: {'line': b'  465 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const error_code& __lhs, const error_condition& __rhs) noexcept\n'}
+[3.017744] (assignment1_rt) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.017790] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/system_error:465:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_code&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.017856] (assignment1_rt) StderrLine: {'line': b'  465 |   operator==(\x1b[01;36m\x1b[Kconst error_code& __lhs\x1b[m\x1b[K, const error_condition& __rhs) noexcept\n'}
+[3.017904] (assignment1_rt) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[3.017950] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/system_error:480:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const error_condition&, const error_condition&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.017995] (assignment1_rt) StderrLine: {'line': b'  480 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const error_condition& __lhs,\n'}
+[3.018040] (assignment1_rt) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.018085] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/system_error:480:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_condition&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.018132] (assignment1_rt) StderrLine: {'line': b'  480 |   operator==(\x1b[01;36m\x1b[Kconst error_condition& __lhs\x1b[m\x1b[K,\n'}
+[3.018177] (assignment1_rt) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[3.018221] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/system_error:517:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(const error_condition&, const error_code&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.018266] (assignment1_rt) StderrLine: {'line': b'  517 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(const error_condition& __lhs, const error_code& __rhs) noexcept\n'}
+[3.018311] (assignment1_rt) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.018355] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/system_error:517:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_condition&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.018401] (assignment1_rt) StderrLine: {'line': b'  517 |   operator==(\x1b[01;36m\x1b[Kconst error_condition& __lhs\x1b[m\x1b[K, const error_code& __rhs) noexcept\n'}
+[3.018446] (assignment1_rt) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[3.018490] (assignment1_rt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/future:51\x1b[m\x1b[K,\n'}
+[3.018533] (assignment1_rt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K:\n'}
+[3.018576] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_thread.h:324:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(thread::id, thread::id)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.018621] (assignment1_rt) StderrLine: {'line': b'  324 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(thread::id __x, thread::id __y) noexcept\n'}
+[3.018664] (assignment1_rt) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.018707] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/std_thread.h:324:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::thread::id\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.018756] (assignment1_rt) StderrLine: {'line': b'  324 |   operator==(\x1b[01;36m\x1b[Kthread::id __x\x1b[m\x1b[K, thread::id __y) noexcept\n'}
+[3.018810] (assignment1_rt) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.018863] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/variant:1273:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr bool std::\x1b[01;32m\x1b[Koperator==\x1b[m\x1b[K(monostate, monostate)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.018910] (assignment1_rt) StderrLine: {'line': b' 1273 |   constexpr bool \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K==(monostate, monostate) noexcept { return true; }\n'}
+[3.018954] (assignment1_rt) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.018998] (assignment1_rt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/variant:1273:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int8_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::monostate\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.019044] (assignment1_rt) StderrLine: {'line': b' 1273 |   constexpr bool operator==(\x1b[01;36m\x1b[Kmonostate\x1b[m\x1b[K, monostate) noexcept { return true; }\n'}
+[3.019088] (assignment1_rt) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.114336] (-) TimerEvent: {}
+[3.214855] (-) TimerEvent: {}
+[3.315276] (-) TimerEvent: {}
+[3.415744] (-) TimerEvent: {}
+[3.516222] (-) TimerEvent: {}
+[3.616608] (-) TimerEvent: {}
+[3.717128] (-) TimerEvent: {}
+[3.817677] (-) TimerEvent: {}
+[3.918060] (-) TimerEvent: {}
+[4.018561] (-) TimerEvent: {}
+[4.118970] (-) TimerEvent: {}
+[4.219494] (-) TimerEvent: {}
+[4.320132] (-) TimerEvent: {}
+[4.420680] (-) TimerEvent: {}
+[4.521294] (-) TimerEvent: {}
+[4.621759] (-) TimerEvent: {}
+[4.722339] (-) TimerEvent: {}
+[4.822752] (-) TimerEvent: {}
+[4.923276] (-) TimerEvent: {}
+[5.023903] (-) TimerEvent: {}
+[5.124289] (-) TimerEvent: {}
+[5.224686] (-) TimerEvent: {}
+[5.325176] (-) TimerEvent: {}
+[5.425589] (-) TimerEvent: {}
+[5.525987] (-) TimerEvent: {}
+[5.626345] (-) TimerEvent: {}
+[5.726767] (-) TimerEvent: {}
+[5.827194] (-) TimerEvent: {}
+[5.927647] (-) TimerEvent: {}
+[6.028166] (-) TimerEvent: {}
+[6.128770] (-) TimerEvent: {}
+[6.229306] (-) TimerEvent: {}
+[6.329834] (-) TimerEvent: {}
+[6.430456] (-) TimerEvent: {}
+[6.530893] (-) TimerEvent: {}
+[6.631354] (-) TimerEvent: {}
+[6.731975] (-) TimerEvent: {}
+[6.772855] (assignment1_rt) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/distance.dir/build.make:76: CMakeFiles/distance.dir/src/distance_node.cpp.o] Error 1\n'}
+[6.773546] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2\n'}
+[6.773695] (assignment1_rt) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[6.832149] (-) TimerEvent: {}
+[6.932637] (-) TimerEvent: {}
+[7.033268] (-) TimerEvent: {}
+[7.133851] (-) TimerEvent: {}
+[7.234250] (-) TimerEvent: {}
+[7.334756] (-) TimerEvent: {}
+[7.435133] (-) TimerEvent: {}
+[7.535536] (-) TimerEvent: {}
+[7.636202] (-) TimerEvent: {}
+[7.736701] (-) TimerEvent: {}
+[7.837094] (-) TimerEvent: {}
+[7.937699] (-) TimerEvent: {}
+[8.038234] (-) TimerEvent: {}
+[8.138939] (-) TimerEvent: {}
+[8.239680] (-) TimerEvent: {}
+[8.340262] (-) TimerEvent: {}
+[8.441010] (-) TimerEvent: {}
+[8.541775] (-) TimerEvent: {}
+[8.642367] (-) TimerEvent: {}
+[8.743007] (-) TimerEvent: {}
+[8.843631] (-) TimerEvent: {}
+[8.944407] (-) TimerEvent: {}
+[9.045253] (-) TimerEvent: {}
+[9.145805] (-) TimerEvent: {}
+[9.246400] (-) TimerEvent: {}
+[9.346899] (-) TimerEvent: {}
+[9.447580] (-) TimerEvent: {}
+[9.548268] (-) TimerEvent: {}
+[9.648942] (-) TimerEvent: {}
+[9.749356] (-) TimerEvent: {}
+[9.849953] (-) TimerEvent: {}
+[9.950532] (-) TimerEvent: {}
+[10.050996] (-) TimerEvent: {}
+[10.151433] (-) TimerEvent: {}
+[10.154136] (assignment1_rt) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable ui\x1b[0m\n'}
+[10.251807] (-) TimerEvent: {}
+[10.352240] (-) TimerEvent: {}
+[10.452676] (-) TimerEvent: {}
+[10.553322] (-) TimerEvent: {}
+[10.653797] (-) TimerEvent: {}
+[10.683922] (assignment1_rt) StdoutLine: {'line': b'[ 75%] Built target ui\n'}
+[10.685186] (assignment1_rt) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.689019] (assignment1_rt) CommandEnded: {'returncode': 2}
+[10.699416] (assignment1_rt) JobEnded: {'identifier': 'assignment1_rt', 'rc': 2}
+[10.710772] (-) EventReactorShutdown: {}

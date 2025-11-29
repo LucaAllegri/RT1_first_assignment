@@ -1,0 +1,30 @@
+[0.014s] Invoking command in '/home/luchino/RT_first_assignment/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8
+[0.098s] [ 50%] Built target distance
+[0.098s] [ 75%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[2.360s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kinput_timer_callback[m[K()[m[K’:
+[2.360s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:79:24:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_vel_input[m[K’ was not declared in this scope; did you mean ‘[01m[Kvel_input[m[K’?
+[2.360s]    79 |                     if([01;31m[Klast_vel_input[m[K.linear.x  != 0 && last_vel_input.angular.z !=0){
+[2.360s]       |                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.360s]       |                        [32m[Kvel_input[m[K
+[2.366s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:80:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kreverse_vel[m[K’ was not declared in this scope
+[2.366s]    80 |                         [01;31m[Kreverse_vel[m[K.linear.x = -1;
+[2.366s]       |                         [01;31m[K^~~~~~~~~~~[m[K
+[2.373s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:83:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kreverse_vel[m[K’ was not declared in this scope
+[2.373s]    83 |                         [01;31m[Kreverse_vel[m[K.linear.x = -1;
+[2.373s]       |                         [01;31m[K^~~~~~~~~~~[m[K
+[2.381s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:85:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kreverse_vel[m[K’ was not declared in this scope
+[2.381s]    85 |                         [01;31m[Kreverse_vel[m[K.linear.x = -1;
+[2.381s]       |                         [01;31m[K^~~~~~~~~~~[m[K
+[2.388s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:95:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kreverse_timer_[m[K’ was not declared in this scope
+[2.388s]    95 |                     if ([01;31m[Kreverse_timer_[m[K != nullptr) {
+[2.388s]       |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.394s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:98:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kreverse_timer_[m[K’ was not declared in this scope
+[2.394s]    98 |                     [01;31m[Kreverse_timer_[m[K = this->create_wall_timer(
+[2.394s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.394s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:100:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kreverse_movement_callback[m[K’ is not a member of ‘[01m[KInput_Controller[m[K’
+[2.394s]   100 |                         std::bind(&Input_Controller::[01;31m[Kreverse_movement_callback[m[K, this)
+[2.394s]       |                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.938s] gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+[4.939s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+[4.939s] gmake: *** [Makefile:146: all] Error 2
+[4.942s] Invoked command in '/home/luchino/RT_first_assignment/build/assignment1_rt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8

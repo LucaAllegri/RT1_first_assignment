@@ -1,0 +1,17 @@
+[ 50%] Built target distance
+[ 75%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kinput_timer_callback[m[K()[m[K’:
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:98:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kreverse_timer_[m[K’ was not declared in this scope; did you mean ‘[01m[Kreverse_vel[m[K’?
+   98 |                     if ([01;31m[Kreverse_timer_[m[K != nullptr) {
+      |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                         [32m[Kreverse_vel[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:101:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kreverse_timer_[m[K’ was not declared in this scope; did you mean ‘[01m[Kreverse_vel[m[K’?
+  101 |                     [01;31m[Kreverse_timer_[m[K = this->create_wall_timer(
+      |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                     [32m[Kreverse_vel[m[K
+[01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:103:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kreverse_movement_callback[m[K’ is not a member of ‘[01m[KInput_Controller[m[K’
+  103 |                         std::bind(&Input_Controller::[01;31m[Kreverse_movement_callback[m[K, this)
+      |                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

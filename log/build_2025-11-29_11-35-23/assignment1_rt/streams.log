@@ -1,0 +1,1282 @@
+[0.018s] Invoking command in '/home/luchino/RT_first_assignment/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8
+[0.108s] [ 25%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[0.109s] [ 50%] [32mBuilding CXX object CMakeFiles/distance.dir/src/distance_node.cpp.o[0m
+[2.919s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:[m[K In constructor ‘[01m[KDistance_Check::[01;32m[KDistance_Check[m[K()[m[K’:
+[2.919s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:29:31:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+[2.920s]    29 |             id_turtle_moved = [01;31m[K0[m[K;
+[2.920s]       |                               [01;31m[K^[m[K
+[2.920s] In file included from [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/int8.hpp:7[m[K,
+[2.920s]                  from [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:5[m[K:
+[2.920s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std_msgs::msg::Int8_<std::allocator<void> >& std_msgs::msg::Int8_<std::allocator<void> >::[01;32m[Koperator=[m[K(const std_msgs::msg::Int8_<std::allocator<void> >&)[m[K’
+[2.920s]    35 | struct [01;36m[KInt8_[m[K
+[2.920s]       |        [01;36m[K^~~~~[m[K
+[2.920s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst std_msgs::msg::Int8_<std::allocator<void> >&[m[K’
+[2.920s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std_msgs::msg::Int8_<std::allocator<void> >& std_msgs::msg::Int8_<std::allocator<void> >::[01;32m[Koperator=[m[K(std_msgs::msg::Int8_<std::allocator<void> >&&)[m[K’
+[2.920s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >&&[m[K’
+[2.922s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:[m[K In member function ‘[01m[Kvoid Distance_Check::[01;32m[Kdistance_timer_callback[m[K()[m[K’:
+[2.923s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:36:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator==[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+[2.923s]    57 |                 if([32m[Kid_turtle_moved[m[K [01;31m[K==[m[K [34m[K1[m[K){
+[2.923s]       |                    [32m[K~~~~~~~~~~~~~~~[m[K [01;31m[K^~[m[K [34m[K~[m[K
+[2.923s]       |                    [32m[K|[m[K                  [34m[K|[m[K
+[2.923s]       |                    [32m[K|[m[K                  [34m[Kint[m[K
+[2.924s]       |                    [32m[Kstd_msgs::msg::Int8 {aka std_msgs::msg::Int8_<std::allocator<void> >}[m[K
+[2.924s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:111:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std_msgs::msg::Int8_<ContainerAllocator>::[01;32m[Koperator==[m[K(const std_msgs::msg::Int8_<ContainerAllocator>&) const [35m[K[with ContainerAllocator = std::allocator<void>][m[K[m[K’
+[2.924s]   111 |   bool [01;36m[Koperator[m[K==(const Int8_ & other) const
+[2.924s]       |        [01;36m[K^~~~~~~~[m[K
+[2.925s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:111:33:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst std_msgs::msg::Int8_<std::allocator<void> >&[m[K’
+[2.925s]   111 |   bool operator==([01;36m[Kconst Int8_ & other[m[K) const
+[2.925s]       |                   [01;36m[K~~~~~~~~~~~~~~^~~~~[m[K
+[2.925s] In file included from [01m[K/usr/include/c++/13/memory:65[m[K,
+[2.926s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K,
+[2.926s]                  from [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:1[m[K:
+[2.926s] [01m[K/usr/include/c++/13/bits/allocator.h:237:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> bool std::[01;32m[Koperator==[m[K(const allocator<_Tp1>&, const allocator<_T2>&)[m[K’
+[2.927s]   237 |     [01;36m[Koperator[m[K==(const allocator<_T1>&, const allocator<_T2>&)
+[2.927s]       |     [01;36m[K^~~~~~~~[m[K
+[2.927s] [01m[K/usr/include/c++/13/bits/allocator.h:237:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.929s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::allocator<_Tp1>[m[K’
+[2.929s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.929s]       |                                       [01;36m[K^[m[K
+[2.929s] In file included from [01m[K/usr/include/c++/13/bits/stl_tempbuf.h:62[m[K,
+[2.929s]                  from [01m[K/usr/include/c++/13/memory:66[m[K:
+[2.929s] [01m[K/usr/include/c++/13/bits/stl_pair.h:812:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> constexpr bool std::[01;32m[Koperator==[m[K(const pair<_T1, _T2>&, const pair<_T1, _T2>&)[m[K’
+[2.929s]   812 |     [01;36m[Koperator[m[K==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+[2.929s]       |     [01;36m[K^~~~~~~~[m[K
+[2.930s] [01m[K/usr/include/c++/13/bits/stl_pair.h:812:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.930s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::pair<_T1, _T2>[m[K’
+[2.930s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.930s]       |                                       [01;36m[K^[m[K
+[2.930s] In file included from [01m[K/usr/include/c++/13/bits/stl_algobase.h:67[m[K,
+[2.930s]                  from [01m[K/usr/include/c++/13/bits/stl_uninitialized.h:63[m[K,
+[2.930s]                  from [01m[K/usr/include/c++/13/memory:69[m[K:
+[2.930s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:448:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr bool std::[01;32m[Koperator==[m[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_Iterator>&)[m[K’
+[2.930s]   448 |     [01;36m[Koperator[m[K==(const reverse_iterator<_Iterator>& __x,
+[2.930s]       |     [01;36m[K^~~~~~~~[m[K
+[2.931s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:448:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.931s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[2.931s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.931s]       |                                       [01;36m[K^[m[K
+[2.931s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:493:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::[01;32m[Koperator==[m[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)[m[K’
+[2.931s]   493 |     [01;36m[Koperator[m[K==(const reverse_iterator<_IteratorL>& __x,
+[2.931s]       |     [01;36m[K^~~~~~~~[m[K
+[2.931s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:493:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.931s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[2.931s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.931s]       |                                       [01;36m[K^[m[K
+[2.931s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:1678:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::[01;32m[Koperator==[m[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)[m[K’
+[2.932s]  1678 |     [01;36m[Koperator[m[K==(const move_iterator<_IteratorL>& __x,
+[2.932s]       |     [01;36m[K^~~~~~~~[m[K
+[2.932s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:1678:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.932s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[2.932s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.932s]       |                                       [01;36m[K^[m[K
+[2.932s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:1748:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr bool std::[01;32m[Koperator==[m[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorL>&)[m[K’
+[2.932s]  1748 |     [01;36m[Koperator[m[K==(const move_iterator<_Iterator>& __x,
+[2.932s]       |     [01;36m[K^~~~~~~~[m[K
+[2.932s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:1748:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.932s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[2.932s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.932s]       |                                       [01;36m[K^[m[K
+[2.933s] In file included from [01m[K/usr/include/c++/13/bits/unique_ptr.h:36[m[K,
+[2.933s]                  from [01m[K/usr/include/c++/13/memory:78[m[K:
+[2.933s] [01m[K/usr/include/c++/13/tuple:1919:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::[01;32m[Koperator==[m[K(const tuple<_UTypes ...>&, const tuple<_UTypes ...>&)[m[K’
+[2.933s]  1919 |     [01;36m[Koperator[m[K==(const tuple<_TElements...>& __t,
+[2.933s]       |     [01;36m[K^~~~~~~~[m[K
+[2.933s] [01m[K/usr/include/c++/13/tuple:1919:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.933s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::tuple<_UTypes ...>[m[K’
+[2.933s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.933s]       |                                       [01;36m[K^[m[K
+[2.933s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:829:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::[01;32m[Koperator==[m[K(const unique_ptr<_Tp, _Dp>&, const unique_ptr<_Up, _Ep>&)[m[K’
+[2.933s]   829 |     [01;36m[Koperator[m[K==(const unique_ptr<_Tp, _Dp>& __x,
+[2.933s]       |     [01;36m[K^~~~~~~~[m[K
+[2.934s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:829:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.934s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[2.934s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.934s]       |                                       [01;36m[K^[m[K
+[2.934s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:837:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::[01;32m[Koperator==[m[K(const unique_ptr<_Tp, _Dp>&, nullptr_t)[m[K’
+[2.934s]   837 |     [01;36m[Koperator[m[K==(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+[2.934s]       |     [01;36m[K^~~~~~~~[m[K
+[2.934s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:837:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.934s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[2.934s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.934s]       |                                       [01;36m[K^[m[K
+[2.935s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:845:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::[01;32m[Koperator==[m[K(nullptr_t, const unique_ptr<_Tp, _Dp>&)[m[K’
+[2.935s]   845 |     [01;36m[Koperator[m[K==(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+[2.935s]       |     [01;36m[K^~~~~~~~[m[K
+[2.935s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:845:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.935s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’ and ‘[01m[Kint[m[K’
+[2.935s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.935s]       |                                       [01;36m[K^[m[K
+[2.935s] In file included from [01m[K/usr/include/c++/13/iosfwd:42[m[K,
+[2.935s]                  from [01m[K/usr/include/c++/13/bits/shared_ptr.h:52[m[K,
+[2.935s]                  from [01m[K/usr/include/c++/13/memory:80[m[K:
+[2.935s] [01m[K/usr/include/c++/13/bits/postypes.h:192:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _StateT> bool std::[01;32m[Koperator==[m[K(const fpos<_StateT>&, const fpos<_StateT>&)[m[K’
+[2.936s]   192 |     [01;36m[Koperator[m[K==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+[2.936s]       |     [01;36m[K^~~~~~~~[m[K
+[2.936s] [01m[K/usr/include/c++/13/bits/postypes.h:192:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.936s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::fpos<_StateT>[m[K’
+[2.936s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.936s]       |                                       [01;36m[K^[m[K
+[2.936s] In file included from [01m[K/usr/include/c++/13/bits/shared_ptr.h:53[m[K:
+[2.936s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1793:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::[01;32m[Koperator==[m[K(const __shared_ptr<_Tp1, _Lp>&, const __shared_ptr<_Tp2, _Lp>&)[m[K’
+[2.936s]  1793 |     [01;36m[Koperator[m[K==(const __shared_ptr<_Tp1, _Lp>& __a,
+[2.936s]       |     [01;36m[K^~~~~~~~[m[K
+[2.937s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1793:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.937s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp1, _Lp>[m[K’
+[2.937s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.937s]       |                                       [01;36m[K^[m[K
+[2.937s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1799:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::[01;32m[Koperator==[m[K(const __shared_ptr<_Tp, _Lp>&, nullptr_t)[m[K’
+[2.937s]  1799 |     [01;36m[Koperator[m[K==(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+[2.937s]       |     [01;36m[K^~~~~~~~[m[K
+[2.937s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1799:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.937s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+[2.937s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.938s]       |                                       [01;36m[K^[m[K
+[2.938s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1819:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::[01;32m[Koperator==[m[K(nullptr_t, const __shared_ptr<_Tp, _Lp>&)[m[K’
+[2.938s]  1819 |     [01;36m[Koperator[m[K==(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+[2.938s]       |     [01;36m[K^~~~~~~~[m[K
+[2.938s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1819:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.938s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’ and ‘[01m[Kint[m[K’
+[2.938s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.938s]       |                                       [01;36m[K^[m[K
+[2.938s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:555:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> bool std::[01;32m[Koperator==[m[K(const shared_ptr<_Tp>&, const shared_ptr<_Tp>&)[m[K’
+[2.938s]   555 |     [01;36m[Koperator[m[K==(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+[2.938s]       |     [01;36m[K^~~~~~~~[m[K
+[2.939s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:555:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.939s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+[2.939s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.939s]       |                                       [01;36m[K^[m[K
+[2.939s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:561:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::[01;32m[Koperator==[m[K(const shared_ptr<_Tp>&, nullptr_t)[m[K’
+[2.939s]   561 |     [01;36m[Koperator[m[K==(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+[2.939s]       |     [01;36m[K^~~~~~~~[m[K
+[2.939s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:561:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.939s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+[2.940s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.940s]       |                                       [01;36m[K^[m[K
+[2.940s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:582:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::[01;32m[Koperator==[m[K(nullptr_t, const shared_ptr<_Tp>&)[m[K’
+[2.940s]   582 |     [01;36m[Koperator[m[K==(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+[2.940s]       |     [01;36m[K^~~~~~~~[m[K
+[2.940s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:582:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.940s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[2.940s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.940s]       |                                       [01;36m[K^[m[K
+[2.941s] In file included from [01m[K/usr/include/c++/13/bits/basic_string.h:47[m[K,
+[2.941s]                  from [01m[K/usr/include/c++/13/string:54[m[K,
+[2.941s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:18[m[K,
+[2.941s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K:
+[2.941s] [01m[K/usr/include/c++/13/string_view:609:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::[01;32m[Koperator==[m[K(basic_string_view<_CharT, _Traits>, basic_string_view<_CharT, _Traits>)[m[K’
+[2.941s]   609 |     [01;36m[Koperator[m[K==(basic_string_view<_CharT, _Traits> __x,
+[2.941s]       |     [01;36m[K^~~~~~~~[m[K
+[2.941s] [01m[K/usr/include/c++/13/string_view:609:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.941s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+[2.941s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.942s]       |                                       [01;36m[K^[m[K
+[2.942s] [01m[K/usr/include/c++/13/string_view:616:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::[01;32m[Koperator==[m[K(basic_string_view<_CharT, _Traits>, __type_identity_t<basic_string_view<_CharT, _Traits> >)[m[K’
+[2.942s]   616 |     [01;36m[Koperator[m[K==(basic_string_view<_CharT, _Traits> __x,
+[2.942s]       |     [01;36m[K^~~~~~~~[m[K
+[2.942s] [01m[K/usr/include/c++/13/string_view:616:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.942s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+[2.942s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.942s]       |                                       [01;36m[K^[m[K
+[2.942s] [01m[K/usr/include/c++/13/string_view:642:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::[01;32m[Koperator==[m[K(__type_identity_t<basic_string_view<_CharT, _Traits> >, basic_string_view<_CharT, _Traits>)[m[K’
+[2.942s]   642 |     [01;36m[Koperator[m[K==(__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+[2.943s]       |     [01;36m[K^~~~~~~~[m[K
+[2.943s] [01m[K/usr/include/c++/13/string_view:642:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.943s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’ and ‘[01m[Kint[m[K’
+[2.943s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.943s]       |                                       [01;36m[K^[m[K
+[2.943s] [01m[K/usr/include/c++/13/bits/basic_string.h:3710:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::[01;32m[Koperator==[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[2.943s]  3710 |     [01;36m[Koperator[m[K==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[2.943s]       |     [01;36m[K^~~~~~~~[m[K
+[2.943s] [01m[K/usr/include/c++/13/bits/basic_string.h:3710:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.943s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[2.944s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.944s]       |                                       [01;36m[K^[m[K
+[2.944s] [01m[K/usr/include/c++/13/bits/basic_string.h:3727:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::[01;32m[Koperator==[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)[m[K’
+[2.944s]  3727 |     [01;36m[Koperator[m[K==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[2.944s]       |     [01;36m[K^~~~~~~~[m[K
+[2.944s] [01m[K/usr/include/c++/13/bits/basic_string.h:3727:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.944s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[2.944s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.944s]       |                                       [01;36m[K^[m[K
+[2.944s] [01m[K/usr/include/c++/13/bits/basic_string.h:3774:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::[01;32m[Koperator==[m[K(const _CharT*, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[2.945s]  3774 |     [01;36m[Koperator[m[K==(const _CharT* __lhs,
+[2.945s]       |     [01;36m[K^~~~~~~~[m[K
+[2.945s] [01m[K/usr/include/c++/13/bits/basic_string.h:3774:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.945s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’
+[2.945s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.945s]       |                                       [01;36m[K^[m[K
+[2.945s] In file included from [01m[K/usr/include/c++/13/vector:66[m[K,
+[2.945s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:19[m[K:
+[2.945s] [01m[K/usr/include/c++/13/bits/stl_vector.h:2040:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::[01;32m[Koperator==[m[K(const vector<_Tp, _Alloc>&, const vector<_Tp, _Alloc>&)[m[K’
+[2.946s]  2040 |     [01;36m[Koperator[m[K==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+[2.946s]       |     [01;36m[K^~~~~~~~[m[K
+[2.946s] [01m[K/usr/include/c++/13/bits/stl_vector.h:2040:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.946s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::vector<_Tp, _Alloc>[m[K’
+[2.946s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.946s]       |                                       [01;36m[K^[m[K
+[2.946s] In file included from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:12[m[K,
+[2.946s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:7[m[K,
+[2.946s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:21[m[K:
+[2.946s] [01m[K/usr/include/c++/13/array:297:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, long unsigned int _Nm> bool std::[01;32m[Koperator==[m[K(const array<_Tp, _Nm>&, const array<_Tp, _Nm>&)[m[K’
+[2.946s]   297 |     [01;36m[Koperator[m[K==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+[2.947s]       |     [01;36m[K^~~~~~~~[m[K
+[2.947s] [01m[K/usr/include/c++/13/array:297:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.947s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+[2.947s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.947s]       |                                       [01;36m[K^[m[K
+[2.947s] In file included from [01m[K/usr/include/c++/13/bits/locale_facets.h:48[m[K,
+[2.947s]                  from [01m[K/usr/include/c++/13/bits/basic_ios.h:37[m[K,
+[2.947s]                  from [01m[K/usr/include/c++/13/ios:46[m[K,
+[2.947s]                  from [01m[K/usr/include/c++/13/istream:40[m[K,
+[2.947s]                  from [01m[K/usr/include/c++/13/sstream:40[m[K,
+[2.948s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:13[m[K,
+[2.948s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:9[m[K:
+[2.948s] [01m[K/usr/include/c++/13/bits/streambuf_iterator.h:234:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> bool std::[01;32m[Koperator==[m[K(const istreambuf_iterator<_CharT, _Traits>&, const istreambuf_iterator<_CharT, _Traits>&)[m[K’
+[2.948s]   234 |     [01;36m[Koperator[m[K==(const istreambuf_iterator<_CharT, _Traits>& __a,
+[2.948s]       |     [01;36m[K^~~~~~~~[m[K
+[2.948s] [01m[K/usr/include/c++/13/bits/streambuf_iterator.h:234:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.948s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::istreambuf_iterator<_CharT, _Traits>[m[K’
+[2.948s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.948s]       |                                       [01;36m[K^[m[K
+[2.948s] In file included from [01m[K/usr/include/c++/13/functional:59[m[K,
+[2.948s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:19[m[K,
+[2.949s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+[2.949s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K:
+[2.949s] [01m[K/usr/include/c++/13/bits/std_function.h:737:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Res, class ... _Args> bool std::[01;32m[Koperator==[m[K(const function<_Res(_ArgTypes ...)>&, nullptr_t)[m[K’
+[2.949s]   737 |     [01;36m[Koperator[m[K==(const function<_Res(_Args...)>& __f, nullptr_t) noexcept
+[2.949s]       |     [01;36m[K^~~~~~~~[m[K
+[2.949s] [01m[K/usr/include/c++/13/bits/std_function.h:737:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.949s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::function<_Res(_ArgTypes ...)>[m[K’
+[2.949s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.949s]       |                                       [01;36m[K^[m[K
+[2.949s] [01m[K/usr/include/c++/13/bits/std_function.h:744:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Res, class ... _Args> bool std::[01;32m[Koperator==[m[K(nullptr_t, const function<_Res(_ArgTypes ...)>&)[m[K’
+[2.950s]   744 |     [01;36m[Koperator[m[K==(nullptr_t, const function<_Res(_Args...)>& __f) noexcept
+[2.950s]       |     [01;36m[K^~~~~~~~[m[K
+[2.950s] [01m[K/usr/include/c++/13/bits/std_function.h:744:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.950s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::function<_Res(_ArgTypes ...)>[m[K’ and ‘[01m[Kint[m[K’
+[2.950s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.950s]       |                                       [01;36m[K^[m[K
+[2.950s] In file included from [01m[K/usr/include/c++/13/unordered_map:41[m[K,
+[2.950s]                  from [01m[K/usr/include/c++/13/functional:63[m[K:
+[2.950s] [01m[K/usr/include/c++/13/bits/unordered_map.h:2143:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key1, class _Tp1, class _Hash1, class _Pred1, class _Alloc1> bool std::[01;32m[Koperator==[m[K(const unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&, const unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+[2.950s]  2143 |     [01;36m[Koperator[m[K==(const unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+[2.951s]       |     [01;36m[K^~~~~~~~[m[K
+[2.951s] [01m[K/usr/include/c++/13/bits/unordered_map.h:2143:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.951s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>[m[K’
+[2.951s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.951s]       |                                       [01;36m[K^[m[K
+[2.952s] [01m[K/usr/include/c++/13/bits/unordered_map.h:2157:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key1, class _Tp1, class _Hash1, class _Pred1, class _Alloc1> bool std::[01;32m[Koperator==[m[K(const unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&, const unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+[2.952s]  2157 |     [01;36m[Koperator[m[K==(const unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+[2.952s]       |     [01;36m[K^~~~~~~~[m[K
+[2.952s] [01m[K/usr/include/c++/13/bits/unordered_map.h:2157:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.952s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>[m[K’
+[2.953s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.953s]       |                                       [01;36m[K^[m[K
+[2.953s] In file included from [01m[K/usr/include/c++/13/unordered_set:41[m[K,
+[2.953s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/context.hpp:26[m[K,
+[2.953s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:24[m[K:
+[2.954s] [01m[K/usr/include/c++/13/bits/unordered_set.h:1813:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Value1, class _Hash1, class _Pred1, class _Alloc1> bool std::[01;32m[Koperator==[m[K(const unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>&, const unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+[2.954s]  1813 |     [01;36m[Koperator[m[K==(const unordered_set<_Value, _Hash, _Pred, _Alloc>& __x,
+[2.954s]       |     [01;36m[K^~~~~~~~[m[K
+[2.954s] [01m[K/usr/include/c++/13/bits/unordered_set.h:1813:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.954s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>[m[K’
+[2.955s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.955s]       |                                       [01;36m[K^[m[K
+[2.955s] [01m[K/usr/include/c++/13/bits/unordered_set.h:1827:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Value1, class _Hash1, class _Pred1, class _Alloc1> bool std::[01;32m[Koperator==[m[K(const unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>&, const unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+[2.956s]  1827 |     [01;36m[Koperator[m[K==(const unordered_multiset<_Value, _Hash, _Pred, _Alloc>& __x,
+[2.956s]       |     [01;36m[K^~~~~~~~[m[K
+[2.956s] [01m[K/usr/include/c++/13/bits/unordered_set.h:1827:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.956s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>[m[K’
+[2.957s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.957s]       |                                       [01;36m[K^[m[K
+[2.957s] In file included from [01m[K/usr/include/c++/13/set:63[m[K,
+[2.957s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21[m[K,
+[2.957s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.957s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K:
+[2.957s] [01m[K/usr/include/c++/13/bits/stl_set.h:987:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::[01;32m[Koperator==[m[K(const set<_Key, _Compare, _Allocator>&, const set<_Key, _Compare, _Allocator>&)[m[K’
+[2.957s]   987 |     [01;36m[Koperator[m[K==(const set<_Key, _Compare, _Alloc>& __x,
+[2.958s]       |     [01;36m[K^~~~~~~~[m[K
+[2.958s] [01m[K/usr/include/c++/13/bits/stl_set.h:987:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.958s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::set<_Key, _Compare, _Allocator>[m[K’
+[2.958s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.958s]       |                                       [01;36m[K^[m[K
+[2.958s] In file included from [01m[K/usr/include/c++/13/set:64[m[K:
+[2.959s] [01m[K/usr/include/c++/13/bits/stl_multiset.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::[01;32m[Koperator==[m[K(const multiset<_Key, _Compare, _Allocator>&, const multiset<_Key, _Compare, _Allocator>&)[m[K’
+[2.959s]   973 |     [01;36m[Koperator[m[K==(const multiset<_Key, _Compare, _Alloc>& __x,
+[2.959s]       |     [01;36m[K^~~~~~~~[m[K
+[2.959s] [01m[K/usr/include/c++/13/bits/stl_multiset.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.960s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::multiset<_Key, _Compare, _Allocator>[m[K’
+[2.960s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.960s]       |                                       [01;36m[K^[m[K
+[2.960s] In file included from [01m[K/usr/include/c++/13/list:65[m[K,
+[2.960s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:23[m[K,
+[2.960s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K:
+[2.961s] [01m[K/usr/include/c++/13/bits/stl_list.h:2123:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::[01;32m[Koperator==[m[K(const __cxx11::list<_Tp, _Alloc>&, const __cxx11::list<_Tp, _Alloc>&)[m[K’
+[2.961s]  2123 |     [01;36m[Koperator[m[K==(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+[2.961s]       |     [01;36m[K^~~~~~~~[m[K
+[2.961s] [01m[K/usr/include/c++/13/bits/stl_list.h:2123:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.962s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::list<_Tp, _Alloc>[m[K’
+[2.962s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.962s]       |                                       [01;36m[K^[m[K
+[2.962s] In file included from [01m[K/usr/include/c++/13/map:63[m[K,
+[2.962s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:24[m[K:
+[2.963s] [01m[K/usr/include/c++/13/bits/stl_map.h:1513:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::[01;32m[Koperator==[m[K(const map<_Key, _Tp, _Compare, _Allocator>&, const map<_Key, _Tp, _Compare, _Allocator>&)[m[K’
+[2.963s]  1513 |     [01;36m[Koperator[m[K==(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+[2.963s]       |     [01;36m[K^~~~~~~~[m[K
+[2.963s] [01m[K/usr/include/c++/13/bits/stl_map.h:1513:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.963s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::map<_Key, _Tp, _Compare, _Allocator>[m[K’
+[2.964s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.964s]       |                                       [01;36m[K^[m[K
+[2.964s] In file included from [01m[K/usr/include/c++/13/map:64[m[K:
+[2.964s] [01m[K/usr/include/c++/13/bits/stl_multimap.h:1134:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::[01;32m[Koperator==[m[K(const multimap<_Key, _Tp, _Compare, _Allocator>&, const multimap<_Key, _Tp, _Compare, _Allocator>&)[m[K’
+[2.964s]  1134 |     [01;36m[Koperator[m[K==(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+[2.964s]       |     [01;36m[K^~~~~~~~[m[K
+[2.965s] [01m[K/usr/include/c++/13/bits/stl_multimap.h:1134:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.965s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::multimap<_Key, _Tp, _Compare, _Allocator>[m[K’
+[2.965s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.965s]       |                                       [01;36m[K^[m[K
+[2.965s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[2.966s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.966s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.966s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.966s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.966s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22[m[K,
+[2.967s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38[m[K:
+[2.967s] [01m[K/usr/include/c++/13/optional:1236:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_eq_t<_Tp, _Up> std::[01;32m[Koperator==[m[K(const optional<_Tp>&, const optional<_Up>&)[m[K’
+[2.967s]  1236 |     [01;36m[Koperator[m[K==(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+[2.967s]       |     [01;36m[K^~~~~~~~[m[K
+[2.967s] [01m[K/usr/include/c++/13/optional:1236:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.967s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[2.968s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.968s]       |                                       [01;36m[K^[m[K
+[2.968s] [01m[K/usr/include/c++/13/optional:1296:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr bool std::[01;32m[Koperator==[m[K(const optional<_Tp>&, nullopt_t)[m[K’
+[2.968s]  1296 |     [01;36m[Koperator[m[K==(const optional<_Tp>& __lhs, nullopt_t) noexcept
+[2.969s]       |     [01;36m[K^~~~~~~~[m[K
+[2.969s] [01m[K/usr/include/c++/13/optional:1296:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.969s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[2.970s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.970s]       |                                       [01;36m[K^[m[K
+[2.970s] [01m[K/usr/include/c++/13/optional:1307:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr bool std::[01;32m[Koperator==[m[K(nullopt_t, const optional<_Tp>&)[m[K’
+[2.970s]  1307 |     [01;36m[Koperator[m[K==(nullopt_t, const optional<_Tp>& __rhs) noexcept
+[2.970s]       |     [01;36m[K^~~~~~~~[m[K
+[2.970s] [01m[K/usr/include/c++/13/optional:1307:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.970s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::optional<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[2.971s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.971s]       |                                       [01;36m[K^[m[K
+[2.971s] [01m[K/usr/include/c++/13/optional:1364:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_eq_t<_Tp, _Up> std::[01;32m[Koperator==[m[K(const optional<_Tp>&, const _Up&)[m[K’
+[2.971s]  1364 |     [01;36m[Koperator[m[K==(const optional<_Tp>& __lhs, const _Up& __rhs)
+[2.971s]       |     [01;36m[K^~~~~~~~[m[K
+[2.971s] [01m[K/usr/include/c++/13/optional:1364:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.971s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[2.972s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.972s]       |                                       [01;36m[K^[m[K
+[2.972s] [01m[K/usr/include/c++/13/optional:1370:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_eq_t<_Up, _Tp> std::[01;32m[Koperator==[m[K(const _Up&, const optional<_Tp>&)[m[K’
+[2.972s]  1370 |     [01;36m[Koperator[m[K==(const _Up& __lhs, const optional<_Tp>& __rhs)
+[2.972s]       |     [01;36m[K^~~~~~~~[m[K
+[2.972s] [01m[K/usr/include/c++/13/optional:1370:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.972s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::optional<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[2.972s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.972s]       |                                       [01;36m[K^[m[K
+[2.973s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:29[m[K:
+[2.973s] [01m[K/usr/include/c++/13/variant:1266:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _Types> constexpr bool std::[01;32m[Koperator==[m[K(const variant<_Types ...>&, const variant<_Types ...>&)[m[K’
+[2.973s]  1266 |   [01;36m[K_VARIANT_RELATION_FUNCTION_TEMPLATE[m[K(==, equal)
+[2.973s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.974s] [01m[K/usr/include/c++/13/variant:1266:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.974s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::variant<_Types ...>[m[K’
+[2.974s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.974s]       |                                       [01;36m[K^[m[K
+[2.975s] In file included from [01m[K/usr/include/c++/13/deque:66[m[K,
+[2.975s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_entities_collection.hpp:18[m[K,
+[2.975s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:39[m[K:
+[2.975s] [01m[K/usr/include/c++/13/bits/stl_deque.h:2290:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::[01;32m[Koperator==[m[K(const deque<_Tp, _Alloc>&, const deque<_Tp, _Alloc>&)[m[K’
+[2.976s]  2290 |     [01;36m[Koperator[m[K==(const deque<_Tp, _Alloc>& __x, const deque<_Tp, _Alloc>& __y)
+[2.976s]       |     [01;36m[K^~~~~~~~[m[K
+[2.976s] [01m[K/usr/include/c++/13/bits/stl_deque.h:2290:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.976s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::deque<_Tp, _Alloc>[m[K’
+[2.977s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.977s]       |                                       [01;36m[K^[m[K
+[2.978s] In file included from [01m[K/usr/include/c++/13/queue:66[m[K,
+[2.978s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_queue.hpp:18[m[K,
+[2.978s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_executor.hpp:27[m[K,
+[2.978s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:24[m[K:
+[2.978s] [01m[K/usr/include/c++/13/bits/stl_queue.h:380:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Seq> bool std::[01;32m[Koperator==[m[K(const queue<_Tp, _Seq>&, const queue<_Tp, _Seq>&)[m[K’
+[2.978s]   380 |     [01;36m[Koperator[m[K==(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+[2.978s]       |     [01;36m[K^~~~~~~~[m[K
+[2.978s] [01m[K/usr/include/c++/13/bits/stl_queue.h:380:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.978s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/distance_node.cpp:57:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::queue<_Tp, _Seq>[m[K’
+[2.978s]    57 |                 if(id_turtle_moved == [01;36m[K1[m[K){
+[2.978s]       |                                       [01;36m[K^[m[K
+[2.978s] In file included from [01m[K/usr/include/c++/13/bits/ios_base.h:46[m[K,
+[2.978s]                  from [01m[K/usr/include/c++/13/ios:44[m[K:
+[2.978s] [01m[K/usr/include/c++/13/system_error:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::[01;32m[Koperator==[m[K(const error_code&, const error_code&)[m[K’
+[2.978s]   449 |   [01;36m[Koperator[m[K==(const error_code& __lhs, const error_code& __rhs) noexcept
+[2.978s]       |   [01;36m[K^~~~~~~~[m[K
+[2.979s] [01m[K/usr/include/c++/13/system_error:449:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std::error_code&[m[K’
+[2.979s]   449 |   operator==([01;36m[Kconst error_code& __lhs[m[K, const error_code& __rhs) noexcept
+[2.979s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[2.979s] [01m[K/usr/include/c++/13/system_error:465:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::[01;32m[Koperator==[m[K(const error_code&, const error_condition&)[m[K’
+[2.979s]   465 |   [01;36m[Koperator[m[K==(const error_code& __lhs, const error_condition& __rhs) noexcept
+[2.979s]       |   [01;36m[K^~~~~~~~[m[K
+[2.979s] [01m[K/usr/include/c++/13/system_error:465:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std::error_code&[m[K’
+[2.979s]   465 |   operator==([01;36m[Kconst error_code& __lhs[m[K, const error_condition& __rhs) noexcept
+[2.979s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[2.979s] [01m[K/usr/include/c++/13/system_error:480:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::[01;32m[Koperator==[m[K(const error_condition&, const error_condition&)[m[K’
+[2.979s]   480 |   [01;36m[Koperator[m[K==(const error_condition& __lhs,
+[2.980s]       |   [01;36m[K^~~~~~~~[m[K
+[2.980s] [01m[K/usr/include/c++/13/system_error:480:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std::error_condition&[m[K’
+[2.980s]   480 |   operator==([01;36m[Kconst error_condition& __lhs[m[K,
+[2.980s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[2.980s] [01m[K/usr/include/c++/13/system_error:517:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::[01;32m[Koperator==[m[K(const error_condition&, const error_code&)[m[K’
+[2.980s]   517 |   [01;36m[Koperator[m[K==(const error_condition& __lhs, const error_code& __rhs) noexcept
+[2.980s]       |   [01;36m[K^~~~~~~~[m[K
+[2.980s] [01m[K/usr/include/c++/13/system_error:517:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std::error_condition&[m[K’
+[2.980s]   517 |   operator==([01;36m[Kconst error_condition& __lhs[m[K, const error_code& __rhs) noexcept
+[2.980s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[2.981s] In file included from [01m[K/usr/include/c++/13/future:51[m[K,
+[2.981s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:18[m[K:
+[2.981s] [01m[K/usr/include/c++/13/bits/std_thread.h:324:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::[01;32m[Koperator==[m[K(thread::id, thread::id)[m[K’
+[2.981s]   324 |   [01;36m[Koperator[m[K==(thread::id __x, thread::id __y) noexcept
+[2.981s]       |   [01;36m[K^~~~~~~~[m[K
+[2.981s] [01m[K/usr/include/c++/13/bits/std_thread.h:324:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::thread::id[m[K’
+[2.981s]   324 |   operator==([01;36m[Kthread::id __x[m[K, thread::id __y) noexcept
+[2.981s]       |              [01;36m[K~~~~~~~~~~~^~~[m[K
+[2.981s] [01m[K/usr/include/c++/13/variant:1273:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr bool std::[01;32m[Koperator==[m[K(monostate, monostate)[m[K’
+[2.981s]  1273 |   constexpr bool [01;36m[Koperator[m[K==(monostate, monostate) noexcept { return true; }
+[2.981s]       |                  [01;36m[K^~~~~~~~[m[K
+[2.982s] [01m[K/usr/include/c++/13/variant:1273:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::monostate[m[K’
+[2.982s]  1273 |   constexpr bool operator==([01;36m[Kmonostate[m[K, monostate) noexcept { return true; }
+[2.982s]       |                             [01;36m[K^~~~~~~~~[m[K
+[2.982s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In constructor ‘[01m[KInput_Controller::[01;32m[KInput_Controller[m[K()[m[K’:
+[2.982s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:30:30:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+[2.982s]    30 |             moving_turtle_ = [01;31m[K0[m[K;
+[2.982s]       |                              [01;31m[K^[m[K
+[2.982s] In file included from [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/int8.hpp:7[m[K,
+[2.982s]                  from [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:5[m[K:
+[2.982s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std_msgs::msg::Int8_<std::allocator<void> >& std_msgs::msg::Int8_<std::allocator<void> >::[01;32m[Koperator=[m[K(const std_msgs::msg::Int8_<std::allocator<void> >&)[m[K’
+[2.982s]    35 | struct [01;36m[KInt8_[m[K
+[2.982s]       |        [01;36m[K^~~~~[m[K
+[2.982s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst std_msgs::msg::Int8_<std::allocator<void> >&[m[K’
+[2.982s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std_msgs::msg::Int8_<std::allocator<void> >& std_msgs::msg::Int8_<std::allocator<void> >::[01;32m[Koperator=[m[K(std_msgs::msg::Int8_<std::allocator<void> >&&)[m[K’
+[2.983s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >&&[m[K’
+[2.983s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kstop_timer_callback[m[K()[m[K’:
+[2.983s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:31:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator==[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+[2.983s]    41 |             if([32m[Kmoving_turtle_[m[K [01;31m[K==[m[K [34m[K1[m[K){
+[2.983s]       |                [32m[K~~~~~~~~~~~~~~[m[K [01;31m[K^~[m[K [34m[K~[m[K
+[2.983s]       |                [32m[K|[m[K                 [34m[K|[m[K
+[2.983s]       |                [32m[K|[m[K                 [34m[Kint[m[K
+[2.983s]       |                [32m[Kstd_msgs::msg::Int8 {aka std_msgs::msg::Int8_<std::allocator<void> >}[m[K
+[2.983s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:111:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std_msgs::msg::Int8_<ContainerAllocator>::[01;32m[Koperator==[m[K(const std_msgs::msg::Int8_<ContainerAllocator>&) const [35m[K[with ContainerAllocator = std::allocator<void>][m[K[m[K’
+[2.983s]   111 |   bool [01;36m[Koperator[m[K==(const Int8_ & other) const
+[2.983s]       |        [01;36m[K^~~~~~~~[m[K
+[2.983s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:111:33:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst std_msgs::msg::Int8_<std::allocator<void> >&[m[K’
+[2.983s]   111 |   bool operator==([01;36m[Kconst Int8_ & other[m[K) const
+[2.983s]       |                   [01;36m[K~~~~~~~~~~~~~~^~~~~[m[K
+[2.983s] In file included from [01m[K/usr/include/c++/13/memory:65[m[K,
+[2.983s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K,
+[2.984s]                  from [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:1[m[K:
+[2.984s] [01m[K/usr/include/c++/13/bits/allocator.h:237:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> bool std::[01;32m[Koperator==[m[K(const allocator<_Tp1>&, const allocator<_T2>&)[m[K’
+[2.984s]   237 |     [01;36m[Koperator[m[K==(const allocator<_T1>&, const allocator<_T2>&)
+[2.984s]       |     [01;36m[K^~~~~~~~[m[K
+[2.984s] [01m[K/usr/include/c++/13/bits/allocator.h:237:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.984s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::allocator<_Tp1>[m[K’
+[2.984s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.984s]       |                                  [01;36m[K^[m[K
+[2.984s] In file included from [01m[K/usr/include/c++/13/bits/stl_tempbuf.h:62[m[K,
+[2.984s]                  from [01m[K/usr/include/c++/13/memory:66[m[K:
+[2.984s] [01m[K/usr/include/c++/13/bits/stl_pair.h:812:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> constexpr bool std::[01;32m[Koperator==[m[K(const pair<_T1, _T2>&, const pair<_T1, _T2>&)[m[K’
+[2.984s]   812 |     [01;36m[Koperator[m[K==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+[2.984s]       |     [01;36m[K^~~~~~~~[m[K
+[2.984s] [01m[K/usr/include/c++/13/bits/stl_pair.h:812:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.984s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::pair<_T1, _T2>[m[K’
+[2.985s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.985s]       |                                  [01;36m[K^[m[K
+[2.985s] In file included from [01m[K/usr/include/c++/13/bits/stl_algobase.h:67[m[K,
+[2.985s]                  from [01m[K/usr/include/c++/13/bits/stl_uninitialized.h:63[m[K,
+[2.985s]                  from [01m[K/usr/include/c++/13/memory:69[m[K:
+[2.985s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:448:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr bool std::[01;32m[Koperator==[m[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_Iterator>&)[m[K’
+[2.985s]   448 |     [01;36m[Koperator[m[K==(const reverse_iterator<_Iterator>& __x,
+[2.985s]       |     [01;36m[K^~~~~~~~[m[K
+[2.985s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:448:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.985s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[2.985s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.985s]       |                                  [01;36m[K^[m[K
+[2.985s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:493:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::[01;32m[Koperator==[m[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)[m[K’
+[2.985s]   493 |     [01;36m[Koperator[m[K==(const reverse_iterator<_IteratorL>& __x,
+[2.985s]       |     [01;36m[K^~~~~~~~[m[K
+[2.985s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:493:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.985s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[2.986s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.986s]       |                                  [01;36m[K^[m[K
+[2.986s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:1678:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::[01;32m[Koperator==[m[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)[m[K’
+[2.986s]  1678 |     [01;36m[Koperator[m[K==(const move_iterator<_IteratorL>& __x,
+[2.986s]       |     [01;36m[K^~~~~~~~[m[K
+[2.986s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:1678:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.986s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[2.986s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.986s]       |                                  [01;36m[K^[m[K
+[2.986s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:1748:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr bool std::[01;32m[Koperator==[m[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorL>&)[m[K’
+[2.986s]  1748 |     [01;36m[Koperator[m[K==(const move_iterator<_Iterator>& __x,
+[2.986s]       |     [01;36m[K^~~~~~~~[m[K
+[2.986s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:1748:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.986s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[2.986s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.987s]       |                                  [01;36m[K^[m[K
+[2.987s] In file included from [01m[K/usr/include/c++/13/bits/unique_ptr.h:36[m[K,
+[2.987s]                  from [01m[K/usr/include/c++/13/memory:78[m[K:
+[2.987s] [01m[K/usr/include/c++/13/tuple:1919:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::[01;32m[Koperator==[m[K(const tuple<_UTypes ...>&, const tuple<_UTypes ...>&)[m[K’
+[2.987s]  1919 |     [01;36m[Koperator[m[K==(const tuple<_TElements...>& __t,
+[2.987s]       |     [01;36m[K^~~~~~~~[m[K
+[2.987s] [01m[K/usr/include/c++/13/tuple:1919:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.987s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::tuple<_UTypes ...>[m[K’
+[2.987s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.987s]       |                                  [01;36m[K^[m[K
+[2.987s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:829:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::[01;32m[Koperator==[m[K(const unique_ptr<_Tp, _Dp>&, const unique_ptr<_Up, _Ep>&)[m[K’
+[2.987s]   829 |     [01;36m[Koperator[m[K==(const unique_ptr<_Tp, _Dp>& __x,
+[2.987s]       |     [01;36m[K^~~~~~~~[m[K
+[2.987s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:829:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.988s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[2.988s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.988s]       |                                  [01;36m[K^[m[K
+[2.988s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:837:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::[01;32m[Koperator==[m[K(const unique_ptr<_Tp, _Dp>&, nullptr_t)[m[K’
+[2.988s]   837 |     [01;36m[Koperator[m[K==(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+[2.988s]       |     [01;36m[K^~~~~~~~[m[K
+[2.988s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:837:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.988s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[2.988s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.988s]       |                                  [01;36m[K^[m[K
+[2.988s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:845:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::[01;32m[Koperator==[m[K(nullptr_t, const unique_ptr<_Tp, _Dp>&)[m[K’
+[2.988s]   845 |     [01;36m[Koperator[m[K==(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+[2.988s]       |     [01;36m[K^~~~~~~~[m[K
+[2.988s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:845:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.988s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’ and ‘[01m[Kint[m[K’
+[2.989s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.989s]       |                                  [01;36m[K^[m[K
+[2.989s] In file included from [01m[K/usr/include/c++/13/iosfwd:42[m[K,
+[2.989s]                  from [01m[K/usr/include/c++/13/bits/shared_ptr.h:52[m[K,
+[2.989s]                  from [01m[K/usr/include/c++/13/memory:80[m[K:
+[2.989s] [01m[K/usr/include/c++/13/bits/postypes.h:192:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _StateT> bool std::[01;32m[Koperator==[m[K(const fpos<_StateT>&, const fpos<_StateT>&)[m[K’
+[2.989s]   192 |     [01;36m[Koperator[m[K==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+[2.989s]       |     [01;36m[K^~~~~~~~[m[K
+[2.989s] [01m[K/usr/include/c++/13/bits/postypes.h:192:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.989s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::fpos<_StateT>[m[K’
+[2.989s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.989s]       |                                  [01;36m[K^[m[K
+[2.989s] In file included from [01m[K/usr/include/c++/13/bits/shared_ptr.h:53[m[K:
+[2.989s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1793:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::[01;32m[Koperator==[m[K(const __shared_ptr<_Tp1, _Lp>&, const __shared_ptr<_Tp2, _Lp>&)[m[K’
+[2.989s]  1793 |     [01;36m[Koperator[m[K==(const __shared_ptr<_Tp1, _Lp>& __a,
+[2.989s]       |     [01;36m[K^~~~~~~~[m[K
+[2.989s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1793:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.990s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp1, _Lp>[m[K’
+[2.990s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.990s]       |                                  [01;36m[K^[m[K
+[2.990s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1799:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::[01;32m[Koperator==[m[K(const __shared_ptr<_Tp, _Lp>&, nullptr_t)[m[K’
+[2.990s]  1799 |     [01;36m[Koperator[m[K==(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+[2.990s]       |     [01;36m[K^~~~~~~~[m[K
+[2.990s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1799:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.990s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+[2.990s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.990s]       |                                  [01;36m[K^[m[K
+[2.990s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1819:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::[01;32m[Koperator==[m[K(nullptr_t, const __shared_ptr<_Tp, _Lp>&)[m[K’
+[2.990s]  1819 |     [01;36m[Koperator[m[K==(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+[2.990s]       |     [01;36m[K^~~~~~~~[m[K
+[2.990s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1819:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.990s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’ and ‘[01m[Kint[m[K’
+[2.990s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.991s]       |                                  [01;36m[K^[m[K
+[2.991s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:555:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> bool std::[01;32m[Koperator==[m[K(const shared_ptr<_Tp>&, const shared_ptr<_Tp>&)[m[K’
+[2.991s]   555 |     [01;36m[Koperator[m[K==(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+[2.991s]       |     [01;36m[K^~~~~~~~[m[K
+[2.991s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:555:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.991s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+[2.991s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.991s]       |                                  [01;36m[K^[m[K
+[2.991s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:561:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::[01;32m[Koperator==[m[K(const shared_ptr<_Tp>&, nullptr_t)[m[K’
+[2.991s]   561 |     [01;36m[Koperator[m[K==(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+[2.991s]       |     [01;36m[K^~~~~~~~[m[K
+[2.991s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:561:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.991s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+[2.991s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.991s]       |                                  [01;36m[K^[m[K
+[2.992s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:582:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::[01;32m[Koperator==[m[K(nullptr_t, const shared_ptr<_Tp>&)[m[K’
+[2.992s]   582 |     [01;36m[Koperator[m[K==(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+[2.992s]       |     [01;36m[K^~~~~~~~[m[K
+[2.992s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:582:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.992s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[2.992s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.992s]       |                                  [01;36m[K^[m[K
+[2.992s] In file included from [01m[K/usr/include/c++/13/bits/basic_string.h:47[m[K,
+[2.992s]                  from [01m[K/usr/include/c++/13/string:54[m[K,
+[2.993s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:18[m[K,
+[2.993s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K:
+[2.993s] [01m[K/usr/include/c++/13/string_view:609:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::[01;32m[Koperator==[m[K(basic_string_view<_CharT, _Traits>, basic_string_view<_CharT, _Traits>)[m[K’
+[2.993s]   609 |     [01;36m[Koperator[m[K==(basic_string_view<_CharT, _Traits> __x,
+[2.993s]       |     [01;36m[K^~~~~~~~[m[K
+[2.993s] [01m[K/usr/include/c++/13/string_view:609:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.993s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+[2.993s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.993s]       |                                  [01;36m[K^[m[K
+[2.993s] [01m[K/usr/include/c++/13/string_view:616:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::[01;32m[Koperator==[m[K(basic_string_view<_CharT, _Traits>, __type_identity_t<basic_string_view<_CharT, _Traits> >)[m[K’
+[2.993s]   616 |     [01;36m[Koperator[m[K==(basic_string_view<_CharT, _Traits> __x,
+[2.993s]       |     [01;36m[K^~~~~~~~[m[K
+[2.993s] [01m[K/usr/include/c++/13/string_view:616:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.993s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+[2.993s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.993s]       |                                  [01;36m[K^[m[K
+[2.994s] [01m[K/usr/include/c++/13/string_view:642:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::[01;32m[Koperator==[m[K(__type_identity_t<basic_string_view<_CharT, _Traits> >, basic_string_view<_CharT, _Traits>)[m[K’
+[2.994s]   642 |     [01;36m[Koperator[m[K==(__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+[2.994s]       |     [01;36m[K^~~~~~~~[m[K
+[2.994s] [01m[K/usr/include/c++/13/string_view:642:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.994s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’ and ‘[01m[Kint[m[K’
+[2.994s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.994s]       |                                  [01;36m[K^[m[K
+[2.994s] [01m[K/usr/include/c++/13/bits/basic_string.h:3710:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::[01;32m[Koperator==[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[2.994s]  3710 |     [01;36m[Koperator[m[K==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[2.994s]       |     [01;36m[K^~~~~~~~[m[K
+[2.994s] [01m[K/usr/include/c++/13/bits/basic_string.h:3710:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.994s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[2.994s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.994s]       |                                  [01;36m[K^[m[K
+[2.994s] [01m[K/usr/include/c++/13/bits/basic_string.h:3727:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::[01;32m[Koperator==[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)[m[K’
+[2.994s]  3727 |     [01;36m[Koperator[m[K==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[2.994s]       |     [01;36m[K^~~~~~~~[m[K
+[2.995s] [01m[K/usr/include/c++/13/bits/basic_string.h:3727:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.995s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[2.995s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.995s]       |                                  [01;36m[K^[m[K
+[2.995s] [01m[K/usr/include/c++/13/bits/basic_string.h:3774:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::[01;32m[Koperator==[m[K(const _CharT*, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[2.995s]  3774 |     [01;36m[Koperator[m[K==(const _CharT* __lhs,
+[2.995s]       |     [01;36m[K^~~~~~~~[m[K
+[2.995s] [01m[K/usr/include/c++/13/bits/basic_string.h:3774:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.995s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’
+[2.995s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.995s]       |                                  [01;36m[K^[m[K
+[2.995s] In file included from [01m[K/usr/include/c++/13/vector:66[m[K,
+[2.995s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:19[m[K:
+[2.995s] [01m[K/usr/include/c++/13/bits/stl_vector.h:2040:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::[01;32m[Koperator==[m[K(const vector<_Tp, _Alloc>&, const vector<_Tp, _Alloc>&)[m[K’
+[2.995s]  2040 |     [01;36m[Koperator[m[K==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+[2.996s]       |     [01;36m[K^~~~~~~~[m[K
+[2.996s] [01m[K/usr/include/c++/13/bits/stl_vector.h:2040:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.996s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::vector<_Tp, _Alloc>[m[K’
+[2.996s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.996s]       |                                  [01;36m[K^[m[K
+[2.996s] In file included from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:12[m[K,
+[2.996s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:7[m[K,
+[2.996s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:21[m[K:
+[2.996s] [01m[K/usr/include/c++/13/array:297:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, long unsigned int _Nm> bool std::[01;32m[Koperator==[m[K(const array<_Tp, _Nm>&, const array<_Tp, _Nm>&)[m[K’
+[2.996s]   297 |     [01;36m[Koperator[m[K==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+[2.996s]       |     [01;36m[K^~~~~~~~[m[K
+[2.996s] [01m[K/usr/include/c++/13/array:297:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.996s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+[2.996s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.996s]       |                                  [01;36m[K^[m[K
+[2.996s] In file included from [01m[K/usr/include/c++/13/bits/locale_facets.h:48[m[K,
+[2.996s]                  from [01m[K/usr/include/c++/13/bits/basic_ios.h:37[m[K,
+[2.997s]                  from [01m[K/usr/include/c++/13/ios:46[m[K,
+[2.997s]                  from [01m[K/usr/include/c++/13/istream:40[m[K,
+[2.997s]                  from [01m[K/usr/include/c++/13/sstream:40[m[K,
+[2.997s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:13[m[K,
+[2.997s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:9[m[K:
+[2.997s] [01m[K/usr/include/c++/13/bits/streambuf_iterator.h:234:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> bool std::[01;32m[Koperator==[m[K(const istreambuf_iterator<_CharT, _Traits>&, const istreambuf_iterator<_CharT, _Traits>&)[m[K’
+[2.997s]   234 |     [01;36m[Koperator[m[K==(const istreambuf_iterator<_CharT, _Traits>& __a,
+[2.997s]       |     [01;36m[K^~~~~~~~[m[K
+[2.997s] [01m[K/usr/include/c++/13/bits/streambuf_iterator.h:234:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.997s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::istreambuf_iterator<_CharT, _Traits>[m[K’
+[2.997s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.997s]       |                                  [01;36m[K^[m[K
+[2.997s] In file included from [01m[K/usr/include/c++/13/functional:59[m[K,
+[2.997s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:19[m[K,
+[2.997s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+[2.997s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K:
+[2.997s] [01m[K/usr/include/c++/13/bits/std_function.h:737:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Res, class ... _Args> bool std::[01;32m[Koperator==[m[K(const function<_Res(_ArgTypes ...)>&, nullptr_t)[m[K’
+[2.998s]   737 |     [01;36m[Koperator[m[K==(const function<_Res(_Args...)>& __f, nullptr_t) noexcept
+[2.998s]       |     [01;36m[K^~~~~~~~[m[K
+[2.998s] [01m[K/usr/include/c++/13/bits/std_function.h:737:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.998s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::function<_Res(_ArgTypes ...)>[m[K’
+[2.998s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.998s]       |                                  [01;36m[K^[m[K
+[2.998s] [01m[K/usr/include/c++/13/bits/std_function.h:744:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Res, class ... _Args> bool std::[01;32m[Koperator==[m[K(nullptr_t, const function<_Res(_ArgTypes ...)>&)[m[K’
+[2.998s]   744 |     [01;36m[Koperator[m[K==(nullptr_t, const function<_Res(_Args...)>& __f) noexcept
+[2.998s]       |     [01;36m[K^~~~~~~~[m[K
+[2.998s] [01m[K/usr/include/c++/13/bits/std_function.h:744:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.998s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::function<_Res(_ArgTypes ...)>[m[K’ and ‘[01m[Kint[m[K’
+[2.998s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.998s]       |                                  [01;36m[K^[m[K
+[2.998s] In file included from [01m[K/usr/include/c++/13/unordered_map:41[m[K,
+[2.998s]                  from [01m[K/usr/include/c++/13/functional:63[m[K:
+[2.998s] [01m[K/usr/include/c++/13/bits/unordered_map.h:2143:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key1, class _Tp1, class _Hash1, class _Pred1, class _Alloc1> bool std::[01;32m[Koperator==[m[K(const unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&, const unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+[2.998s]  2143 |     [01;36m[Koperator[m[K==(const unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+[2.999s]       |     [01;36m[K^~~~~~~~[m[K
+[2.999s] [01m[K/usr/include/c++/13/bits/unordered_map.h:2143:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.999s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>[m[K’
+[2.999s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.999s]       |                                  [01;36m[K^[m[K
+[2.999s] [01m[K/usr/include/c++/13/bits/unordered_map.h:2157:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key1, class _Tp1, class _Hash1, class _Pred1, class _Alloc1> bool std::[01;32m[Koperator==[m[K(const unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&, const unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+[2.999s]  2157 |     [01;36m[Koperator[m[K==(const unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+[2.999s]       |     [01;36m[K^~~~~~~~[m[K
+[2.999s] [01m[K/usr/include/c++/13/bits/unordered_map.h:2157:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.999s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>[m[K’
+[2.999s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[2.999s]       |                                  [01;36m[K^[m[K
+[2.999s] In file included from [01m[K/usr/include/c++/13/unordered_set:41[m[K,
+[2.999s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/context.hpp:26[m[K,
+[2.999s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:24[m[K:
+[3.000s] [01m[K/usr/include/c++/13/bits/unordered_set.h:1813:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Value1, class _Hash1, class _Pred1, class _Alloc1> bool std::[01;32m[Koperator==[m[K(const unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>&, const unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+[3.000s]  1813 |     [01;36m[Koperator[m[K==(const unordered_set<_Value, _Hash, _Pred, _Alloc>& __x,
+[3.000s]       |     [01;36m[K^~~~~~~~[m[K
+[3.000s] [01m[K/usr/include/c++/13/bits/unordered_set.h:1813:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.000s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>[m[K’
+[3.000s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[3.000s]       |                                  [01;36m[K^[m[K
+[3.000s] [01m[K/usr/include/c++/13/bits/unordered_set.h:1827:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Value1, class _Hash1, class _Pred1, class _Alloc1> bool std::[01;32m[Koperator==[m[K(const unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>&, const unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+[3.000s]  1827 |     [01;36m[Koperator[m[K==(const unordered_multiset<_Value, _Hash, _Pred, _Alloc>& __x,
+[3.000s]       |     [01;36m[K^~~~~~~~[m[K
+[3.000s] [01m[K/usr/include/c++/13/bits/unordered_set.h:1827:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.000s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>[m[K’
+[3.000s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[3.000s]       |                                  [01;36m[K^[m[K
+[3.000s] In file included from [01m[K/usr/include/c++/13/set:63[m[K,
+[3.000s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21[m[K,
+[3.001s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.001s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K:
+[3.001s] [01m[K/usr/include/c++/13/bits/stl_set.h:987:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::[01;32m[Koperator==[m[K(const set<_Key, _Compare, _Allocator>&, const set<_Key, _Compare, _Allocator>&)[m[K’
+[3.001s]   987 |     [01;36m[Koperator[m[K==(const set<_Key, _Compare, _Alloc>& __x,
+[3.001s]       |     [01;36m[K^~~~~~~~[m[K
+[3.001s] [01m[K/usr/include/c++/13/bits/stl_set.h:987:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.001s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::set<_Key, _Compare, _Allocator>[m[K’
+[3.001s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[3.001s]       |                                  [01;36m[K^[m[K
+[3.001s] In file included from [01m[K/usr/include/c++/13/set:64[m[K:
+[3.001s] [01m[K/usr/include/c++/13/bits/stl_multiset.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::[01;32m[Koperator==[m[K(const multiset<_Key, _Compare, _Allocator>&, const multiset<_Key, _Compare, _Allocator>&)[m[K’
+[3.001s]   973 |     [01;36m[Koperator[m[K==(const multiset<_Key, _Compare, _Alloc>& __x,
+[3.001s]       |     [01;36m[K^~~~~~~~[m[K
+[3.001s] [01m[K/usr/include/c++/13/bits/stl_multiset.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.001s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::multiset<_Key, _Compare, _Allocator>[m[K’
+[3.001s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[3.002s]       |                                  [01;36m[K^[m[K
+[3.002s] In file included from [01m[K/usr/include/c++/13/list:65[m[K,
+[3.002s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:23[m[K,
+[3.002s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K:
+[3.002s] [01m[K/usr/include/c++/13/bits/stl_list.h:2123:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::[01;32m[Koperator==[m[K(const __cxx11::list<_Tp, _Alloc>&, const __cxx11::list<_Tp, _Alloc>&)[m[K’
+[3.002s]  2123 |     [01;36m[Koperator[m[K==(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+[3.002s]       |     [01;36m[K^~~~~~~~[m[K
+[3.002s] [01m[K/usr/include/c++/13/bits/stl_list.h:2123:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.002s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::list<_Tp, _Alloc>[m[K’
+[3.002s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[3.002s]       |                                  [01;36m[K^[m[K
+[3.002s] In file included from [01m[K/usr/include/c++/13/map:63[m[K,
+[3.002s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:24[m[K:
+[3.002s] [01m[K/usr/include/c++/13/bits/stl_map.h:1513:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::[01;32m[Koperator==[m[K(const map<_Key, _Tp, _Compare, _Allocator>&, const map<_Key, _Tp, _Compare, _Allocator>&)[m[K’
+[3.002s]  1513 |     [01;36m[Koperator[m[K==(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+[3.002s]       |     [01;36m[K^~~~~~~~[m[K
+[3.002s] [01m[K/usr/include/c++/13/bits/stl_map.h:1513:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.003s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::map<_Key, _Tp, _Compare, _Allocator>[m[K’
+[3.003s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[3.003s]       |                                  [01;36m[K^[m[K
+[3.003s] In file included from [01m[K/usr/include/c++/13/map:64[m[K:
+[3.003s] [01m[K/usr/include/c++/13/bits/stl_multimap.h:1134:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::[01;32m[Koperator==[m[K(const multimap<_Key, _Tp, _Compare, _Allocator>&, const multimap<_Key, _Tp, _Compare, _Allocator>&)[m[K’
+[3.003s]  1134 |     [01;36m[Koperator[m[K==(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+[3.003s]       |     [01;36m[K^~~~~~~~[m[K
+[3.003s] [01m[K/usr/include/c++/13/bits/stl_multimap.h:1134:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.003s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::multimap<_Key, _Tp, _Compare, _Allocator>[m[K’
+[3.003s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[3.003s]       |                                  [01;36m[K^[m[K
+[3.003s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[3.003s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.003s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.003s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.003s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.003s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22[m[K,
+[3.003s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38[m[K:
+[3.004s] [01m[K/usr/include/c++/13/optional:1236:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_eq_t<_Tp, _Up> std::[01;32m[Koperator==[m[K(const optional<_Tp>&, const optional<_Up>&)[m[K’
+[3.004s]  1236 |     [01;36m[Koperator[m[K==(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+[3.004s]       |     [01;36m[K^~~~~~~~[m[K
+[3.004s] [01m[K/usr/include/c++/13/optional:1236:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.004s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[3.004s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[3.004s]       |                                  [01;36m[K^[m[K
+[3.004s] [01m[K/usr/include/c++/13/optional:1296:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr bool std::[01;32m[Koperator==[m[K(const optional<_Tp>&, nullopt_t)[m[K’
+[3.004s]  1296 |     [01;36m[Koperator[m[K==(const optional<_Tp>& __lhs, nullopt_t) noexcept
+[3.004s]       |     [01;36m[K^~~~~~~~[m[K
+[3.004s] [01m[K/usr/include/c++/13/optional:1296:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.004s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[3.004s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[3.004s]       |                                  [01;36m[K^[m[K
+[3.004s] [01m[K/usr/include/c++/13/optional:1307:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr bool std::[01;32m[Koperator==[m[K(nullopt_t, const optional<_Tp>&)[m[K’
+[3.004s]  1307 |     [01;36m[Koperator[m[K==(nullopt_t, const optional<_Tp>& __rhs) noexcept
+[3.005s]       |     [01;36m[K^~~~~~~~[m[K
+[3.005s] [01m[K/usr/include/c++/13/optional:1307:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.005s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::optional<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[3.005s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[3.005s]       |                                  [01;36m[K^[m[K
+[3.005s] [01m[K/usr/include/c++/13/optional:1364:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_eq_t<_Tp, _Up> std::[01;32m[Koperator==[m[K(const optional<_Tp>&, const _Up&)[m[K’
+[3.005s]  1364 |     [01;36m[Koperator[m[K==(const optional<_Tp>& __lhs, const _Up& __rhs)
+[3.005s]       |     [01;36m[K^~~~~~~~[m[K
+[3.005s] [01m[K/usr/include/c++/13/optional:1364:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.005s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[3.005s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[3.005s]       |                                  [01;36m[K^[m[K
+[3.005s] [01m[K/usr/include/c++/13/optional:1370:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_eq_t<_Up, _Tp> std::[01;32m[Koperator==[m[K(const _Up&, const optional<_Tp>&)[m[K’
+[3.005s]  1370 |     [01;36m[Koperator[m[K==(const _Up& __lhs, const optional<_Tp>& __rhs)
+[3.005s]       |     [01;36m[K^~~~~~~~[m[K
+[3.005s] [01m[K/usr/include/c++/13/optional:1370:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.006s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::optional<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[3.006s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[3.006s]       |                                  [01;36m[K^[m[K
+[3.006s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:29[m[K:
+[3.006s] [01m[K/usr/include/c++/13/variant:1266:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _Types> constexpr bool std::[01;32m[Koperator==[m[K(const variant<_Types ...>&, const variant<_Types ...>&)[m[K’
+[3.006s]  1266 |   [01;36m[K_VARIANT_RELATION_FUNCTION_TEMPLATE[m[K(==, equal)
+[3.006s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.006s] [01m[K/usr/include/c++/13/variant:1266:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.006s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::variant<_Types ...>[m[K’
+[3.006s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[3.007s]       |                                  [01;36m[K^[m[K
+[3.007s] In file included from [01m[K/usr/include/c++/13/deque:66[m[K,
+[3.007s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_entities_collection.hpp:18[m[K,
+[3.007s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:39[m[K:
+[3.007s] [01m[K/usr/include/c++/13/bits/stl_deque.h:2290:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::[01;32m[Koperator==[m[K(const deque<_Tp, _Alloc>&, const deque<_Tp, _Alloc>&)[m[K’
+[3.007s]  2290 |     [01;36m[Koperator[m[K==(const deque<_Tp, _Alloc>& __x, const deque<_Tp, _Alloc>& __y)
+[3.007s]       |     [01;36m[K^~~~~~~~[m[K
+[3.007s] [01m[K/usr/include/c++/13/bits/stl_deque.h:2290:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.008s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::deque<_Tp, _Alloc>[m[K’
+[3.008s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[3.008s]       |                                  [01;36m[K^[m[K
+[3.008s] In file included from [01m[K/usr/include/c++/13/queue:66[m[K,
+[3.008s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_queue.hpp:18[m[K,
+[3.008s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_executor.hpp:27[m[K,
+[3.008s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:24[m[K:
+[3.008s] [01m[K/usr/include/c++/13/bits/stl_queue.h:380:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Seq> bool std::[01;32m[Koperator==[m[K(const queue<_Tp, _Seq>&, const queue<_Tp, _Seq>&)[m[K’
+[3.008s]   380 |     [01;36m[Koperator[m[K==(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+[3.008s]       |     [01;36m[K^~~~~~~~[m[K
+[3.008s] [01m[K/usr/include/c++/13/bits/stl_queue.h:380:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.008s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:41:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::queue<_Tp, _Seq>[m[K’
+[3.008s]    41 |             if(moving_turtle_ == [01;36m[K1[m[K){
+[3.008s]       |                                  [01;36m[K^[m[K
+[3.008s] In file included from [01m[K/usr/include/c++/13/bits/ios_base.h:46[m[K,
+[3.008s]                  from [01m[K/usr/include/c++/13/ios:44[m[K:
+[3.008s] [01m[K/usr/include/c++/13/system_error:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::[01;32m[Koperator==[m[K(const error_code&, const error_code&)[m[K’
+[3.008s]   449 |   [01;36m[Koperator[m[K==(const error_code& __lhs, const error_code& __rhs) noexcept
+[3.008s]       |   [01;36m[K^~~~~~~~[m[K
+[3.009s] [01m[K/usr/include/c++/13/system_error:449:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std::error_code&[m[K’
+[3.009s]   449 |   operator==([01;36m[Kconst error_code& __lhs[m[K, const error_code& __rhs) noexcept
+[3.009s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[3.009s] [01m[K/usr/include/c++/13/system_error:465:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::[01;32m[Koperator==[m[K(const error_code&, const error_condition&)[m[K’
+[3.009s]   465 |   [01;36m[Koperator[m[K==(const error_code& __lhs, const error_condition& __rhs) noexcept
+[3.009s]       |   [01;36m[K^~~~~~~~[m[K
+[3.009s] [01m[K/usr/include/c++/13/system_error:465:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std::error_code&[m[K’
+[3.009s]   465 |   operator==([01;36m[Kconst error_code& __lhs[m[K, const error_condition& __rhs) noexcept
+[3.009s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[3.009s] [01m[K/usr/include/c++/13/system_error:480:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::[01;32m[Koperator==[m[K(const error_condition&, const error_condition&)[m[K’
+[3.009s]   480 |   [01;36m[Koperator[m[K==(const error_condition& __lhs,
+[3.009s]       |   [01;36m[K^~~~~~~~[m[K
+[3.009s] [01m[K/usr/include/c++/13/system_error:480:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std::error_condition&[m[K’
+[3.010s]   480 |   operator==([01;36m[Kconst error_condition& __lhs[m[K,
+[3.010s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[3.010s] [01m[K/usr/include/c++/13/system_error:517:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::[01;32m[Koperator==[m[K(const error_condition&, const error_code&)[m[K’
+[3.010s]   517 |   [01;36m[Koperator[m[K==(const error_condition& __lhs, const error_code& __rhs) noexcept
+[3.010s]       |   [01;36m[K^~~~~~~~[m[K
+[3.010s] [01m[K/usr/include/c++/13/system_error:517:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std::error_condition&[m[K’
+[3.010s]   517 |   operator==([01;36m[Kconst error_condition& __lhs[m[K, const error_code& __rhs) noexcept
+[3.010s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[3.011s] In file included from [01m[K/usr/include/c++/13/future:51[m[K,
+[3.011s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:18[m[K:
+[3.011s] [01m[K/usr/include/c++/13/bits/std_thread.h:324:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::[01;32m[Koperator==[m[K(thread::id, thread::id)[m[K’
+[3.011s]   324 |   [01;36m[Koperator[m[K==(thread::id __x, thread::id __y) noexcept
+[3.011s]       |   [01;36m[K^~~~~~~~[m[K
+[3.011s] [01m[K/usr/include/c++/13/bits/std_thread.h:324:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::thread::id[m[K’
+[3.011s]   324 |   operator==([01;36m[Kthread::id __x[m[K, thread::id __y) noexcept
+[3.011s]       |              [01;36m[K~~~~~~~~~~~^~~[m[K
+[3.012s] [01m[K/usr/include/c++/13/variant:1273:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr bool std::[01;32m[Koperator==[m[K(monostate, monostate)[m[K’
+[3.012s]  1273 |   constexpr bool [01;36m[Koperator[m[K==(monostate, monostate) noexcept { return true; }
+[3.012s]       |                  [01;36m[K^~~~~~~~[m[K
+[3.012s] [01m[K/usr/include/c++/13/variant:1273:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::monostate[m[K’
+[3.012s]  1273 |   constexpr bool operator==([01;36m[Kmonostate[m[K, monostate) noexcept { return true; }
+[3.012s]       |                             [01;36m[K^~~~~~~~~[m[K
+[3.012s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:38:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator==[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+[3.013s]    44 |             } else if([32m[Kmoving_turtle_[m[K [01;31m[K==[m[K [34m[K2[m[K){
+[3.013s]       |                       [32m[K~~~~~~~~~~~~~~[m[K [01;31m[K^~[m[K [34m[K~[m[K
+[3.013s]       |                       [32m[K|[m[K                 [34m[K|[m[K
+[3.013s]       |                       [32m[K|[m[K                 [34m[Kint[m[K
+[3.013s]       |                       [32m[Kstd_msgs::msg::Int8 {aka std_msgs::msg::Int8_<std::allocator<void> >}[m[K
+[3.013s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:111:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std_msgs::msg::Int8_<ContainerAllocator>::[01;32m[Koperator==[m[K(const std_msgs::msg::Int8_<ContainerAllocator>&) const [35m[K[with ContainerAllocator = std::allocator<void>][m[K[m[K’
+[3.013s]   111 |   bool [01;36m[Koperator[m[K==(const Int8_ & other) const
+[3.013s]       |        [01;36m[K^~~~~~~~[m[K
+[3.013s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:111:33:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst std_msgs::msg::Int8_<std::allocator<void> >&[m[K’
+[3.013s]   111 |   bool operator==([01;36m[Kconst Int8_ & other[m[K) const
+[3.014s]       |                   [01;36m[K~~~~~~~~~~~~~~^~~~~[m[K
+[3.014s] [01m[K/usr/include/c++/13/bits/allocator.h:237:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> bool std::[01;32m[Koperator==[m[K(const allocator<_Tp1>&, const allocator<_T2>&)[m[K’
+[3.014s]   237 |     [01;36m[Koperator[m[K==(const allocator<_T1>&, const allocator<_T2>&)
+[3.014s]       |     [01;36m[K^~~~~~~~[m[K
+[3.014s] [01m[K/usr/include/c++/13/bits/allocator.h:237:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.014s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::allocator<_Tp1>[m[K’
+[3.014s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.014s]       |                                         [01;36m[K^[m[K
+[3.015s] [01m[K/usr/include/c++/13/bits/stl_pair.h:812:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> constexpr bool std::[01;32m[Koperator==[m[K(const pair<_T1, _T2>&, const pair<_T1, _T2>&)[m[K’
+[3.015s]   812 |     [01;36m[Koperator[m[K==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+[3.015s]       |     [01;36m[K^~~~~~~~[m[K
+[3.015s] [01m[K/usr/include/c++/13/bits/stl_pair.h:812:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.015s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::pair<_T1, _T2>[m[K’
+[3.015s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.015s]       |                                         [01;36m[K^[m[K
+[3.015s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:448:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr bool std::[01;32m[Koperator==[m[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_Iterator>&)[m[K’
+[3.015s]   448 |     [01;36m[Koperator[m[K==(const reverse_iterator<_Iterator>& __x,
+[3.016s]       |     [01;36m[K^~~~~~~~[m[K
+[3.016s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:448:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.016s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[3.016s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.016s]       |                                         [01;36m[K^[m[K
+[3.016s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:493:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::[01;32m[Koperator==[m[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)[m[K’
+[3.016s]   493 |     [01;36m[Koperator[m[K==(const reverse_iterator<_IteratorL>& __x,
+[3.016s]       |     [01;36m[K^~~~~~~~[m[K
+[3.016s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:493:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.016s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[3.017s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.017s]       |                                         [01;36m[K^[m[K
+[3.017s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:1678:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::[01;32m[Koperator==[m[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)[m[K’
+[3.017s]  1678 |     [01;36m[Koperator[m[K==(const move_iterator<_IteratorL>& __x,
+[3.017s]       |     [01;36m[K^~~~~~~~[m[K
+[3.017s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:1678:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.017s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[3.017s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.017s]       |                                         [01;36m[K^[m[K
+[3.018s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:1748:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr bool std::[01;32m[Koperator==[m[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorL>&)[m[K’
+[3.018s]  1748 |     [01;36m[Koperator[m[K==(const move_iterator<_Iterator>& __x,
+[3.018s]       |     [01;36m[K^~~~~~~~[m[K
+[3.018s] [01m[K/usr/include/c++/13/bits/stl_iterator.h:1748:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.018s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[3.018s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.018s]       |                                         [01;36m[K^[m[K
+[3.018s] [01m[K/usr/include/c++/13/tuple:1919:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::[01;32m[Koperator==[m[K(const tuple<_UTypes ...>&, const tuple<_UTypes ...>&)[m[K’
+[3.018s]  1919 |     [01;36m[Koperator[m[K==(const tuple<_TElements...>& __t,
+[3.018s]       |     [01;36m[K^~~~~~~~[m[K
+[3.018s] [01m[K/usr/include/c++/13/tuple:1919:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.018s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::tuple<_UTypes ...>[m[K’
+[3.018s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.018s]       |                                         [01;36m[K^[m[K
+[3.018s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:829:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::[01;32m[Koperator==[m[K(const unique_ptr<_Tp, _Dp>&, const unique_ptr<_Up, _Ep>&)[m[K’
+[3.018s]   829 |     [01;36m[Koperator[m[K==(const unique_ptr<_Tp, _Dp>& __x,
+[3.019s]       |     [01;36m[K^~~~~~~~[m[K
+[3.019s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:829:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.019s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[3.019s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.019s]       |                                         [01;36m[K^[m[K
+[3.019s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:837:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::[01;32m[Koperator==[m[K(const unique_ptr<_Tp, _Dp>&, nullptr_t)[m[K’
+[3.019s]   837 |     [01;36m[Koperator[m[K==(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+[3.019s]       |     [01;36m[K^~~~~~~~[m[K
+[3.019s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:837:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.019s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[3.019s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.019s]       |                                         [01;36m[K^[m[K
+[3.019s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:845:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::[01;32m[Koperator==[m[K(nullptr_t, const unique_ptr<_Tp, _Dp>&)[m[K’
+[3.020s]   845 |     [01;36m[Koperator[m[K==(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+[3.020s]       |     [01;36m[K^~~~~~~~[m[K
+[3.020s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:845:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.020s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’ and ‘[01m[Kint[m[K’
+[3.020s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.020s]       |                                         [01;36m[K^[m[K
+[3.020s] [01m[K/usr/include/c++/13/bits/postypes.h:192:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _StateT> bool std::[01;32m[Koperator==[m[K(const fpos<_StateT>&, const fpos<_StateT>&)[m[K’
+[3.020s]   192 |     [01;36m[Koperator[m[K==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+[3.020s]       |     [01;36m[K^~~~~~~~[m[K
+[3.020s] [01m[K/usr/include/c++/13/bits/postypes.h:192:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.020s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::fpos<_StateT>[m[K’
+[3.020s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.020s]       |                                         [01;36m[K^[m[K
+[3.020s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1793:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::[01;32m[Koperator==[m[K(const __shared_ptr<_Tp1, _Lp>&, const __shared_ptr<_Tp2, _Lp>&)[m[K’
+[3.020s]  1793 |     [01;36m[Koperator[m[K==(const __shared_ptr<_Tp1, _Lp>& __a,
+[3.020s]       |     [01;36m[K^~~~~~~~[m[K
+[3.021s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1793:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.021s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp1, _Lp>[m[K’
+[3.021s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.021s]       |                                         [01;36m[K^[m[K
+[3.021s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1799:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::[01;32m[Koperator==[m[K(const __shared_ptr<_Tp, _Lp>&, nullptr_t)[m[K’
+[3.021s]  1799 |     [01;36m[Koperator[m[K==(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+[3.021s]       |     [01;36m[K^~~~~~~~[m[K
+[3.021s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1799:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.021s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+[3.021s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.021s]       |                                         [01;36m[K^[m[K
+[3.021s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1819:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::[01;32m[Koperator==[m[K(nullptr_t, const __shared_ptr<_Tp, _Lp>&)[m[K’
+[3.021s]  1819 |     [01;36m[Koperator[m[K==(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+[3.021s]       |     [01;36m[K^~~~~~~~[m[K
+[3.021s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1819:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.022s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’ and ‘[01m[Kint[m[K’
+[3.022s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.022s]       |                                         [01;36m[K^[m[K
+[3.022s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:555:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> bool std::[01;32m[Koperator==[m[K(const shared_ptr<_Tp>&, const shared_ptr<_Tp>&)[m[K’
+[3.022s]   555 |     [01;36m[Koperator[m[K==(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+[3.022s]       |     [01;36m[K^~~~~~~~[m[K
+[3.022s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:555:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.022s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+[3.022s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.022s]       |                                         [01;36m[K^[m[K
+[3.022s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:561:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::[01;32m[Koperator==[m[K(const shared_ptr<_Tp>&, nullptr_t)[m[K’
+[3.022s]   561 |     [01;36m[Koperator[m[K==(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+[3.022s]       |     [01;36m[K^~~~~~~~[m[K
+[3.022s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:561:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.022s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+[3.022s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.022s]       |                                         [01;36m[K^[m[K
+[3.023s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:582:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::[01;32m[Koperator==[m[K(nullptr_t, const shared_ptr<_Tp>&)[m[K’
+[3.023s]   582 |     [01;36m[Koperator[m[K==(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+[3.023s]       |     [01;36m[K^~~~~~~~[m[K
+[3.023s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:582:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.023s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[3.023s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.023s]       |                                         [01;36m[K^[m[K
+[3.023s] [01m[K/usr/include/c++/13/string_view:609:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::[01;32m[Koperator==[m[K(basic_string_view<_CharT, _Traits>, basic_string_view<_CharT, _Traits>)[m[K’
+[3.023s]   609 |     [01;36m[Koperator[m[K==(basic_string_view<_CharT, _Traits> __x,
+[3.023s]       |     [01;36m[K^~~~~~~~[m[K
+[3.023s] [01m[K/usr/include/c++/13/string_view:609:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.023s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+[3.023s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.023s]       |                                         [01;36m[K^[m[K
+[3.023s] [01m[K/usr/include/c++/13/string_view:616:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::[01;32m[Koperator==[m[K(basic_string_view<_CharT, _Traits>, __type_identity_t<basic_string_view<_CharT, _Traits> >)[m[K’
+[3.023s]   616 |     [01;36m[Koperator[m[K==(basic_string_view<_CharT, _Traits> __x,
+[3.023s]       |     [01;36m[K^~~~~~~~[m[K
+[3.023s] [01m[K/usr/include/c++/13/string_view:616:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.023s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+[3.024s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.024s]       |                                         [01;36m[K^[m[K
+[3.024s] [01m[K/usr/include/c++/13/string_view:642:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::[01;32m[Koperator==[m[K(__type_identity_t<basic_string_view<_CharT, _Traits> >, basic_string_view<_CharT, _Traits>)[m[K’
+[3.024s]   642 |     [01;36m[Koperator[m[K==(__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+[3.024s]       |     [01;36m[K^~~~~~~~[m[K
+[3.024s] [01m[K/usr/include/c++/13/string_view:642:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.024s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’ and ‘[01m[Kint[m[K’
+[3.024s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.024s]       |                                         [01;36m[K^[m[K
+[3.024s] [01m[K/usr/include/c++/13/bits/basic_string.h:3710:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::[01;32m[Koperator==[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[3.024s]  3710 |     [01;36m[Koperator[m[K==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[3.024s]       |     [01;36m[K^~~~~~~~[m[K
+[3.024s] [01m[K/usr/include/c++/13/bits/basic_string.h:3710:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.024s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[3.024s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.024s]       |                                         [01;36m[K^[m[K
+[3.024s] [01m[K/usr/include/c++/13/bits/basic_string.h:3727:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::[01;32m[Koperator==[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)[m[K’
+[3.024s]  3727 |     [01;36m[Koperator[m[K==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[3.025s]       |     [01;36m[K^~~~~~~~[m[K
+[3.025s] [01m[K/usr/include/c++/13/bits/basic_string.h:3727:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.025s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[3.025s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.025s]       |                                         [01;36m[K^[m[K
+[3.025s] [01m[K/usr/include/c++/13/bits/basic_string.h:3774:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::[01;32m[Koperator==[m[K(const _CharT*, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[3.025s]  3774 |     [01;36m[Koperator[m[K==(const _CharT* __lhs,
+[3.025s]       |     [01;36m[K^~~~~~~~[m[K
+[3.025s] [01m[K/usr/include/c++/13/bits/basic_string.h:3774:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.025s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’
+[3.025s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.025s]       |                                         [01;36m[K^[m[K
+[3.025s] [01m[K/usr/include/c++/13/bits/stl_vector.h:2040:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::[01;32m[Koperator==[m[K(const vector<_Tp, _Alloc>&, const vector<_Tp, _Alloc>&)[m[K’
+[3.025s]  2040 |     [01;36m[Koperator[m[K==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+[3.025s]       |     [01;36m[K^~~~~~~~[m[K
+[3.025s] [01m[K/usr/include/c++/13/bits/stl_vector.h:2040:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.025s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::vector<_Tp, _Alloc>[m[K’
+[3.026s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.026s]       |                                         [01;36m[K^[m[K
+[3.026s] [01m[K/usr/include/c++/13/array:297:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, long unsigned int _Nm> bool std::[01;32m[Koperator==[m[K(const array<_Tp, _Nm>&, const array<_Tp, _Nm>&)[m[K’
+[3.026s]   297 |     [01;36m[Koperator[m[K==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+[3.026s]       |     [01;36m[K^~~~~~~~[m[K
+[3.026s] [01m[K/usr/include/c++/13/array:297:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.026s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+[3.026s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.026s]       |                                         [01;36m[K^[m[K
+[3.026s] [01m[K/usr/include/c++/13/bits/streambuf_iterator.h:234:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> bool std::[01;32m[Koperator==[m[K(const istreambuf_iterator<_CharT, _Traits>&, const istreambuf_iterator<_CharT, _Traits>&)[m[K’
+[3.026s]   234 |     [01;36m[Koperator[m[K==(const istreambuf_iterator<_CharT, _Traits>& __a,
+[3.026s]       |     [01;36m[K^~~~~~~~[m[K
+[3.026s] [01m[K/usr/include/c++/13/bits/streambuf_iterator.h:234:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.026s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::istreambuf_iterator<_CharT, _Traits>[m[K’
+[3.026s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.026s]       |                                         [01;36m[K^[m[K
+[3.026s] [01m[K/usr/include/c++/13/bits/std_function.h:737:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Res, class ... _Args> bool std::[01;32m[Koperator==[m[K(const function<_Res(_ArgTypes ...)>&, nullptr_t)[m[K’
+[3.026s]   737 |     [01;36m[Koperator[m[K==(const function<_Res(_Args...)>& __f, nullptr_t) noexcept
+[3.027s]       |     [01;36m[K^~~~~~~~[m[K
+[3.027s] [01m[K/usr/include/c++/13/bits/std_function.h:737:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.027s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::function<_Res(_ArgTypes ...)>[m[K’
+[3.027s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.027s]       |                                         [01;36m[K^[m[K
+[3.027s] [01m[K/usr/include/c++/13/bits/std_function.h:744:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Res, class ... _Args> bool std::[01;32m[Koperator==[m[K(nullptr_t, const function<_Res(_ArgTypes ...)>&)[m[K’
+[3.027s]   744 |     [01;36m[Koperator[m[K==(nullptr_t, const function<_Res(_Args...)>& __f) noexcept
+[3.027s]       |     [01;36m[K^~~~~~~~[m[K
+[3.027s] [01m[K/usr/include/c++/13/bits/std_function.h:744:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.027s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::function<_Res(_ArgTypes ...)>[m[K’ and ‘[01m[Kint[m[K’
+[3.027s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.027s]       |                                         [01;36m[K^[m[K
+[3.027s] [01m[K/usr/include/c++/13/bits/unordered_map.h:2143:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key1, class _Tp1, class _Hash1, class _Pred1, class _Alloc1> bool std::[01;32m[Koperator==[m[K(const unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&, const unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+[3.027s]  2143 |     [01;36m[Koperator[m[K==(const unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+[3.027s]       |     [01;36m[K^~~~~~~~[m[K
+[3.027s] [01m[K/usr/include/c++/13/bits/unordered_map.h:2143:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.027s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unordered_map<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>[m[K’
+[3.028s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.028s]       |                                         [01;36m[K^[m[K
+[3.028s] [01m[K/usr/include/c++/13/bits/unordered_map.h:2157:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key1, class _Tp1, class _Hash1, class _Pred1, class _Alloc1> bool std::[01;32m[Koperator==[m[K(const unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&, const unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+[3.028s]  2157 |     [01;36m[Koperator[m[K==(const unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+[3.028s]       |     [01;36m[K^~~~~~~~[m[K
+[3.028s] [01m[K/usr/include/c++/13/bits/unordered_map.h:2157:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.028s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unordered_multimap<_Key1, _Tp1, _Hash1, _Pred1, _Alloc1>[m[K’
+[3.028s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.028s]       |                                         [01;36m[K^[m[K
+[3.028s] [01m[K/usr/include/c++/13/bits/unordered_set.h:1813:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Value1, class _Hash1, class _Pred1, class _Alloc1> bool std::[01;32m[Koperator==[m[K(const unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>&, const unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+[3.028s]  1813 |     [01;36m[Koperator[m[K==(const unordered_set<_Value, _Hash, _Pred, _Alloc>& __x,
+[3.028s]       |     [01;36m[K^~~~~~~~[m[K
+[3.028s] [01m[K/usr/include/c++/13/bits/unordered_set.h:1813:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.028s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unordered_set<_Value1, _Hash1, _Pred1, _Alloc1>[m[K’
+[3.028s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.028s]       |                                         [01;36m[K^[m[K
+[3.028s] [01m[K/usr/include/c++/13/bits/unordered_set.h:1827:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Value1, class _Hash1, class _Pred1, class _Alloc1> bool std::[01;32m[Koperator==[m[K(const unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>&, const unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>&)[m[K’
+[3.029s]  1827 |     [01;36m[Koperator[m[K==(const unordered_multiset<_Value, _Hash, _Pred, _Alloc>& __x,
+[3.029s]       |     [01;36m[K^~~~~~~~[m[K
+[3.029s] [01m[K/usr/include/c++/13/bits/unordered_set.h:1827:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.029s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::unordered_multiset<_Value1, _Hash1, _Pred1, _Alloc1>[m[K’
+[3.029s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.029s]       |                                         [01;36m[K^[m[K
+[3.029s] [01m[K/usr/include/c++/13/bits/stl_set.h:987:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::[01;32m[Koperator==[m[K(const set<_Key, _Compare, _Allocator>&, const set<_Key, _Compare, _Allocator>&)[m[K’
+[3.029s]   987 |     [01;36m[Koperator[m[K==(const set<_Key, _Compare, _Alloc>& __x,
+[3.029s]       |     [01;36m[K^~~~~~~~[m[K
+[3.029s] [01m[K/usr/include/c++/13/bits/stl_set.h:987:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.030s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::set<_Key, _Compare, _Allocator>[m[K’
+[3.030s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.030s]       |                                         [01;36m[K^[m[K
+[3.030s] [01m[K/usr/include/c++/13/bits/stl_multiset.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::[01;32m[Koperator==[m[K(const multiset<_Key, _Compare, _Allocator>&, const multiset<_Key, _Compare, _Allocator>&)[m[K’
+[3.030s]   973 |     [01;36m[Koperator[m[K==(const multiset<_Key, _Compare, _Alloc>& __x,
+[3.030s]       |     [01;36m[K^~~~~~~~[m[K
+[3.030s] [01m[K/usr/include/c++/13/bits/stl_multiset.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.031s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::multiset<_Key, _Compare, _Allocator>[m[K’
+[3.031s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.031s]       |                                         [01;36m[K^[m[K
+[3.031s] [01m[K/usr/include/c++/13/bits/stl_list.h:2123:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::[01;32m[Koperator==[m[K(const __cxx11::list<_Tp, _Alloc>&, const __cxx11::list<_Tp, _Alloc>&)[m[K’
+[3.031s]  2123 |     [01;36m[Koperator[m[K==(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+[3.031s]       |     [01;36m[K^~~~~~~~[m[K
+[3.031s] [01m[K/usr/include/c++/13/bits/stl_list.h:2123:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.031s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::list<_Tp, _Alloc>[m[K’
+[3.032s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.032s]       |                                         [01;36m[K^[m[K
+[3.032s] [01m[K/usr/include/c++/13/bits/stl_map.h:1513:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::[01;32m[Koperator==[m[K(const map<_Key, _Tp, _Compare, _Allocator>&, const map<_Key, _Tp, _Compare, _Allocator>&)[m[K’
+[3.032s]  1513 |     [01;36m[Koperator[m[K==(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+[3.032s]       |     [01;36m[K^~~~~~~~[m[K
+[3.032s] [01m[K/usr/include/c++/13/bits/stl_map.h:1513:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.032s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::map<_Key, _Tp, _Compare, _Allocator>[m[K’
+[3.032s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.032s]       |                                         [01;36m[K^[m[K
+[3.032s] [01m[K/usr/include/c++/13/bits/stl_multimap.h:1134:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::[01;32m[Koperator==[m[K(const multimap<_Key, _Tp, _Compare, _Allocator>&, const multimap<_Key, _Tp, _Compare, _Allocator>&)[m[K’
+[3.032s]  1134 |     [01;36m[Koperator[m[K==(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+[3.032s]       |     [01;36m[K^~~~~~~~[m[K
+[3.032s] [01m[K/usr/include/c++/13/bits/stl_multimap.h:1134:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.032s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::multimap<_Key, _Tp, _Compare, _Allocator>[m[K’
+[3.032s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.032s]       |                                         [01;36m[K^[m[K
+[3.033s] [01m[K/usr/include/c++/13/optional:1236:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_eq_t<_Tp, _Up> std::[01;32m[Koperator==[m[K(const optional<_Tp>&, const optional<_Up>&)[m[K’
+[3.033s]  1236 |     [01;36m[Koperator[m[K==(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+[3.033s]       |     [01;36m[K^~~~~~~~[m[K
+[3.033s] [01m[K/usr/include/c++/13/optional:1236:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.033s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[3.033s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.033s]       |                                         [01;36m[K^[m[K
+[3.033s] [01m[K/usr/include/c++/13/optional:1296:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr bool std::[01;32m[Koperator==[m[K(const optional<_Tp>&, nullopt_t)[m[K’
+[3.033s]  1296 |     [01;36m[Koperator[m[K==(const optional<_Tp>& __lhs, nullopt_t) noexcept
+[3.033s]       |     [01;36m[K^~~~~~~~[m[K
+[3.033s] [01m[K/usr/include/c++/13/optional:1296:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.033s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[3.034s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.034s]       |                                         [01;36m[K^[m[K
+[3.034s] [01m[K/usr/include/c++/13/optional:1307:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr bool std::[01;32m[Koperator==[m[K(nullopt_t, const optional<_Tp>&)[m[K’
+[3.034s]  1307 |     [01;36m[Koperator[m[K==(nullopt_t, const optional<_Tp>& __rhs) noexcept
+[3.034s]       |     [01;36m[K^~~~~~~~[m[K
+[3.034s] [01m[K/usr/include/c++/13/optional:1307:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.034s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::optional<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[3.034s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.034s]       |                                         [01;36m[K^[m[K
+[3.034s] [01m[K/usr/include/c++/13/optional:1364:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_eq_t<_Tp, _Up> std::[01;32m[Koperator==[m[K(const optional<_Tp>&, const _Up&)[m[K’
+[3.034s]  1364 |     [01;36m[Koperator[m[K==(const optional<_Tp>& __lhs, const _Up& __rhs)
+[3.034s]       |     [01;36m[K^~~~~~~~[m[K
+[3.034s] [01m[K/usr/include/c++/13/optional:1364:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.034s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[3.034s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.034s]       |                                         [01;36m[K^[m[K
+[3.035s] [01m[K/usr/include/c++/13/optional:1370:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_eq_t<_Up, _Tp> std::[01;32m[Koperator==[m[K(const _Up&, const optional<_Tp>&)[m[K’
+[3.035s]  1370 |     [01;36m[Koperator[m[K==(const _Up& __lhs, const optional<_Tp>& __rhs)
+[3.035s]       |     [01;36m[K^~~~~~~~[m[K
+[3.035s] [01m[K/usr/include/c++/13/optional:1370:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.035s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::optional<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[3.035s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.035s]       |                                         [01;36m[K^[m[K
+[3.035s] [01m[K/usr/include/c++/13/variant:1266:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _Types> constexpr bool std::[01;32m[Koperator==[m[K(const variant<_Types ...>&, const variant<_Types ...>&)[m[K’
+[3.035s]  1266 |   [01;36m[K_VARIANT_RELATION_FUNCTION_TEMPLATE[m[K(==, equal)
+[3.035s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.035s] [01m[K/usr/include/c++/13/variant:1266:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.035s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::variant<_Types ...>[m[K’
+[3.035s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.035s]       |                                         [01;36m[K^[m[K
+[3.035s] [01m[K/usr/include/c++/13/bits/stl_deque.h:2290:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::[01;32m[Koperator==[m[K(const deque<_Tp, _Alloc>&, const deque<_Tp, _Alloc>&)[m[K’
+[3.035s]  2290 |     [01;36m[Koperator[m[K==(const deque<_Tp, _Alloc>& __x, const deque<_Tp, _Alloc>& __y)
+[3.035s]       |     [01;36m[K^~~~~~~~[m[K
+[3.035s] [01m[K/usr/include/c++/13/bits/stl_deque.h:2290:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.036s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::deque<_Tp, _Alloc>[m[K’
+[3.036s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.036s]       |                                         [01;36m[K^[m[K
+[3.036s] [01m[K/usr/include/c++/13/bits/stl_queue.h:380:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Seq> bool std::[01;32m[Koperator==[m[K(const queue<_Tp, _Seq>&, const queue<_Tp, _Seq>&)[m[K’
+[3.036s]   380 |     [01;36m[Koperator[m[K==(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+[3.036s]       |     [01;36m[K^~~~~~~~[m[K
+[3.036s] [01m[K/usr/include/c++/13/bits/stl_queue.h:380:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.036s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:44:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::queue<_Tp, _Seq>[m[K’
+[3.036s]    44 |             } else if(moving_turtle_ == [01;36m[K2[m[K){
+[3.036s]       |                                         [01;36m[K^[m[K
+[3.036s] [01m[K/usr/include/c++/13/system_error:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::[01;32m[Koperator==[m[K(const error_code&, const error_code&)[m[K’
+[3.036s]   449 |   [01;36m[Koperator[m[K==(const error_code& __lhs, const error_code& __rhs) noexcept
+[3.036s]       |   [01;36m[K^~~~~~~~[m[K
+[3.036s] [01m[K/usr/include/c++/13/system_error:449:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std::error_code&[m[K’
+[3.036s]   449 |   operator==([01;36m[Kconst error_code& __lhs[m[K, const error_code& __rhs) noexcept
+[3.036s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[3.036s] [01m[K/usr/include/c++/13/system_error:465:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::[01;32m[Koperator==[m[K(const error_code&, const error_condition&)[m[K’
+[3.036s]   465 |   [01;36m[Koperator[m[K==(const error_code& __lhs, const error_condition& __rhs) noexcept
+[3.036s]       |   [01;36m[K^~~~~~~~[m[K
+[3.036s] [01m[K/usr/include/c++/13/system_error:465:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std::error_code&[m[K’
+[3.037s]   465 |   operator==([01;36m[Kconst error_code& __lhs[m[K, const error_condition& __rhs) noexcept
+[3.037s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[3.037s] [01m[K/usr/include/c++/13/system_error:480:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::[01;32m[Koperator==[m[K(const error_condition&, const error_condition&)[m[K’
+[3.037s]   480 |   [01;36m[Koperator[m[K==(const error_condition& __lhs,
+[3.037s]       |   [01;36m[K^~~~~~~~[m[K
+[3.037s] [01m[K/usr/include/c++/13/system_error:480:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std::error_condition&[m[K’
+[3.037s]   480 |   operator==([01;36m[Kconst error_condition& __lhs[m[K,
+[3.037s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[3.037s] [01m[K/usr/include/c++/13/system_error:517:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::[01;32m[Koperator==[m[K(const error_condition&, const error_code&)[m[K’
+[3.037s]   517 |   [01;36m[Koperator[m[K==(const error_condition& __lhs, const error_code& __rhs) noexcept
+[3.037s]       |   [01;36m[K^~~~~~~~[m[K
+[3.037s] [01m[K/usr/include/c++/13/system_error:517:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std::error_condition&[m[K’
+[3.037s]   517 |   operator==([01;36m[Kconst error_condition& __lhs[m[K, const error_code& __rhs) noexcept
+[3.037s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[3.037s] [01m[K/usr/include/c++/13/bits/std_thread.h:324:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::[01;32m[Koperator==[m[K(thread::id, thread::id)[m[K’
+[3.038s]   324 |   [01;36m[Koperator[m[K==(thread::id __x, thread::id __y) noexcept
+[3.038s]       |   [01;36m[K^~~~~~~~[m[K
+[3.038s] [01m[K/usr/include/c++/13/bits/std_thread.h:324:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::thread::id[m[K’
+[3.038s]   324 |   operator==([01;36m[Kthread::id __x[m[K, thread::id __y) noexcept
+[3.038s]       |              [01;36m[K~~~~~~~~~~~^~~[m[K
+[3.038s] [01m[K/usr/include/c++/13/variant:1273:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr bool std::[01;32m[Koperator==[m[K(monostate, monostate)[m[K’
+[3.038s]  1273 |   constexpr bool [01;36m[Koperator[m[K==(monostate, monostate) noexcept { return true; }
+[3.038s]       |                  [01;36m[K^~~~~~~~[m[K
+[3.038s] [01m[K/usr/include/c++/13/variant:1273:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::monostate[m[K’
+[3.038s]  1273 |   constexpr bool operator==([01;36m[Kmonostate[m[K, monostate) noexcept { return true; }
+[3.038s]       |                             [01;36m[K^~~~~~~~~[m[K
+[3.038s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:48:30:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+[3.038s]    48 |             moving_turtle_ = [01;31m[K0[m[K;
+[3.038s]       |                              [01;31m[K^[m[K
+[3.038s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std_msgs::msg::Int8_<std::allocator<void> >& std_msgs::msg::Int8_<std::allocator<void> >::[01;32m[Koperator=[m[K(const std_msgs::msg::Int8_<std::allocator<void> >&)[m[K’
+[3.038s]    35 | struct [01;36m[KInt8_[m[K
+[3.038s]       |        [01;36m[K^~~~~[m[K
+[3.039s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst std_msgs::msg::Int8_<std::allocator<void> >&[m[K’
+[3.039s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std_msgs::msg::Int8_<std::allocator<void> >& std_msgs::msg::Int8_<std::allocator<void> >::[01;32m[Koperator=[m[K(std_msgs::msg::Int8_<std::allocator<void> >&&)[m[K’
+[3.039s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >&&[m[K’
+[3.039s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kinput_timer_callback[m[K()[m[K’:
+[3.039s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:67:34:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::Int8[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+[3.039s]    67 |                 moving_turtle_ = [01;31m[Kn_turtle[m[K;
+[3.039s]       |                                  [01;31m[K^~~~~~~~[m[K
+[3.039s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std_msgs::msg::Int8_<std::allocator<void> >& std_msgs::msg::Int8_<std::allocator<void> >::[01;32m[Koperator=[m[K(const std_msgs::msg::Int8_<std::allocator<void> >&)[m[K’
+[3.039s]    35 | struct [01;36m[KInt8_[m[K
+[3.039s]       |        [01;36m[K^~~~~[m[K
+[3.039s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst std_msgs::msg::Int8_<std::allocator<void> >&[m[K’
+[3.039s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std_msgs::msg::Int8_<std::allocator<void> >& std_msgs::msg::Int8_<std::allocator<void> >::[01;32m[Koperator=[m[K(std_msgs::msg::Int8_<std::allocator<void> >&&)[m[K’
+[3.039s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kstd_msgs::msg::Int8_<std::allocator<void> >&&[m[K’
+[6.033s] gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+[6.033s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+[6.033s] gmake[1]: *** Waiting for unfinished jobs....
+[6.798s] gmake[2]: *** [CMakeFiles/distance.dir/build.make:76: CMakeFiles/distance.dir/src/distance_node.cpp.o] Error 1
+[6.798s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/distance.dir/all] Error 2
+[6.798s] gmake: *** [Makefile:146: all] Error 2
+[6.804s] Invoked command in '/home/luchino/RT_first_assignment/build/assignment1_rt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8

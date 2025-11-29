@@ -1,0 +1,22 @@
+[0.022s] Invoking command in '/home/luchino/RT_first_assignment/build/assignment1_rt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8
+[0.245s] [ 25%] [32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o[0m
+[0.251s] [ 50%] [32mBuilding CXX object CMakeFiles/distance.dir/src/distance_node.cpp.o[0m
+[3.436s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In constructor ‘[01m[KInput_Controller::[01;32m[KInput_Controller[m[K()[m[K’:
+[3.436s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:20:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kstop_turtle[m[K’
+[3.436s]    20 |             [01;31m[Kstop_turtle[m[K.linear.x = 0.0;
+[3.437s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[3.455s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:[m[K In member function ‘[01m[Kvoid Input_Controller::[01;32m[Kinput_timer_callback[m[K()[m[K’:
+[3.455s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:80:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kreverse_vel[m[K’ was not declared in this scope; did you mean ‘[01m[Kreverse_timer_[m[K’?
+[3.456s]    80 |                     [01;31m[Kreverse_vel[m[K.linear.x = -last_vel_input.linear.x;
+[3.456s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[3.456s]       |                     [32m[Kreverse_timer_[m[K
+[3.456s] [01m[K/home/luchino/RT_first_assignment/src/assignment1_rt/src/ui_node.cpp:94:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kreverse_movement_callback[m[K’ is not a member of ‘[01m[KInput_Controller[m[K’
+[3.456s]    94 |                         std::bind(&Input_Controller::[01;31m[Kreverse_movement_callback[m[K, this)
+[3.456s]       |                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.355s] gmake[2]: *** [CMakeFiles/ui.dir/build.make:76: CMakeFiles/ui.dir/src/ui_node.cpp.o] Error 1
+[6.356s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ui.dir/all] Error 2
+[6.356s] gmake[1]: *** Waiting for unfinished jobs....
+[10.924s] [ 75%] [32m[1mLinking CXX executable distance[0m
+[11.867s] [ 75%] Built target distance
+[11.869s] gmake: *** [Makefile:146: all] Error 2
+[11.872s] Invoked command in '/home/luchino/RT_first_assignment/build/assignment1_rt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy /usr/bin/cmake --build /home/luchino/RT_first_assignment/build/assignment1_rt -- -j8 -l8

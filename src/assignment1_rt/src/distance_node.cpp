@@ -2,29 +2,33 @@
 #include "turtlesim/msg/pose.hpp"
 #include "geometry_msgs/msg/twist.hpp"
 #include "std_msgs/msg/float32.hpp"
+#include "std_msgs/msg/int8.hpp"
 #include "std_msgs/msg/bool.hpp" 
 #include <math.h>
+#include <iostream>
 using std::placeholders::_1;
 
-#include <iostream>
 class Distance_Check: public rclcpp::Node{
     public:
         Distance_Check(): Node("distance_check"){
             t1_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
             t2_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle2/cmd_vel", 10);
             distance_pub_ = this->create_publisher<std_msgs::msg::Float32>("distance", 10);
-            boundaries_pub_ = this->create_publisher<std_msgs::msg::Bool>("boundaries", 10);
 
             t1_pose_sub_ = this->create_subscription<turtlesim::msg::Pose>("/turtle1/pose", 10, std::bind(&Distance_Check::turtle1_pose, this, _1));
             t2_pose_sub_ = this->create_subscription<turtlesim::msg::Pose>("/turtle2/pose", 10, std::bind(&Distance_Check::turtle2_pose, this, _1));
+            id_moved_turtle_sub_ = this->create_subscription<std_msgs::msg::Int8>("/id_moved_turtle", 10, std::bind(&Distance_Check::turtle_moved, this, _1));
 
-            //timer_ = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&Distance_Check::timer_callback, this));
             distance_timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&Distance_Check::distance_timer_callback, this));
             boundaries_timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&Distance_Check::boundaries_timer_callback, this));
 
             distance.data =11.0;
 
             boundaries.data = false;
+
+            id_turtle_moved.data = 0;
+
+            reverse_turtle.linear.x = -0.5;
 
             stop_turtle.linear.x = 0.0;
             stop_turtle.angular.z = 0.0;
@@ -33,22 +37,16 @@ class Distance_Check: public rclcpp::Node{
     private:
 
         void boundaries_timer_callback(){
-
-            boundaries.data = false;
             if(pos_t1.x > 10.0 || pos_t1.x < 1.0 || pos_t1.y > 10.0 || pos_t1.y < 1.0){
                 t1_vel_pub_->publish(stop_turtle);
-                boundaries.data = true;
-                RCLCPP_INFO(this->get_logger(), "Turtle 1 troppo vicina ad un bordo!");
-
+                t1_vel_pub_->publish(reverse_turtle);
+                t1_vel_pub_->publish(stop_turtle);
             }
-
             if(pos_t2.x > 10.0 || pos_t2.x < 1.0 || pos_t2.y > 10.0 || pos_t2.y < 1.0){
                 t2_vel_pub_->publish(stop_turtle);
-                boundaries.data = true;
-                RCLCPP_INFO(this->get_logger(), "Turtle 2 troppo vicina ad un bordo!");
+                t2_vel_pub_->publish(reverse_turtle);
+                t1_vel_pub_->publish(stop_turtle);
             }
-            boundaries_pub_->publish(boundaries);
-
         }
 
         void distance_timer_callback(){
@@ -56,12 +54,23 @@ class Distance_Check: public rclcpp::Node{
             distance.data = sqrt(pow((pos_t2.x-pos_t1.x),2) + pow((pos_t2.y-pos_t1.y),2));
             std::cout << "Distanza:" << distance.data <<std::endl;
             if(distance.data < 1.0){
-                t1_vel_pub_->publish(stop_turtle);
-                t2_vel_pub_->publish(stop_turtle);
+                if(id_turtle_moved.data == 1){
+                    t1_vel_pub_->publish(stop_turtle);
+                    t1_vel_pub_->publish(reverse_turtle);
+                    t1_vel_pub_->publish(stop_turtle);
+                }else{
+                    t2_vel_pub_->publish(stop_turtle);
+                    t2_vel_pub_->publish(reverse_turtle);
+                    t2_vel_pub_->publish(stop_turtle);
+                }
                 RCLCPP_INFO(this->get_logger(), "Tartarughe troppo vicine!.");
             }
             distance_pub_->publish(distance);
 
+        }
+
+        void turtle_moved(const std_msgs::msg::Int8::SharedPtr msg){
+            id_turtle_moved.data = msg->data;
         }
 
         void turtle1_pose(const turtlesim::msg::Pose::SharedPtr msg){
@@ -74,22 +83,25 @@ class Distance_Check: public rclcpp::Node{
         } 
         rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr t1_pose_sub_;
         rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr t2_pose_sub_;
+        rclcpp::Subscription<std_msgs::msg::Int8>::SharedPtr id_moved_turtle_sub_;
 
         rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr t1_vel_pub_;
         rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr t2_vel_pub_;
         rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr distance_pub_;
-        rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr boundaries_pub_;
 
         turtlesim::msg::Pose pos_t1;
         turtlesim::msg::Pose pos_t2;
 
         geometry_msgs::msg::Twist stop_turtle;
+        geometry_msgs::msg::Twist rotation_turtle;
+        geometry_msgs::msg::Twist reverse_turtle;
 
         //rclcpp::TimerBase::SharedPtr timer_;
         rclcpp::TimerBase::SharedPtr distance_timer_;
         rclcpp::TimerBase::SharedPtr boundaries_timer_;
 
         std_msgs::msg::Float32 distance;
+        std_msgs::msg::Int8 id_turtle_moved;
         std_msgs::msg::Bool boundaries;
 };
 
