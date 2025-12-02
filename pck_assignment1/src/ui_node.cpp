@@ -56,7 +56,7 @@ class InputController : public rclcpp::Node{
 
         //TIMERS
         rclcpp::TimerBase::SharedPtr input_timer_;
-        rclcpp::TimerBase::SharedPtr stop_timer_;
+        //rclcpp::TimerBase::SharedPtr stop_timer_;
 
         //PUBLISHERS
         rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr t1_vel_pub_;

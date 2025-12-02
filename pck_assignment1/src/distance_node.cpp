@@ -13,12 +13,13 @@ class DistanceController: public rclcpp::Node{
         DistanceController(): Node("distance_controller"){
             
             //TIMERS
-            check_timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&DistanceController::distance_boundaries_timer_callback, this));
+            distance_timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&DistanceController::distance_timer_callback, this));
+            boundaries_timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&DistanceController::boundaries_timer_callback, this));
 
             //PUBLISHERS
             distance_pub_ = this->create_publisher<std_msgs::msg::Float32>("/distance", 10);
             t1_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
-            t1_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle2/cmd_vel", 10);
+            t2_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle2/cmd_vel", 10);
 
             //SUBSCRIBERS
             t1_pose_sub_ = this->create_subscription<turtlesim::msg::Pose>("/turtle1/pose", 10, std::bind(&DistanceController::turtle1_pose_callback, this, _1));
@@ -27,10 +28,27 @@ class DistanceController: public rclcpp::Node{
 
             //VARIABLES
             stop_turtle.linear.x = 0.0;
-            stop_turtle.angular.y = 0.0;
+            stop_turtle.angular.z = 0.0;
+            id_turtle.data = 0;
         }
     private:
 
+        void distance_timer_callback(){
+            distance.data = sqrt(pow((t2_pose.x-t1_pose.x),2) + pow((t2_pose.y-t1_pose.y),2));
+            std::cout << "Distanza:" << distance.data <<std::endl;
+            distance_pub_->publish(distance);
+
+            if(distance.data < 1.0){
+                if(id_turtle.data == 1){
+                    t1_vel_pub_->publish(stop_turtle);
+                }
+                if(id_turtle.data == 2){
+                    t2_vel_pub_->publish(stop_turtle);
+                }
+            }
+        }
+        
+        /*
         void distance_boundaries_timer_callback(){
 
             distance.data = sqrt(pow((t2_pose.x-t1_pose.x),2) + pow((t2_pose.y-t1_pose.y),2));
@@ -41,7 +59,7 @@ class DistanceController: public rclcpp::Node{
                 if(id_turtle.data == 1){
                     t1_vel_pub_->publish(stop_turtle);
                 }
-                if(id_turtle.data == 1){
+                if(id_turtle.data == 2){
                     t2_vel_pub_->publish(stop_turtle);
                 }
             }
@@ -50,7 +68,7 @@ class DistanceController: public rclcpp::Node{
                 if(id_turtle.data == 1){
                     t1_vel_pub_->publish(stop_turtle);
                 }
-                if(id_turtle.data == 1){
+                if(id_turtle.data == 2){
                     t2_vel_pub_->publish(stop_turtle);
                 }
             }
@@ -59,35 +77,48 @@ class DistanceController: public rclcpp::Node{
                 if(id_turtle.data == 1){
                     t1_vel_pub_->publish(stop_turtle);
                 }
+                if(id_turtle.data == 2){
+                    t2_vel_pub_->publish(stop_turtle);
+                }
+            }
+        }*/
+        
+        void boundaries_timer_callback(){
+            if(t1_pose.x > 10.0 || t1_pose.y > 10.0 || t1_pose.x < 1.0 || t1_pose.y < 1.0){
                 if(id_turtle.data == 1){
+                    t1_vel_pub_->publish(stop_turtle);
+                }
+                if(id_turtle.data == 2){
+                    t2_vel_pub_->publish(stop_turtle);
+                }
+            }
+
+            if(t2_pose.x > 10.0 || t2_pose.y > 10.0 || t2_pose.x < 1.0 || t2_pose.y < 1.0){
+                if(id_turtle.data == 1){
+                    t1_vel_pub_->publish(stop_turtle);
+                }
+                if(id_turtle.data == 2){
                     t2_vel_pub_->publish(stop_turtle);
                 }
             }
         }
-        /*
-        void boundaries_timer_callback(){
-            if(t1_pose.x > 10.0 || t1_pose.y > 10.0 || t1_pose.x < 1.0 || t1_pose.y < 1.0){
-                stop.data=true;
-            }
-            if(t2_pose.x > 10.0 || t2_pose.y > 10.0 || t2_pose.x < 1.0 || t2_pose.y < 1.0){
-                stop.data=true;
-            }
-            stop_pub_->publish(stop);
-        }*/
 
         void id_turtle_callback(const std_msgs::msg::Int32::SharedPtr msg){
-            id_turtle = *msg;
+            id_turtle.data = msg->data;
         }
 
         void turtle1_pose_callback(const turtlesim::msg::Pose::SharedPtr msg){
-            t1_pose = *msg;
+            t1_pose.x = msg->x;
+            t1_pose.y = msg->y;
         }
 
         void turtle2_pose_callback(const turtlesim::msg::Pose::SharedPtr msg){
-            t2_pose = *msg;
+            t2_pose.x = msg->x;
+            t2_pose.y = msg->y;
         }
         //TIMERS
-        rclcpp::TimerBase::SharedPtr check_timer_;
+        rclcpp::TimerBase::SharedPtr distance_timer_;
+        rclcpp::TimerBase::SharedPtr boundaries_timer_;
 
         //PUBLISHER
         rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr distance_pub_;
