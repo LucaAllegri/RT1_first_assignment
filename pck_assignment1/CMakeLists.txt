@@ -21,7 +21,7 @@ add_executable(ui src/ui_node.cpp)
 add_executable(distance src/distance_node.cpp) 
 
 ament_target_dependencies(ui rclcpp std_msgs geometry_msgs)
-ament_target_dependencies(distance rclcpp std_msgs turtlesim)
+ament_target_dependencies(distance rclcpp std_msgs turtlesim geometry_msgs)
 
 
 install(TARGETS 
