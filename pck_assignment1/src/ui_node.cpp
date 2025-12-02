@@ -34,14 +34,6 @@ class InputController : public rclcpp::Node{
     
     private:
 
-        void start(){
-            if(!is_reversing){
-                input_timer_ = this->create_wall_timer(
-                    std::chrono::milliseconds(1000), 
-                    std::bind(&Input_Controller::input_timer_callback, this));        
-            }
-        }
-
         void reverse_state_callback(const std_msgs::msg::Int32::SharedPtr msg){
             int i = msg->data;
             if(i!=0){
@@ -54,8 +46,16 @@ class InputController : public rclcpp::Node{
         void stop_turtles(){
             t1_vel_pub_->publish(stop_vel);
             t2_vel_pub_->publish(stop_vel);
-            is_moving_ = false;
+            is_moving = false;
             this->start();
+        }
+
+        void start(){
+            if(!input_timer_ && !is_reversing){
+                input_timer_ = this->create_wall_timer(
+                    std::chrono::milliseconds(1000), 
+                    std::bind(&InputController::input_timer_callback, this));        
+            }
         }
 
         void input_timer_callback(){
@@ -75,7 +75,6 @@ class InputController : public rclcpp::Node{
                 std::cin >> vel_input.angular.z;
 
                 moved_turtle.data = n_turtle;
-                last_vel = vel_input;
 
                 if(n_turtle == 1){
                     t1_vel_pub_->publish(vel_input);
@@ -85,10 +84,11 @@ class InputController : public rclcpp::Node{
                     id_turtle_managed_pub_->publish(moved_turtle);
                 }
                 is_moving=true;
+                input_timer_.reset();
 
                 stop_timer_ = this->create_wall_timer(
                     std::chrono::milliseconds(1000), 
-                    std::bind(&Input_Controller::stop_turtles, this)
+                    std::bind(&InputController::stop_turtles, this)
                 );
 
             }else{
@@ -98,6 +98,7 @@ class InputController : public rclcpp::Node{
 
         //TIMERSs
         rclcpp::TimerBase::SharedPtr input_timer_;
+        rclcpp::TimerBase::SharedPtr stop_timer_;
 
         //PUBLISHERS
         rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr t1_vel_pub_;
@@ -105,7 +106,7 @@ class InputController : public rclcpp::Node{
         rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr id_turtle_managed_pub_;
 
         //SUBSCRIBERS
-        rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr stop_msg_sub_;
+        rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr reverse_state_sub_;
 
         //VARIABLES
         int n_turtle;

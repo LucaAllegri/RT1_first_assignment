@@ -32,25 +32,28 @@ class DistanceController: public rclcpp::Node{
             stop_turtle.linear.x = 0.0;
             stop_turtle.angular.z = 0.0;
             id_turtle.data = 0;
+            is_reversing_t1 = false;
+            is_reversing_t2 = false;
         }
     private:
 
         void stop_and_reset() {
             if(id_turtle.data == 1){
                 t1_vel_pub_->publish(stop_turtle);
-                is_reversing_t1_ = false;
+                is_reversing_t1 = false;
                 reverse_timer_t1_.reset();
-            }else if(){
+            }else if(id_turtle.data == 2){
                 t2_vel_pub_->publish(stop_turtle);
-                is_reversing_t2_ = false;
+                is_reversing_t2 = false;
                 reverse_timer_t2_.reset();
             }
-            reverse_state_pub_->publish(0);
+            id_turtle.data=0;
+            reverse_state_pub_->publish(id_turtle);
         }
 
         geometry_msgs::msg::Twist check_direction_t1(){
             geometry_msgs::msg::Twist reverse_turtle1_vel;
-            if(t1_vel.linear.x < 0){
+            if(t1_actual_vel.linear.x < 0){
                 reverse_turtle1_vel.linear.x = 1;
             }else{
                 reverse_turtle1_vel.linear.x = -1;
@@ -60,7 +63,7 @@ class DistanceController: public rclcpp::Node{
 
         geometry_msgs::msg::Twist check_direction_t2(){
             geometry_msgs::msg::Twist reverse_turtle2_vel;
-            if(t2_vel.linear.x < 0){
+            if(t2_actual_vel.linear.x < 0){
                 reverse_turtle2_vel.linear.x = 1;
             }else{
                 reverse_turtle2_vel.linear.x = -1;
@@ -79,50 +82,50 @@ class DistanceController: public rclcpp::Node{
             if(distance.data < 1.0){
                 if(id_turtle.data == 1 && !is_reversing_t1){
                     is_reversing_t1 = true;
-                    reverse_state_pub_->publish(1);
+                    reverse_state_pub_->publish(id_turtle);
                     reverse_vel = check_direction_t1();
-                    t1_vel_pub_->publish(check_direction_t1());
+                    t1_vel_pub_->publish(reverse_vel);
 
                     reverse_timer_t1_ = this->create_wall_timer(
                         std::chrono::milliseconds(1000),
-                        std::bind(&Distance_Check::stop_and_reset, this)
+                        std::bind(&DistanceController::stop_and_reset, this)
                     );
 
                 }
                 if(id_turtle.data == 2 && !is_reversing_t2){
                     is_reversing_t2 = true;
-                    reverse_state_pub_->publish(2);
+                    reverse_state_pub_->publish(id_turtle);
                     reverse_vel = check_direction_t2();
                     t2_vel_pub_->publish(check_direction_t1());
 
                     reverse_timer_t2_ = this->create_wall_timer(
                         std::chrono::milliseconds(1000),
-                        std::bind(&Distance_Check::stop_and_reset, this)
+                        std::bind(&DistanceController::stop_and_reset, this)
                     );
                 }
             }
 
             if(t1_pose.x > 10.0 || t1_pose.y > 10.0 || t1_pose.x < 1.0 || t1_pose.y < 1.0){
                 is_reversing_t1 = true;
-                reverse_state_pub_->publish(1);
+                reverse_state_pub_->publish(id_turtle);
                 reverse_vel = check_direction_t1();
                 t1_vel_pub_->publish(reverse_vel);
 
                 reverse_timer_t1_= this->create_wall_timer(
                     std::chrono::milliseconds(1000),
-                    std::bind(&Distance_Check::stop_and_reset, this)
+                    std::bind(&DistanceController::stop_and_reset, this)
                 );
             }
 
             if(t2_pose.x > 10.0 || t2_pose.y > 10.0 || t2_pose.x < 1.0 || t2_pose.y < 1.0){
-                is_reversing_t2_ = true;
-                reverse_state_pub_->publish(2);
+                is_reversing_t2 = true;
+                reverse_state_pub_->publish(id_turtle);
                 reverse_vel = check_direction_t2();
                 t2_vel_pub_->publish(reverse_vel);
 
                 reverse_timer_t2_ = this->create_wall_timer(
                     std::chrono::milliseconds(1000),
-                    std::bind(&Distance_Check::stop_and_reset, this)
+                    std::bind(&DistanceController::stop_and_reset, this)
                 );
             }
         }
@@ -158,6 +161,8 @@ class DistanceController: public rclcpp::Node{
         //rclcpp::TimerBase::SharedPtr distance_timer_;
         //rclcpp::TimerBase::SharedPtr boundaries_timer_;
         rclcpp::TimerBase::SharedPtr check_timer;
+        rclcpp::TimerBase::SharedPtr reverse_timer_t1_;
+        rclcpp::TimerBase::SharedPtr reverse_timer_t2_;
 
         //PUBLISHER
         rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr distance_pub_;
