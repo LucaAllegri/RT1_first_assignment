@@ -11,7 +11,7 @@ class InputController : public rclcpp::Node{
     InputController(): Node("input_controller"){ 
 
         //TIMERS 
-        main_timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&InputController::stop_timer_callback, this));
+        this->start();
 
         //PUBLISHERS
         t1_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
@@ -19,53 +19,52 @@ class InputController : public rclcpp::Node{
         id_turtle_managed_pub_ = this->create_publisher<std_msgs::msg::Int32>("/id_turtle_moved", 10);
         
         //SUBSCRIBERS
-        stop_msg_sub_ = this->create_subscription<std_msgs::msg::Bool>("/stop_message", 10, std::bind(&InputController::stop_msg_callback, this, _1));
-        reverse_state_sub_ = this->create_subscription<std_msgs::msg::Int32>("/is_reversing", 10, std::bind(&InputController::stop_msg_callback, this, _1));
+        reverse_state_sub_ = this->create_subscription<std_msgs::msg::Int32>("/is_reversing", 10, std::bind(&InputController::reverse_state_callback, this, _1));
 
         //VARIABLES
-        stop_turtle.linear.x = 0.0;
-        stop_turtle.angular.z = 0.0;
+        stop_vel.linear.x = 0.0;
+        stop_vel.angular.z = 0.0;
         vel_input.linear.x = 0.0;
         vel_input.angular.z = 0.0;
         last_vel.linear.x = 0.0;
         last_vel.angular.z = 0.0;
-        is_stopped.data = false;
+        is_moving = false;
+        is_reversing = false;
     }
     
     private:
 
-        void stop_timer_callback(){
-            if(is_stopped.data){
-                /*if(last_vel.liner.x == 0.0 && last_vel.angular.z == 0.0){  //if both turtles start near each other or near one bounder
-                    last_vel.linear.x = -1.0; 
-                    t1_vel_pub_->publish(last_vel);
-                }*/
-                if(last_vel.linear.x < 0.0){
-                    if(moved_turtle.data == 1){
-                        last_vel.linear.x = 1.0;
-                        t1_vel_pub_->publish(last_vel);
-                    }else if(moved_turtle.data == 2){
-                        last_vel.linear.x = 1.0;
-                        t2_vel_pub_->publish(last_vel);
-                    }
-                }else if(last_vel.linear.x > 0.0){
-                    if(moved_turtle.data == 1){
-                        last_vel.linear.x = -1.0;
-                        t1_vel_pub_->publish(last_vel);
-                    }else if(moved_turtle.data == 2){
-                        last_vel.linear.x = -1.0;
-                        t2_vel_pub_->publish(last_vel);
-                    }
-                }
+        void start(){
+            if(!is_reversing){
+                input_timer_ = this->create_wall_timer(
+                    std::chrono::milliseconds(1000), 
+                    std::bind(&Input_Controller::input_timer_callback, this));        
             }
         }
 
-        void stop_msg_callback(const std_msgs::msg::Bool::SharedPtr msg){
-            is_stopped.data = msg->data;
+        void reverse_state_callback(const std_msgs::msg::Int32::SharedPtr msg){
+            int i = msg->data;
+            if(i!=0){
+                is_reversing=true;
+            }else{
+                is_reversing=false;
+            }
+        }
+
+        void stop_turtles(){
+            t1_vel_pub_->publish(stop_vel);
+            t2_vel_pub_->publish(stop_vel);
+            is_moving_ = false;
+            this->start();
         }
 
         void input_timer_callback(){
-        
+            if(is_moving){
+                return;              //block if is moving
+            }
+            if(is_reversing){        //block if coming back
+                return;
+            }
             std::cout<< "Quale tartaruga vuoi muovere?\n1) Turtle 1\n2) Turtle 2\n:";
             std::cin >> n_turtle;
             if(n_turtle == 1 || n_turtle ==2){
@@ -85,6 +84,12 @@ class InputController : public rclcpp::Node{
                     t2_vel_pub_->publish(vel_input);
                     id_turtle_managed_pub_->publish(moved_turtle);
                 }
+                is_moving=true;
+
+                stop_timer_ = this->create_wall_timer(
+                    std::chrono::milliseconds(1000), 
+                    std::bind(&Input_Controller::stop_turtles, this)
+                );
 
             }else{
                 std::cout<<"Devi inserire 1 o 2!\n";
@@ -93,7 +98,6 @@ class InputController : public rclcpp::Node{
 
         //TIMERSs
         rclcpp::TimerBase::SharedPtr input_timer_;
-        rclcpp::TimerBase::SharedPtr stop_timer_;
 
         //PUBLISHERS
         rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr t1_vel_pub_;
@@ -108,8 +112,9 @@ class InputController : public rclcpp::Node{
         bool is_in_recovery_state;
         geometry_msgs::msg::Twist vel_input;
         geometry_msgs::msg::Twist last_vel;
-        geometry_msgs::msg::Twist stop_turtle;
-        std_msgs::msg::Bool is_stopped;
+        geometry_msgs::msg::Twist stop_vel;
+        bool is_moving;
+        bool is_reversing;
         std_msgs::msg::Int32 moved_turtle;
 };
 

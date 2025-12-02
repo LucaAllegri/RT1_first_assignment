@@ -13,7 +13,7 @@ class DistanceController: public rclcpp::Node{
         DistanceController(): Node("distance_controller"){
             
             //TIMERS
-            check_timer = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&DistanceController::distance_boundaries_timer_callback, this));
+            check_timer = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&DistanceController::distance_boundaries_timer, this));
 
             //PUBLISHERS
             distance_pub_ = this->create_publisher<std_msgs::msg::Float32>("/distance", 10);
@@ -69,7 +69,7 @@ class DistanceController: public rclcpp::Node{
         }
         
         
-        void distance_boundaries_timer_callback(){
+        void distance_boundaries_timer(){
             geometry_msgs::msg::Twist reverse_vel;
 
             distance.data = sqrt(pow((t2_pose.x-t1_pose.x),2) + pow((t2_pose.y-t1_pose.y),2));
@@ -103,12 +103,12 @@ class DistanceController: public rclcpp::Node{
             }
 
             if(t1_pose.x > 10.0 || t1_pose.y > 10.0 || t1_pose.x < 1.0 || t1_pose.y < 1.0){
-                is_reversing_t1_ = true;
+                is_reversing_t1 = true;
                 reverse_state_pub_->publish(1);
                 reverse_vel = check_direction_t1();
                 t1_vel_pub_->publish(reverse_vel);
 
-                reverse_timer_t1_ = this->create_wall_timer(
+                reverse_timer_t1_= this->create_wall_timer(
                     std::chrono::milliseconds(1000),
                     std::bind(&Distance_Check::stop_and_reset, this)
                 );
@@ -131,17 +131,17 @@ class DistanceController: public rclcpp::Node{
             id_turtle.data = msg->data;
         }
 
-        void turtle1_vel_callback(const turtlesim::msg::Pose::SharedPtr msg){
-            if (!is_reversing_t1_){
-                t1_actual_vel.x = msg->x;
-                t1_actual_vel.y = msg->y;
+        void turtle1_vel_callback(const geometry_msgs::msg::Twist::SharedPtr msg){
+            if (!is_reversing_t1){
+                t1_actual_vel.linear.x = msg->linear.x;
+                t1_actual_vel.angular.z = msg->linear.z;
             }
         }
 
-        void turtle2_vel_callback(const turtlesim::msg::Pose::SharedPtr msg){
-            if (!is_reversing_t2_){
-                t2_actual_vel.x = msg->x;
-                t2_actual_vel.y = msg->y;
+        void turtle2_vel_callback(const geometry_msgs::msg::Twist::SharedPtr msg){
+            if (!is_reversing_t2){
+                t2_actual_vel.linear.x = msg->linear.x;
+                t2_actual_vel.angular.z = msg->linear.z;
             }
         }
 
