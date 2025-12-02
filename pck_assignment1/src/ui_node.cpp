@@ -1,30 +1,42 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
+#include "geometry_msgs/msg/twist.hpp"
 #include <iostream>
 
-class MinimalPublisher : public rclcpp::Node{ 
+class InputController : public rclcpp::Node{ 
     public:
-    MinimalPublisher(): Node("minimal_publisher"){ 
-        publisher_ = this->create_publisher<std_msgs::msg::String>("topic", 10);
-        timer_ = this->create_wall_timer(std::chrono::milliseconds(500), std::bind(&MinimalPublisher::timer_callback, this));
+    InputController(): Node("input_controller"){ 
+        t1_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
+        t2_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle2/cmd_vel", 10);
+
+        input_timer_ = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&InputController::input_timer_callback, this));
         count_ = 0;
     }
     
     private:
-        void timer_callback(){
+        void input_timer_callback(){
             message.data = "Hello, world! " + std::to_string(count_++);
             RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
             publisher_->publish(message);
         } 
-        rclcpp::TimerBase::SharedPtr timer_;
-        rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
+
+        //TIMERS
+        rclcpp::TimerBase::SharedPtr input_timer_;
+
+        //PUBLISHERS
+        rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr t1_vel_pub_;
+        rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr t2_vel_pub_;
+
+        //SUBSCRIBERS
+
+        //VARIABLES
         int count_;
         std_msgs::msg::String message;
 };
 
 int main(int argc, char * argv[]){
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<MinimalPublisher>());
+    rclcpp::spin(std::make_shared<InputController>());
     rclcpp::shutdown();
     return 0;
 }
