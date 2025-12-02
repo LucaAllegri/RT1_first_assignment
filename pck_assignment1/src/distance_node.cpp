@@ -1,10 +1,10 @@
- #include "rclcpp/rclcpp.hpp"
- #include "std_msgs/msg/string.hpp"
- #include "turtlesim/msg/pose.hpp"
- #include "std_msgs/msg/bool.hpp"
- #include "std_msgs/msg/float32.hpp"
- #include <math.h>
- using std::placeholders::_1;
+#include "rclcpp/rclcpp.hpp"
+#include "std_msgs/msg/string.hpp"
+#include "turtlesim/msg/pose.hpp"
+#include "std_msgs/msg/bool.hpp"
+#include "std_msgs/msg/float32.hpp"
+#include <math.h>
+using std::placeholders::_1;
 
 class DistanceController: public rclcpp::Node{
     public:
@@ -15,50 +15,55 @@ class DistanceController: public rclcpp::Node{
             t1_pose_sub_ = this->create_subscription<turtlesim::msg::Pose>("/turtle1/pose", 10, std::bind(&DistanceController::turtle1_pose_callback, this, _1));
             t2_pose_sub_ = this->create_subscription<turtlesim::msg::Pose>("/turtle2/pose", 10, std::bind(&DistanceController::turtle2_pose_callback, this, _1));
         
-            distance_timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&InputController::distance_timer_callback, this));
-            boundaries_timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&InputController::boundaries_timer_callback, this));
+            check_timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&InputController::distance_boundaries_timer_callback, this));
+        
         }
     private:
 
-        void distance_timer_callback(){
+        void distance_boundaries_timer_callback(){
             stop.data = false;
-            
+
             distance.data = sqrt(pow((t2_pose.x-t1_pose.x),2) + pow((t2_pose.y-t1_pose.y),2));
             std::cout << "Distanza:" << distance.data <<std::endl;
-            distance_pub_->publish(distance.data);
+            distance_pub_->publish(distance);
 
             if(distance.data < 1.0){
                 stop.data=true;
             }
-            stop_pub_->pusblish(stop.data);
+
+            if(t1_pose.x > 10.0 || t1_pose.y > 10.0 || t1_pose.x < 1.0 || t1_pose.y < 1.0){
+                stop.data=true;
+            }
+
+            if(t2_pose.x > 10.0 || t2_pose.y > 10.0 || t2_pose.x < 1.0 || t2_pose.y < 1.0){
+                stop.data=true;
+            }
+
+            stop_pub_->publish(stop);
         }
 
         void boundaries_timer_callback(){
-            stop = false;
             if(t1_pose.x > 10.0 || t1_pose.y > 10.0 || t1_pose.x < 1.0 || t1_pose.y < 1.0){
-                stop=true;
+                stop.data=true;
             }
             if(t2_pose.x > 10.0 || t2_pose.y > 10.0 || t2_pose.x < 1.0 || t2_pose.y < 1.0){
-                stop=true;
+                stop.data=true;
             }
-            stop_pub_->pusblish(stop.data);
+            stop_pub_->pusblish(stop);
         }
 
         void turtle1_pose_callback(const turtlesim::msg::Pose::SharedPtr msg){
-            t1_pose.x = msg->x;
-            t1_pose.y = msg->y;
+            t1_pose = *msg;
         }
 
         void turtle2_pose_callback(const turtlesim::msg::Pose::SharedPtr msg){
-            t2_pose.x = msg->x;
-            t2_pose.y = msg->y;
+            t2_pose = *msg;
         }
         //TIMERS
-        rclcpp::TimerBase::SharedPtr distance_timer_;
-        rclcpp::TimerBase::SharedPtr boundaries_timer_;
+        rclcpp::TimerBase::SharedPtr check_timer_;
 
         //PUBLISHER
-        rclcpp::Publisher<std_msgs::msg::bool>::SharedPtr stop_pub_;
+        rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr stop_pub_;
 
         //SUBSCRIBERS
         rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr t1_pose_sub_;

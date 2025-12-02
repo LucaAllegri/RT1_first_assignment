@@ -1,7 +1,9 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 #include "geometry_msgs/msg/twist.hpp"
+#include "std_msgs/msg/bool.hpp"
 #include <iostream>
+using std::placeholders::_1;
 
 class InputController : public rclcpp::Node{ 
     public:
@@ -9,13 +11,20 @@ class InputController : public rclcpp::Node{
         t1_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
         t2_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle2/cmd_vel", 10);
         
-        stop_sub_ = this->create_subscription<turtlesim::msg::Pose>("/stop_message", 10, std::bind(&DistanceController::turtle2_pose_callback, this, _1));
+        stop_sub_ = this->create_subscription<std_msgs::msg::Bool>("/stop_message", 10, std::bind(&InputController::stop_callback, this, _1));
 
+        input_timer_ = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&InputController::input_timer_callback, this, _1));
+        stop_timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&InputController::stop_timer_callback, this, _1));
 
-        input_timer_ = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&InputController::input_timer_callback, this));
+        stop_turtle.linear.x = 0.0;
+        stop_turtle.angular.z = 0.0;
     }
     
     private:
+        void stop_callback(const std_msgs::msg::Bool::SharedPtr msg){
+            stop_message.data = msg->data;
+        }
+
         void input_timer_callback(){
             std::cout<< "Quale tartaruga vuoi muovere?\n1) Turtle 1\n2) Turtle 2\n:";
             std::cin >> n_turtle;
@@ -40,8 +49,15 @@ class InputController : public rclcpp::Node{
                 std::cout<<"Devi inserire 1 o 2!\n";
             }
 
-
+            stop_timer_callback();
         } 
+
+        void stop_timer_callback(){
+            if(stop_message.data){
+                t1_vel_pub_->publish(stop_turtle);
+                t2_vel_pub_->publish(stop_turtle);
+            }
+        }
 
         //TIMERS
         rclcpp::TimerBase::SharedPtr input_timer_;
@@ -55,6 +71,8 @@ class InputController : public rclcpp::Node{
         //VARIABLES
         int n_turtle;
         geometry_msgs::msg::Twist vel_input;
+        geometry_msgs::msg::Twist stop_turtle;
+        std_msgs::msg::Bool stop_message;
 };
 
 int main(int argc, char * argv[]){
