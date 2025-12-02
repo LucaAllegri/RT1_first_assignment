@@ -20,7 +20,7 @@ class InputController : public rclcpp::Node{
         id_turtle_managed_pub_ = this->create_publisher<std_msgs::msg::Int32>("/id_turtle_moved", 10);
         
         //SUBSCRIBERS
-        //stop_sub_ = this->create_subscription<std_msgs::msg::Bool>("/stop_message", 10, std::bind(&InputController::stop_callback, this, _1));
+        stop_msg_sub_ = this->create_subscription<std_msgs::msg::Bool>("/stop_message", 10, std::bind(&InputController::stop_msg_callback, this, _1));
 
         //VARIABLES
         stop_turtle.linear.x = 0.0;
@@ -28,6 +28,10 @@ class InputController : public rclcpp::Node{
     }
     
     private:
+
+        void stop_msg_callback(const std_msgs::msg::Bool::SharedPtr msg){
+            stop_message.data = msg->data;
+        }
 
         void input_timer_callback(){
             std::cout<< "Quale tartaruga vuoi muovere?\n1) Turtle 1\n2) Turtle 2\n:";
@@ -64,12 +68,13 @@ class InputController : public rclcpp::Node{
         rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr id_turtle_managed_pub_;
 
         //SUBSCRIBERS
+        rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr stop_msg_sub_;
 
         //VARIABLES
         int n_turtle;
         geometry_msgs::msg::Twist vel_input;
         geometry_msgs::msg::Twist stop_turtle;
-        //std_msgs::msg::Bool stop_message;
+        std_msgs::msg::Bool stop_message;
         std_msgs::msg::Int32 moved_turtle;
 };
 
