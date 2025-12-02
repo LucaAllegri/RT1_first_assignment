@@ -8,16 +8,39 @@ class InputController : public rclcpp::Node{
     InputController(): Node("input_controller"){ 
         t1_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
         t2_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle2/cmd_vel", 10);
+        
+        stop_sub_ = this->create_subscription<turtlesim::msg::Pose>("/stop_message", 10, std::bind(&DistanceController::turtle2_pose_callback, this, _1));
+
 
         input_timer_ = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&InputController::input_timer_callback, this));
-        count_ = 0;
     }
     
     private:
         void input_timer_callback(){
-            message.data = "Hello, world! " + std::to_string(count_++);
-            RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
-            publisher_->publish(message);
+            std::cout<< "Quale tartaruga vuoi muovere?\n1) Turtle 1\n2) Turtle 2\n:";
+            std::cin >> n_turtle;
+            if(n_turtle == 1 || n_turtle ==2){
+                std::cout<< "Inserisci Velocità Lineare\nx:";
+                std::cin >> vel_input.linear.x;
+
+                std::cout<< "Inserisci Velocità Angolare\nz:";
+                std::cin >> vel_input.angular.z;
+
+                //moving_turtle.data = n_turtle;
+
+                if(n_turtle == 1){
+                    t1_vel_pub_->publish(vel_input);
+                    //id_turtle_managed_pub_->publish(moving_turtle);
+                }else if(n_turtle ==2){
+                    t2_vel_pub_->publish(vel_input);
+                    //id_turtle_managed_pub_->publish(moving_turtle);
+                }
+
+            }else{
+                std::cout<<"Devi inserire 1 o 2!\n";
+            }
+
+
         } 
 
         //TIMERS
@@ -30,8 +53,8 @@ class InputController : public rclcpp::Node{
         //SUBSCRIBERS
 
         //VARIABLES
-        int count_;
-        std_msgs::msg::String message;
+        int n_turtle;
+        geometry_msgs::msg::Twist vel_input;
 };
 
 int main(int argc, char * argv[]){
