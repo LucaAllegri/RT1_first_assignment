@@ -11,7 +11,7 @@ class InputController : public rclcpp::Node{
     InputController(): Node("input_controller"){ 
 
         //TIMERS 
-        main_timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&InputController::main_timer_callback, this));
+        main_timer_ = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&InputController::stop_timer_callback, this));
 
         //PUBLISHERS
         t1_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
@@ -20,6 +20,7 @@ class InputController : public rclcpp::Node{
         
         //SUBSCRIBERS
         stop_msg_sub_ = this->create_subscription<std_msgs::msg::Bool>("/stop_message", 10, std::bind(&InputController::stop_msg_callback, this, _1));
+        reverse_state_sub_ = this->create_subscription<std_msgs::msg::Int32>("/is_reversing", 10, std::bind(&InputController::stop_msg_callback, this, _1));
 
         //VARIABLES
         stop_turtle.linear.x = 0.0;
@@ -29,64 +30,41 @@ class InputController : public rclcpp::Node{
         last_vel.linear.x = 0.0;
         last_vel.angular.z = 0.0;
         is_stopped.data = false;
-        is_in_recovery_state = false;
     }
     
     private:
 
+        void stop_timer_callback(){
+            if(is_stopped.data){
+                /*if(last_vel.liner.x == 0.0 && last_vel.angular.z == 0.0){  //if both turtles start near each other or near one bounder
+                    last_vel.linear.x = -1.0; 
+                    t1_vel_pub_->publish(last_vel);
+                }*/
+                if(last_vel.linear.x < 0.0){
+                    if(moved_turtle.data == 1){
+                        last_vel.linear.x = 1.0;
+                        t1_vel_pub_->publish(last_vel);
+                    }else if(moved_turtle.data == 2){
+                        last_vel.linear.x = 1.0;
+                        t2_vel_pub_->publish(last_vel);
+                    }
+                }else if(last_vel.linear.x > 0.0){
+                    if(moved_turtle.data == 1){
+                        last_vel.linear.x = -1.0;
+                        t1_vel_pub_->publish(last_vel);
+                    }else if(moved_turtle.data == 2){
+                        last_vel.linear.x = -1.0;
+                        t2_vel_pub_->publish(last_vel);
+                    }
+                }
+            }
+        }
+
         void stop_msg_callback(const std_msgs::msg::Bool::SharedPtr msg){
             is_stopped.data = msg->data;
-
-            if(is_stopped.data && !is_in_recovery_state){
-
-                is_in_recovery_state = true;
-
-                /*if (moved_turtle.data == 1){
-                    t1_vel_pub_->publish(stop_turtle);
-                } else if (moved_turtle.data == 2){
-                    t2_vel_pub_->publish(stop_turtle);
-                }*/
-
-                recovery_timer_ = this->create_wall_timer(
-                    std::chrono::milliseconds(2500), 
-                    std::bind(&InputController::recovery_timeout_callback, this)
-                );
-            }
-            
         }
 
-        void recovery_timeout_callback(){
-            // Interrompi il timer immediatamente
-            recovery_timer_->cancel();
-            
-            // Logica per tornare alla modalità utente
-            is_in_recovery_state = false;
-            RCLCPP_INFO(this->get_logger(), "Son tornato indietro");
-        }
-
-        void main_timer_callback(){
-            if (is_in_recovery_state) {
-                geometry_msgs::msg::Twist recovery_vel;
-
-                if (last_vel.linear.x >= 0) {
-                    recovery_vel.linear.x = -1.0; // Torna indietro
-                } else {
-                    recovery_vel.linear.x = 1.0;  // Va avanti
-                }
-                recovery_vel.angular.z = 0.0;
-
-                if (moved_turtle.data == 1){
-                    t1_vel_pub_->publish(recovery_vel);
-                } else if (moved_turtle.data == 2){
-                    t2_vel_pub_->publish(recovery_vel);
-                }
-
-            }else{
-                input_callback();
-            }
-        }
-
-        void input_callback(){
+        void input_timer_callback(){
         
             std::cout<< "Quale tartaruga vuoi muovere?\n1) Turtle 1\n2) Turtle 2\n:";
             std::cin >> n_turtle;
@@ -114,8 +92,8 @@ class InputController : public rclcpp::Node{
         } 
 
         //TIMERSs
-        rclcpp::TimerBase::SharedPtr main_timer_;
-        rclcpp::TimerBase::SharedPtr recovery_timer_;
+        rclcpp::TimerBase::SharedPtr input_timer_;
+        rclcpp::TimerBase::SharedPtr stop_timer_;
 
         //PUBLISHERS
         rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr t1_vel_pub_;
