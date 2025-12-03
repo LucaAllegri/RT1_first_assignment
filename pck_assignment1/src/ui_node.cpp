@@ -1,7 +1,5 @@
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/string.hpp"
 #include "geometry_msgs/msg/twist.hpp"
-#include "std_msgs/msg/bool.hpp"
 #include "std_msgs/msg/int32.hpp"
 #include <iostream>
 using std::placeholders::_1;
@@ -66,13 +64,13 @@ class InputController : public rclcpp::Node{
             if(is_reversing){        //block if coming back
                 return;
             }
-            std::cout<< "Quale tartaruga vuoi muovere?\n1) Turtle 1\n2) Turtle 2\n:";
+            std::cout<< "Which turtle do you want to move?\n1) Turtle 1\n2) Turtle 2\n:";
             std::cin >> n_turtle;
             if(n_turtle == 1 || n_turtle ==2){
-                std::cout<< "Inserisci Velocità Lineare\nx:";
+                std::cout<< "Linear Velocity:";
                 std::cin >> vel_input.linear.x;
 
-                std::cout<< "Inserisci Velocità Angolare\nz:";
+                std::cout<< "Angular Velocity:";
                 std::cin >> vel_input.angular.z;
 
                 moved_turtle.data = n_turtle;
@@ -89,7 +87,7 @@ class InputController : public rclcpp::Node{
                 );
 
             }else{
-                std::cout<<"Devi inserire 1 o 2!\n";
+                std::cout<<"You must insert 1 or 2!\n";
             }
         } 
 
@@ -105,12 +103,13 @@ class InputController : public rclcpp::Node{
         rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr reverse_state_sub_;
 
         //VARIABLES
-        int n_turtle;
         geometry_msgs::msg::Twist vel_input;
         geometry_msgs::msg::Twist stop_vel;
         std_msgs::msg::Int32 moved_turtle;
-        bool is_moving;
         bool is_reversing;
+        bool is_moving;
+        int n_turtle;
+        
 };
 
 int main(int argc, char * argv[]){
