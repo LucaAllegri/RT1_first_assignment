@@ -1,0 +1,311 @@
+[0.000000] (-) TimerEvent: {}
+[0.000321] (pck_assignment1) JobQueued: {'identifier': 'pck_assignment1', 'dependencies': OrderedDict()}
+[0.000665] (pck_assignment1) JobStarted: {'identifier': 'pck_assignment1'}
+[0.017062] (pck_assignment1) JobProgress: {'identifier': 'pck_assignment1', 'progress': 'cmake'}
+[0.018250] (pck_assignment1) Command: {'cmd': ['/usr/bin/cmake', '/home/luchino/RT1_first_assignment/src/pck_assignment1', '-DCMAKE_INSTALL_PREFIX=/home/luchino/RT1_first_assignment/src/install/pck_assignment1'], 'cwd': '/home/luchino/RT1_first_assignment/src/build/pck_assignment1', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'luchino', 'GIT_ASKPASS': '/home/luchino/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/luchino', 'OLDPWD': '/home/luchino/RT1_first_assignment', 'TERM_PROGRAM_VERSION': '1.106.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-d4e80d9b-8251-4d27-97c2-676643f436b0.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/luchino/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/luchino/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/luchino/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luchino', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/521_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/luchino/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/luchino/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/luchino/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/Radiance/bin:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/c/Program Files/MySQL/MySQL Server 9.0/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/runtime/win64:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/lucaa/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lucaa/AppData/Roaming/npm:/mnt/c/Users/lucaa/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/lucaa/AppData/Roaming/Programs/Zero Install:/mnt/c/Users/lucaa/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/lucaa/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-28f426a737e37ada.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/luchino/.vscode-server/data/User/workspaceStorage/eafb76860cfa99dd2e7842921028e921/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d81666512e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/luchino/ros_ws/install/turtlesim_controller:/home/luchino/ros_ws/install/first_package_py:/home/luchino/ros_ws/install/first_package_cpp:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/luchino/RT1_first_assignment/src/build/pck_assignment1', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luchino/ros_ws/install/first_package_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/luchino/ros_ws/install/turtlesim_controller:/home/luchino/ros_ws/install/first_package_cpp:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:'}), 'shell': False}
+[0.099942] (-) TimerEvent: {}
+[0.200380] (-) TimerEvent: {}
+[0.300797] (-) TimerEvent: {}
+[0.401299] (-) TimerEvent: {}
+[0.501694] (-) TimerEvent: {}
+[0.529249] (pck_assignment1) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.602239] (-) TimerEvent: {}
+[0.702632] (-) TimerEvent: {}
+[0.803048] (-) TimerEvent: {}
+[0.903429] (-) TimerEvent: {}
+[1.003845] (-) TimerEvent: {}
+[1.104482] (-) TimerEvent: {}
+[1.204899] (-) TimerEvent: {}
+[1.279863] (pck_assignment1) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.305138] (-) TimerEvent: {}
+[1.405558] (-) TimerEvent: {}
+[1.506126] (-) TimerEvent: {}
+[1.607011] (-) TimerEvent: {}
+[1.707505] (-) TimerEvent: {}
+[1.807983] (-) TimerEvent: {}
+[1.908430] (-) TimerEvent: {}
+[1.969773] (pck_assignment1) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.008551] (-) TimerEvent: {}
+[2.108931] (-) TimerEvent: {}
+[2.209380] (-) TimerEvent: {}
+[2.309864] (-) TimerEvent: {}
+[2.410506] (-) TimerEvent: {}
+[2.450078] (pck_assignment1) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.461766] (pck_assignment1) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.465272] (pck_assignment1) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.466954] (pck_assignment1) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.510835] (-) TimerEvent: {}
+[2.611262] (-) TimerEvent: {}
+[2.698675] (pck_assignment1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.711390] (-) TimerEvent: {}
+[2.811969] (-) TimerEvent: {}
+[2.912370] (-) TimerEvent: {}
+[3.012984] (-) TimerEvent: {}
+[3.113719] (-) TimerEvent: {}
+[3.214320] (-) TimerEvent: {}
+[3.254746] (pck_assignment1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.264340] (pck_assignment1) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.264807] (pck_assignment1) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.265463] (pck_assignment1) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.293850] (pck_assignment1) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[3.314471] (-) TimerEvent: {}
+[3.414932] (-) TimerEvent: {}
+[3.448801] (pck_assignment1) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.515175] (-) TimerEvent: {}
+[3.615684] (-) TimerEvent: {}
+[3.640143] (pck_assignment1) StdoutLine: {'line': b'-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[3.715983] (-) TimerEvent: {}
+[3.816954] (-) TimerEvent: {}
+[3.917888] (-) TimerEvent: {}
+[4.018531] (-) TimerEvent: {}
+[4.119524] (-) TimerEvent: {}
+[4.220318] (-) TimerEvent: {}
+[4.321346] (-) TimerEvent: {}
+[4.364995] (pck_assignment1) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[4.415703] (pck_assignment1) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[4.421711] (-) TimerEvent: {}
+[4.504202] (pck_assignment1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.522048] (-) TimerEvent: {}
+[4.587213] (pck_assignment1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.622352] (-) TimerEvent: {}
+[4.723397] (-) TimerEvent: {}
+[4.824203] (-) TimerEvent: {}
+[4.859368] (pck_assignment1) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[4.867041] (pck_assignment1) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.924624] (-) TimerEvent: {}
+[5.025614] (-) TimerEvent: {}
+[5.066915] (pck_assignment1) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[5.125852] (-) TimerEvent: {}
+[5.226395] (-) TimerEvent: {}
+[5.327059] (-) TimerEvent: {}
+[5.427777] (-) TimerEvent: {}
+[5.528499] (-) TimerEvent: {}
+[5.629141] (-) TimerEvent: {}
+[5.638541] (pck_assignment1) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[5.729493] (-) TimerEvent: {}
+[5.830223] (-) TimerEvent: {}
+[5.930927] (-) TimerEvent: {}
+[5.951148] (pck_assignment1) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.031198] (-) TimerEvent: {}
+[6.131793] (-) TimerEvent: {}
+[6.232306] (-) TimerEvent: {}
+[6.332997] (-) TimerEvent: {}
+[6.433652] (-) TimerEvent: {}
+[6.534210] (-) TimerEvent: {}
+[6.583506] (pck_assignment1) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[6.634216] (pck_assignment1) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[6.634548] (-) TimerEvent: {}
+[6.687030] (pck_assignment1) StdoutLine: {'line': b'-- Found turtlesim: 1.8.3 (/opt/ros/jazzy/share/turtlesim/cmake)\n'}
+[6.734840] (-) TimerEvent: {}
+[6.835346] (-) TimerEvent: {}
+[6.856160] (pck_assignment1) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[6.935696] (-) TimerEvent: {}
+[7.036449] (-) TimerEvent: {}
+[7.084158] (pck_assignment1) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.084850] (pck_assignment1) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[7.085068] (pck_assignment1) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.086914] (pck_assignment1) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[7.087128] (pck_assignment1) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[7.089241] (pck_assignment1) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.091248] (pck_assignment1) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[7.093775] (pck_assignment1) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.094003] (pck_assignment1) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.095753] (pck_assignment1) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.101508] (pck_assignment1) StdoutLine: {'line': b'-- Configuring done (6.9s)\n'}
+[7.136668] (-) TimerEvent: {}
+[7.137113] (pck_assignment1) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[7.148357] (pck_assignment1) StdoutLine: {'line': b'-- Build files have been written to: /home/luchino/RT1_first_assignment/src/build/pck_assignment1\n'}
+[7.163036] (pck_assignment1) CommandEnded: {'returncode': 0}
+[7.165689] (pck_assignment1) JobProgress: {'identifier': 'pck_assignment1', 'progress': 'build'}
+[7.165793] (pck_assignment1) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luchino/RT1_first_assignment/src/build/pck_assignment1', '--', '-j8', '-l8'], 'cwd': '/home/luchino/RT1_first_assignment/src/build/pck_assignment1', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'luchino', 'GIT_ASKPASS': '/home/luchino/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/luchino', 'OLDPWD': '/home/luchino/RT1_first_assignment', 'TERM_PROGRAM_VERSION': '1.106.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-d4e80d9b-8251-4d27-97c2-676643f436b0.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/luchino/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/luchino/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/luchino/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luchino', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/521_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/luchino/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/luchino/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/luchino/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/Radiance/bin:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/c/Program Files/MySQL/MySQL Server 9.0/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/runtime/win64:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/lucaa/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lucaa/AppData/Roaming/npm:/mnt/c/Users/lucaa/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/lucaa/AppData/Roaming/Programs/Zero Install:/mnt/c/Users/lucaa/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/lucaa/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-28f426a737e37ada.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/luchino/.vscode-server/data/User/workspaceStorage/eafb76860cfa99dd2e7842921028e921/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d81666512e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/luchino/ros_ws/install/turtlesim_controller:/home/luchino/ros_ws/install/first_package_py:/home/luchino/ros_ws/install/first_package_cpp:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/luchino/RT1_first_assignment/src/build/pck_assignment1', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luchino/ros_ws/install/first_package_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/luchino/ros_ws/install/turtlesim_controller:/home/luchino/ros_ws/install/first_package_cpp:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:'}), 'shell': False}
+[7.237107] (-) TimerEvent: {}
+[7.267750] (pck_assignment1) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/distance.dir/src/distance_node.cpp.o\x1b[0m\n'}
+[7.269262] (pck_assignment1) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ui.dir/src/ui_node.cpp.o\x1b[0m\n'}
+[7.337387] (-) TimerEvent: {}
+[7.438092] (-) TimerEvent: {}
+[7.538630] (-) TimerEvent: {}
+[7.639103] (-) TimerEvent: {}
+[7.739550] (-) TimerEvent: {}
+[7.840774] (-) TimerEvent: {}
+[7.941305] (-) TimerEvent: {}
+[8.041839] (-) TimerEvent: {}
+[8.142316] (-) TimerEvent: {}
+[8.242922] (-) TimerEvent: {}
+[8.343418] (-) TimerEvent: {}
+[8.443912] (-) TimerEvent: {}
+[8.544356] (-) TimerEvent: {}
+[8.644821] (-) TimerEvent: {}
+[8.745375] (-) TimerEvent: {}
+[8.846132] (-) TimerEvent: {}
+[8.946580] (-) TimerEvent: {}
+[9.047369] (-) TimerEvent: {}
+[9.147869] (-) TimerEvent: {}
+[9.248305] (-) TimerEvent: {}
+[9.348736] (-) TimerEvent: {}
+[9.449148] (-) TimerEvent: {}
+[9.549762] (-) TimerEvent: {}
+[9.650320] (-) TimerEvent: {}
+[9.750815] (-) TimerEvent: {}
+[9.851443] (-) TimerEvent: {}
+[9.951997] (-) TimerEvent: {}
+[10.052609] (-) TimerEvent: {}
+[10.153087] (-) TimerEvent: {}
+[10.253524] (-) TimerEvent: {}
+[10.354051] (-) TimerEvent: {}
+[10.454450] (-) TimerEvent: {}
+[10.554988] (-) TimerEvent: {}
+[10.655565] (-) TimerEvent: {}
+[10.756207] (-) TimerEvent: {}
+[10.856689] (-) TimerEvent: {}
+[10.957260] (-) TimerEvent: {}
+[11.057714] (-) TimerEvent: {}
+[11.158194] (-) TimerEvent: {}
+[11.258679] (-) TimerEvent: {}
+[11.359152] (-) TimerEvent: {}
+[11.459535] (-) TimerEvent: {}
+[11.560322] (-) TimerEvent: {}
+[11.661122] (-) TimerEvent: {}
+[11.761633] (-) TimerEvent: {}
+[11.862215] (-) TimerEvent: {}
+[11.962998] (-) TimerEvent: {}
+[12.063461] (-) TimerEvent: {}
+[12.163944] (-) TimerEvent: {}
+[12.264432] (-) TimerEvent: {}
+[12.364894] (-) TimerEvent: {}
+[12.465308] (-) TimerEvent: {}
+[12.565863] (-) TimerEvent: {}
+[12.666512] (-) TimerEvent: {}
+[12.766948] (-) TimerEvent: {}
+[12.867406] (-) TimerEvent: {}
+[12.967937] (-) TimerEvent: {}
+[13.068301] (-) TimerEvent: {}
+[13.168651] (-) TimerEvent: {}
+[13.269196] (-) TimerEvent: {}
+[13.369687] (-) TimerEvent: {}
+[13.470224] (-) TimerEvent: {}
+[13.570875] (-) TimerEvent: {}
+[13.671469] (-) TimerEvent: {}
+[13.771907] (-) TimerEvent: {}
+[13.872378] (-) TimerEvent: {}
+[13.972938] (-) TimerEvent: {}
+[14.073454] (-) TimerEvent: {}
+[14.173843] (-) TimerEvent: {}
+[14.274349] (-) TimerEvent: {}
+[14.374803] (-) TimerEvent: {}
+[14.475150] (-) TimerEvent: {}
+[14.575562] (-) TimerEvent: {}
+[14.676021] (-) TimerEvent: {}
+[14.776379] (-) TimerEvent: {}
+[14.876786] (-) TimerEvent: {}
+[14.977224] (-) TimerEvent: {}
+[15.077635] (-) TimerEvent: {}
+[15.178002] (-) TimerEvent: {}
+[15.278541] (-) TimerEvent: {}
+[15.378873] (-) TimerEvent: {}
+[15.479354] (-) TimerEvent: {}
+[15.579839] (-) TimerEvent: {}
+[15.680384] (-) TimerEvent: {}
+[15.780823] (-) TimerEvent: {}
+[15.881235] (-) TimerEvent: {}
+[15.981605] (-) TimerEvent: {}
+[16.082054] (-) TimerEvent: {}
+[16.182409] (-) TimerEvent: {}
+[16.282826] (-) TimerEvent: {}
+[16.383303] (-) TimerEvent: {}
+[16.483689] (-) TimerEvent: {}
+[16.584151] (-) TimerEvent: {}
+[16.684555] (-) TimerEvent: {}
+[16.784917] (-) TimerEvent: {}
+[16.885342] (-) TimerEvent: {}
+[16.985826] (-) TimerEvent: {}
+[17.086248] (-) TimerEvent: {}
+[17.186718] (-) TimerEvent: {}
+[17.191470] (pck_assignment1) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable ui\x1b[0m\n'}
+[17.286923] (-) TimerEvent: {}
+[17.387315] (-) TimerEvent: {}
+[17.487727] (-) TimerEvent: {}
+[17.588343] (-) TimerEvent: {}
+[17.688879] (-) TimerEvent: {}
+[17.746208] (pck_assignment1) StdoutLine: {'line': b'[ 75%] Built target ui\n'}
+[17.789107] (-) TimerEvent: {}
+[17.889544] (-) TimerEvent: {}
+[17.990063] (-) TimerEvent: {}
+[18.090472] (-) TimerEvent: {}
+[18.190902] (-) TimerEvent: {}
+[18.291380] (-) TimerEvent: {}
+[18.391791] (-) TimerEvent: {}
+[18.492296] (-) TimerEvent: {}
+[18.592840] (-) TimerEvent: {}
+[18.693343] (-) TimerEvent: {}
+[18.793734] (-) TimerEvent: {}
+[18.894218] (-) TimerEvent: {}
+[18.994740] (-) TimerEvent: {}
+[19.095239] (-) TimerEvent: {}
+[19.195722] (-) TimerEvent: {}
+[19.296203] (-) TimerEvent: {}
+[19.396727] (-) TimerEvent: {}
+[19.497214] (-) TimerEvent: {}
+[19.597738] (-) TimerEvent: {}
+[19.698051] (-) TimerEvent: {}
+[19.798416] (-) TimerEvent: {}
+[19.899067] (-) TimerEvent: {}
+[19.999600] (-) TimerEvent: {}
+[20.100255] (-) TimerEvent: {}
+[20.200720] (-) TimerEvent: {}
+[20.301139] (-) TimerEvent: {}
+[20.401613] (-) TimerEvent: {}
+[20.502197] (-) TimerEvent: {}
+[20.602826] (-) TimerEvent: {}
+[20.703362] (-) TimerEvent: {}
+[20.803798] (-) TimerEvent: {}
+[20.904292] (-) TimerEvent: {}
+[21.004947] (-) TimerEvent: {}
+[21.105516] (-) TimerEvent: {}
+[21.206012] (-) TimerEvent: {}
+[21.306541] (-) TimerEvent: {}
+[21.407051] (-) TimerEvent: {}
+[21.507741] (-) TimerEvent: {}
+[21.608358] (-) TimerEvent: {}
+[21.709007] (-) TimerEvent: {}
+[21.809623] (-) TimerEvent: {}
+[21.910136] (-) TimerEvent: {}
+[22.010645] (-) TimerEvent: {}
+[22.111147] (-) TimerEvent: {}
+[22.191499] (pck_assignment1) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable distance\x1b[0m\n'}
+[22.211412] (-) TimerEvent: {}
+[22.311761] (-) TimerEvent: {}
+[22.412151] (-) TimerEvent: {}
+[22.512610] (-) TimerEvent: {}
+[22.613133] (-) TimerEvent: {}
+[22.713559] (-) TimerEvent: {}
+[22.814220] (-) TimerEvent: {}
+[22.914659] (-) TimerEvent: {}
+[22.965157] (pck_assignment1) StdoutLine: {'line': b'[100%] Built target distance\n'}
+[22.975368] (pck_assignment1) CommandEnded: {'returncode': 0}
+[22.976776] (pck_assignment1) JobProgress: {'identifier': 'pck_assignment1', 'progress': 'install'}
+[22.985835] (pck_assignment1) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/luchino/RT1_first_assignment/src/build/pck_assignment1'], 'cwd': '/home/luchino/RT1_first_assignment/src/build/pck_assignment1', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'luchino', 'GIT_ASKPASS': '/home/luchino/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/luchino', 'OLDPWD': '/home/luchino/RT1_first_assignment', 'TERM_PROGRAM_VERSION': '1.106.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-d4e80d9b-8251-4d27-97c2-676643f436b0.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/luchino/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/luchino/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/luchino/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luchino', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/521_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/luchino/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/luchino/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/luchino/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/Radiance/bin:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/c/Program Files/MySQL/MySQL Server 9.0/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/runtime/win64:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/lucaa/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lucaa/AppData/Roaming/npm:/mnt/c/Users/lucaa/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/lucaa/AppData/Roaming/Programs/Zero Install:/mnt/c/Users/lucaa/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/lucaa/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/luchino/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-28f426a737e37ada.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/luchino/.vscode-server/data/User/workspaceStorage/eafb76860cfa99dd2e7842921028e921/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d81666512e.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/luchino/ros_ws/install/turtlesim_controller:/home/luchino/ros_ws/install/first_package_py:/home/luchino/ros_ws/install/first_package_cpp:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/luchino/RT1_first_assignment/src/build/pck_assignment1', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luchino/ros_ws/install/first_package_py/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/luchino/ros_ws/install/turtlesim_controller:/home/luchino/ros_ws/install/first_package_cpp:/home/luchino/ros_ws/install/first_package_py:/opt/ros/jazzy', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:'}), 'shell': False}
+[22.991717] (pck_assignment1) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.992612] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/lib/pck_assignment1/ui\n'}
+[22.998364] (pck_assignment1) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/luchino/RT1_first_assignment/src/install/pck_assignment1/lib/pck_assignment1/ui" to ""\n'}
+[22.998507] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/lib/pck_assignment1/distance\n'}
+[23.004940] (pck_assignment1) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/luchino/RT1_first_assignment/src/install/pck_assignment1/lib/pck_assignment1/distance" to ""\n'}
+[23.005071] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/lib/pck_assignment1/turtle_spawn.py\n'}
+[23.005987] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/share/ament_index/resource_index/package_run_dependencies/pck_assignment1\n'}
+[23.006414] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/share/ament_index/resource_index/parent_prefix_path/pck_assignment1\n'}
+[23.006696] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/share/pck_assignment1/environment/ament_prefix_path.sh\n'}
+[23.006868] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/share/pck_assignment1/environment/ament_prefix_path.dsv\n'}
+[23.007013] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/share/pck_assignment1/environment/path.sh\n'}
+[23.007326] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/share/pck_assignment1/environment/path.dsv\n'}
+[23.007547] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/share/pck_assignment1/local_setup.bash\n'}
+[23.007731] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/share/pck_assignment1/local_setup.sh\n'}
+[23.007913] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/share/pck_assignment1/local_setup.zsh\n'}
+[23.008018] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/share/pck_assignment1/local_setup.dsv\n'}
+[23.008287] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/share/pck_assignment1/package.dsv\n'}
+[23.008396] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/share/ament_index/resource_index/packages/pck_assignment1\n'}
+[23.008483] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/share/pck_assignment1/cmake/pck_assignment1Config.cmake\n'}
+[23.008565] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/share/pck_assignment1/cmake/pck_assignment1Config-version.cmake\n'}
+[23.008642] (pck_assignment1) StdoutLine: {'line': b'-- Installing: /home/luchino/RT1_first_assignment/src/install/pck_assignment1/share/pck_assignment1/package.xml\n'}
+[23.011395] (pck_assignment1) CommandEnded: {'returncode': 0}
+[23.015001] (-) TimerEvent: {}
+[23.047218] (pck_assignment1) JobEnded: {'identifier': 'pck_assignment1', 'rc': 0}
+[23.048511] (-) EventReactorShutdown: {}

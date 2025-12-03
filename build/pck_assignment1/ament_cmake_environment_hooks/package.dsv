@@ -1,0 +1,4 @@
+source;share/pck_assignment1/local_setup.bash
+source;share/pck_assignment1/local_setup.dsv
+source;share/pck_assignment1/local_setup.sh
+source;share/pck_assignment1/local_setup.zsh

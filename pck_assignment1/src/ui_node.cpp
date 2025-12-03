@@ -14,8 +14,9 @@ class InputController : public rclcpp::Node{
         this->start();
 
         //PUBLISHERS
-        t1_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
-        t2_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle2/cmd_vel", 10);
+        //t1_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
+        //t2_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle2/cmd_vel", 10);
+        intermediate_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/intermediate_vel", 10);
         id_turtle_managed_pub_ = this->create_publisher<std_msgs::msg::Int32>("/id_turtle_moved", 10);
         
         //SUBSCRIBERS
@@ -38,16 +39,15 @@ class InputController : public rclcpp::Node{
             int i = msg->data;
             if(i!=0){
                 is_reversing=true;
-                //this->input_timer_();
+                this->input_timer_();
             }else{
                 is_reversing=false;
-                //input_timer_.reset();
+                input_timer_.start();
             }
         }
 
         void stop_turtles(){
-            t1_vel_pub_->publish(stop_vel);
-            t2_vel_pub_->publish(stop_vel);
+            intermediate_vel_pub_->publish(stop_vel);
             is_moving = false;
             this->start();
         }
@@ -79,10 +79,10 @@ class InputController : public rclcpp::Node{
                 moved_turtle.data = n_turtle;
 
                 if(n_turtle == 1){
-                    t1_vel_pub_->publish(vel_input);
+                    intermediate_vel_pub_->publish(vel_input);
                     id_turtle_managed_pub_->publish(moved_turtle);
                 }else if(n_turtle ==2){
-                    t2_vel_pub_->publish(vel_input);
+                    intermediate_vel_pub_->publish(vel_input);
                     id_turtle_managed_pub_->publish(moved_turtle);
                 }
                 is_moving=true;
@@ -105,6 +105,7 @@ class InputController : public rclcpp::Node{
         //PUBLISHERS
         rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr t1_vel_pub_;
         rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr t2_vel_pub_;
+        rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr intermediate_vel_pub_;
         rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr id_turtle_managed_pub_;
 
         //SUBSCRIBERS

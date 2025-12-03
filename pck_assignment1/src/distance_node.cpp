@@ -37,6 +37,8 @@ class DistanceController: public rclcpp::Node{
             distance.data = 5.0;
             is_reversing_t1 = false;
             is_reversing_t2 = false;
+            t1_pose_received_ = false;
+            t2_pose_received_ = false;
         }
     private:
 
@@ -77,6 +79,10 @@ class DistanceController: public rclcpp::Node{
         
         
         void distance_boundaries_timer(){
+
+            if (!t1_pose_received_ || !t2_pose_received_) {
+                return; 
+            }
             geometry_msgs::msg::Twist reverse_vel;
 
             distance.data = sqrt(pow((t2_pose.x-t1_pose.x),2) + pow((t2_pose.y-t1_pose.y),2));
@@ -155,11 +161,13 @@ class DistanceController: public rclcpp::Node{
         void turtle1_pose_callback(const turtlesim::msg::Pose::SharedPtr msg){
             t1_pose.x = msg->x;
             t1_pose.y = msg->y;
+            t1_pose_received_ = true;
         }
 
         void turtle2_pose_callback(const turtlesim::msg::Pose::SharedPtr msg){
             t2_pose.x = msg->x;
             t2_pose.y = msg->y;
+            t2_pose_received_ = true;
         }
         //TIMERS
         //rclcpp::TimerBase::SharedPtr distance_timer_;
@@ -192,6 +200,8 @@ class DistanceController: public rclcpp::Node{
         std_msgs::msg::Int32 id_turtle;
         bool is_reversing_t1;
         bool is_reversing_t2;
+        bool t1_pose_received_;
+        bool t2_pose_received_;
 
         
 };

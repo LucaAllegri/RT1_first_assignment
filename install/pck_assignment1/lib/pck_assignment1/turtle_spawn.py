@@ -14,7 +14,7 @@ class SimpleSpawner(Node):
 
         # Richiesta per spawn
         req = Spawn.Request()
-        req.x = 3.0
+        req.x = 2.0
         req.y = 5.5
         req.theta = 0.0
         req.name = "turtle2"
