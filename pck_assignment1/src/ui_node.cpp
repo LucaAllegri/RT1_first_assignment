@@ -38,8 +38,10 @@ class InputController : public rclcpp::Node{
             int i = msg->data;
             if(i!=0){
                 is_reversing=true;
+                //this->input_timer_();
             }else{
                 is_reversing=false;
+                //input_timer_.reset();
             }
         }
 
