@@ -14,8 +14,6 @@ class InputController : public rclcpp::Node{
         this->start();
 
         //PUBLISHERS
-        //t1_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
-        //t2_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle2/cmd_vel", 10);
         intermediate_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/intermediate_vel", 10);
         id_turtle_managed_pub_ = this->create_publisher<std_msgs::msg::Int32>("/id_turtle_moved", 10);
         
@@ -27,8 +25,7 @@ class InputController : public rclcpp::Node{
         stop_vel.angular.z = 0.0;
         vel_input.linear.x = 0.0;
         vel_input.angular.z = 0.0;
-        last_vel.linear.x = 0.0;
-        last_vel.angular.z = 0.0;
+        moved_turtle.data=0.0;
         is_moving = false;
         is_reversing = false;
     }
@@ -39,16 +36,18 @@ class InputController : public rclcpp::Node{
             int i = msg->data;
             if(i!=0){
                 is_reversing=true;
-                this->input_timer_();
+                input_timer_.reset();
             }else{
                 is_reversing=false;
-                input_timer_.start();
+                this->start();
             }
         }
 
         void stop_turtles(){
             intermediate_vel_pub_->publish(stop_vel);
+            id_turtle_managed_pub_->publish(moved_turtle);
             is_moving = false;
+            stop_timer_.reset();
             this->start();
         }
 
@@ -78,13 +77,9 @@ class InputController : public rclcpp::Node{
 
                 moved_turtle.data = n_turtle;
 
-                if(n_turtle == 1){
-                    intermediate_vel_pub_->publish(vel_input);
-                    id_turtle_managed_pub_->publish(moved_turtle);
-                }else if(n_turtle ==2){
-                    intermediate_vel_pub_->publish(vel_input);
-                    id_turtle_managed_pub_->publish(moved_turtle);
-                }
+                intermediate_vel_pub_->publish(vel_input);
+                id_turtle_managed_pub_->publish(moved_turtle);
+
                 is_moving=true;
                 input_timer_.reset();
 
@@ -103,8 +98,6 @@ class InputController : public rclcpp::Node{
         rclcpp::TimerBase::SharedPtr stop_timer_;
 
         //PUBLISHERS
-        rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr t1_vel_pub_;
-        rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr t2_vel_pub_;
         rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr intermediate_vel_pub_;
         rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr id_turtle_managed_pub_;
 
@@ -113,13 +106,11 @@ class InputController : public rclcpp::Node{
 
         //VARIABLES
         int n_turtle;
-        bool is_in_recovery_state;
         geometry_msgs::msg::Twist vel_input;
-        geometry_msgs::msg::Twist last_vel;
         geometry_msgs::msg::Twist stop_vel;
+        std_msgs::msg::Int32 moved_turtle;
         bool is_moving;
         bool is_reversing;
-        std_msgs::msg::Int32 moved_turtle;
 };
 
 int main(int argc, char * argv[]){
