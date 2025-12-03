@@ -64,15 +64,36 @@ class InputController : public rclcpp::Node{
             if(is_reversing){        //block if coming back
                 return;
             }
+
+            int n_turtle;
+            double linear, angular;
             std::cout<< "Which turtle do you want to move?\n1) Turtle 1\n2) Turtle 2\n:";
-            std::cin >> n_turtle;
+            if(!(std::cin >> n_turtle)){
+                std::cout << "Invalid input! Please enter a number (1 or 2).\n";
+                std::cin.clear(); 
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');// Svuota il buffer
+                return;
+            }
+
             if(n_turtle == 1 || n_turtle ==2){
                 std::cout<< "Linear Velocity:";
-                std::cin >> vel_input.linear.x;
+                if (!(std::cin >> linear)) {
+                    std::cout << "Invalid input for Linear Velocity.\n";
+                    std::cin.clear();
+                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                    return;
+                }
 
-                std::cout<< "Angular Velocity:";
-                std::cin >> vel_input.angular.z;
+                std::cout << "Angular Velocity:";
+                if(!(std::cin >> angular)) {
+                    std::cout << "Invalid input for Angular Velocity.\n";
+                    std::cin.clear();
+                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                    return;
+                }
 
+                vel_input.linear.x = linear;
+                vel_input.angular.z = angular;
                 moved_turtle.data = n_turtle;
 
                 intermediate_vel_pub_->publish(vel_input);
@@ -108,7 +129,6 @@ class InputController : public rclcpp::Node{
         std_msgs::msg::Int32 moved_turtle;
         bool is_reversing;
         bool is_moving;
-        int n_turtle;
         
 };
 

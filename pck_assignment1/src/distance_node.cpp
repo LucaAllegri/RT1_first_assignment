@@ -53,7 +53,7 @@ class DistanceController: public rclcpp::Node{
 
         geometry_msgs::msg::Twist check_direction_turtle(){
             geometry_msgs::msg::Twist reverse_turtle_vel;
-            if(command_input.linear.x != 0){
+            if(command_input.linear.x < 0){
                 reverse_turtle_vel.linear.x = 1;
             }else{
                 reverse_turtle_vel.linear.x = -1;
