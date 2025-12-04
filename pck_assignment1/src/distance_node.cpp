@@ -11,7 +11,7 @@ class DistanceController: public rclcpp::Node{
         DistanceController(): Node("distance_controller"){
             
             //TIMERS
-            check_timer = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&DistanceController::distance_boundaries_timer, this));
+            check_timer = this->create_wall_timer(std::chrono::milliseconds(150), std::bind(&DistanceController::distance_boundaries_timer, this));
 
             //PUBLISHERS
             distance_pub_ = this->create_publisher<std_msgs::msg::Float32>("/distance", 10);
