@@ -11,7 +11,7 @@ class DistanceController: public rclcpp::Node{
         DistanceController(): Node("distance_controller"){
             
             //TIMERS
-            check_timer = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&DistanceController::distance_boundaries_timer, this));
+            check_timer = this->create_wall_timer(std::chrono::milliseconds(150), std::bind(&DistanceController::distance_boundaries_timer, this));
 
             //PUBLISHERS
             distance_pub_ = this->create_publisher<std_msgs::msg::Float32>("/distance", 10);
@@ -90,7 +90,7 @@ class DistanceController: public rclcpp::Node{
 
             if(is_t1_in_danger()){
                 if (!is_reversing_t1) {
-                    is_reversing_t1 = true;
+                    is_reversing_t1 = true;    //problem if turtle doesn't come back in one only timer's step
                     reverse_state_pub_->publish(id_turtle);
                     reverse_vel = check_direction_turtle();
                     t1_vel_pub_->publish(reverse_vel);
@@ -103,7 +103,7 @@ class DistanceController: public rclcpp::Node{
 
             if(is_t2_in_danger()){
                 if (!is_reversing_t2) {
-                    is_reversing_t2 = true;
+                    is_reversing_t2 = true;    //problem if turtle doesn't come back in one only timer's step
                     reverse_state_pub_->publish(id_turtle);
                     reverse_vel = check_direction_turtle();
                     t2_vel_pub_->publish(reverse_vel);
