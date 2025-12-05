@@ -1,6 +1,6 @@
 # ASSIGNMENT 1 - RT1
 
-This project focuses on controlling two turtles within the Turtlesim environment using two primary ROS 2 nodes: UI and Distance.
+This project focuses on controlling two turtles within the Turtlesim environment using two primary ROS 2 nodes written in cpp: UI and Distance.
 These two nodes continuously monitor the turtles' movement to ensure safety and control:
 - the user can select which turtle to move and at what velocity;
 - if a turtle gets too close to the other, it automatically reverses its movement direction to back away;
@@ -41,19 +41,36 @@ These two nodes continuously monitor the turtles' movement to ensure safety and 
 <br>**HOW TO RUN THE SIMULATION**
 <br>To launch the entire simulation, including `turtlesim_node`, `turtle_spawn.py`, `ui_node`, and `distance_node`, just use the `launch_nodes.py` file. 
 <br>First, to compile pck_assignment1 package within your ROS 2 workspace:
-<br>```colcon build```
+```bash
+colcon build
+```
+and after
+```bash
+source install/setup.bash
+```
+
 <br>In a terminal launch the nodes using the command:
-<br>```ros2 launch pck_assignment1 launch_nodes.py```
+```bash
+ros2 launch pck_assignment1 launch_nodes.py
+```
 <br>This command will open three separate windows using xterm.
 
 Since the launch file utilizes the xterm -e prefix to open nodes in separate windows, you must have xterm installed on your system. 
 <br>If the launch fails, execute the following commands
-<br>```sudo apt update```
-<br>```sudo apt install xterm```
+```bash 
+sudo apt update
+```
+```bash
+sudo apt install xterm
+```
 
 In case the launch file does not work as expected, you can manually launch the nodes in four separate terminal windows, in this order:
-1) ```ros2 run turtlesim turtlesim_node```
-2) ```run pck_assignment1 turtle_spawn.py```
-3) ```ros2 run pck_assignment1 ui```
-4) ```ros2 run pck_assignment1 distance```
+1) ```bash
+   ros2 run turtlesim turtlesim_node
+2) ```bash
+   run pck_assignment1 turtle_spawn.py
+3) ```bash
+   ros2 run pck_assignment1 ui
+4) ```bash
+   ros2 run pck_assignment1 distance
  
