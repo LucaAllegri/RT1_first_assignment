@@ -30,7 +30,9 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 install( 
-  PROGRAMS scripts/turtle_spawn.py
+  PROGRAMS 
+  scripts/turtle_spawn.py
+  scripts/turtle3_spawn.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

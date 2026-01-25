@@ -20,6 +20,14 @@ def generate_launch_description():
         output='screen',
     )
 
+    #TURTLE 3 SPAWN NODE
+    turtle3_spawn_node = Node(
+        package='pck_assignment1',
+        executable='turtle3_spawn.py', 
+        name='turtle3_spawn',
+        output='screen',
+    )
+
     #UI NODE
     input_controller_node = Node(
         package='pck_assignment1',
@@ -41,6 +49,7 @@ def generate_launch_description():
     return LaunchDescription([
         turtlesim_node,
         turtle_spawn_node,
+        turtle3_spawn_node,
         input_controller_node,
         distance_controller_node
     ])
