@@ -3,6 +3,7 @@
 #include "std_msgs/msg/float32.hpp"
 #include "std_msgs/msg/int32.hpp"
 #include "geometry_msgs/msg/twist.hpp"
+#include "turtle_custom_msgs/msg/vel_message.hpp"
 #include <math.h>
 using std::placeholders::_1;
 
@@ -26,6 +27,7 @@ class DistanceController: public rclcpp::Node{
             t3_pose_sub_ = this->create_subscription<turtlesim::msg::Pose>("/turtle3/pose", 10, std::bind(&DistanceController::turtle3_pose_callback, this, _1));
             intermediate_vel_sub_ = this->create_subscription<geometry_msgs::msg::Twist>("/intermediate_vel", 10, std::bind(&DistanceController::intermediate_vel_callback, this, _1));
             id_turtle_managed_sub_ = this->create_subscription<std_msgs::msg::Int32>("/id_turtle_moved", 10, std::bind(&DistanceController::id_turtle_callback, this, _1));
+            vel_message_sub_ = this->create_subscription<turtle_custom_msgs::msg::VelMessage>("/vel_message", 10, std::bind(&DistanceController::vel_message_callback, this, _1));
 
             //VARIABLES
             stop_turtle.linear.x = 0.0;
@@ -88,7 +90,8 @@ class DistanceController: public rclcpp::Node{
 
             distance_t1_t3.data = sqrt(pow((t3_pose.x-t1_pose.x),2) + pow((t3_pose.y-t1_pose.y),2));
             distance.data = sqrt(pow((t2_pose.x-t1_pose.x),2) + pow((t2_pose.y-t1_pose.y),2));
-            std::cout << "Distance:" << distance.data <<std::endl;
+            //std::cout << "Distance:" << distance.data <<std::endl;
+
             distance_pub_->publish(distance);
             distance_t1_t3_pub_->publish(distance_t1_t3);
 
@@ -118,6 +121,13 @@ class DistanceController: public rclcpp::Node{
                     stop();
                 }
             }
+        }
+
+        void vel_message_callback (const turtle_custom_msgs::msg::VelMessage::SharedPtr msg){
+            std::cout << "STRING:" << msg->velocity << std::endl;
+            std::cout << "LINEAR VELOCITY:" << msg->linear_velocity << std::endl;
+            std::cout << "ANGULAR VELOCITY:" << msg->angular_velocity << std::endl;
+           
         }
 
         void intermediate_vel_callback(const geometry_msgs::msg::Twist::SharedPtr msg){
@@ -166,6 +176,7 @@ class DistanceController: public rclcpp::Node{
         rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr t3_pose_sub_;
         rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr intermediate_vel_sub_;
         rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr id_turtle_managed_sub_;
+        rclcpp::Subscription<turtle_custom_msgs::msg::VelMessage>::SharedPtr vel_message_sub_;
 
         //VARIABLES
         geometry_msgs::msg::Twist command_input;

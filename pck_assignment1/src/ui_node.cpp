@@ -1,6 +1,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "geometry_msgs/msg/twist.hpp"
 #include "std_msgs/msg/int32.hpp"
+#include "turtle_custom_msgs/msg/vel_message.hpp"
 #include <iostream>
 using std::placeholders::_1;
 
@@ -14,6 +15,7 @@ class InputController : public rclcpp::Node{
         //PUBLISHERS
         intermediate_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/intermediate_vel", 10);
         id_turtle_managed_pub_ = this->create_publisher<std_msgs::msg::Int32>("/id_turtle_moved", 10);
+        vel_message_pub_ = this->create_publisher<turtle_custom_msgs::msg::VelMessage>("/vel_message", 10);
         
         //SUBSCRIBERS
         reverse_state_sub_ = this->create_subscription<std_msgs::msg::Int32>("/is_reversing", 10, std::bind(&InputController::reverse_state_callback, this, _1));
@@ -99,6 +101,11 @@ class InputController : public rclcpp::Node{
                 intermediate_vel_pub_->publish(vel_input);
                 id_turtle_managed_pub_->publish(moved_turtle);
 
+                vel_mess.velocity = "velocity";
+                vel_mess.linear_velocity = linear;
+                vel_mess.angular_velocity = angular;
+                vel_message_pub_->publish(vel_mess);
+
                 is_moving=true;
                 input_timer_.reset();
 
@@ -119,11 +126,13 @@ class InputController : public rclcpp::Node{
         //PUBLISHERS
         rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr intermediate_vel_pub_;
         rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr id_turtle_managed_pub_;
+        rclcpp::Publisher<turtle_custom_msgs::msg::VelMessage>::SharedPtr vel_message_pub_;
 
         //SUBSCRIBERS
         rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr reverse_state_sub_;
 
         //VARIABLES
+        turtle_custom_msgs::msg::VelMessage vel_mess;
         geometry_msgs::msg::Twist vel_input;
         geometry_msgs::msg::Twist stop_vel;
         std_msgs::msg::Int32 moved_turtle;
